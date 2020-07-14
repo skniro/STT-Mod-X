@@ -1,9 +1,9 @@
-[17:50:07] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
-[17:50:07] [Render thread/INFO] [JourneymapClient] initialize ENTER
-[17:50:07] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
-[17:50:07] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
-[17:50:07] [Render thread/WARN] [Constants] Couldn't determine locale from game settings, defaulting to zh_CN
-[17:50:07] [Render thread/INFO] [?] Version: JourneyMap 1.15.2-5.7.0b3, built with Forge 1.15.2-31.2.20
+[21:04:05] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
+[21:04:05] [Render thread/INFO] [JourneymapClient] initialize ENTER
+[21:04:05] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[21:04:05] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[21:04:05] [Render thread/WARN] [Constants] Couldn't determine locale from game settings, defaulting to zh_CN
+[21:04:05] [Render thread/INFO] [?] Version: JourneyMap 1.15.2-5.7.0b3, built with Forge 1.15.2-31.2.20
 Forge: 31.2.31
 Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=zh_cn, locale=zh_CN
 Features: 
@@ -20,31 +20,31 @@ FullMapProperties{state=Valid, file=journeymap.fullmap.config, configVersion=5.7
 WaypointProperties{state=Valid, file=journeymap.waypoint.config, configVersion=5.7.0b3, autoRemoveDeathpointDistance=2, createDeathpoints=true, showName=true, dateFormat=MM-dd-yyyy, autoRemoveDeathpoints=false, maxDistance=0, autoHideLabel=true, teleportCommand=/tp {name} {x} {y} {z}, showStaticBeam=true, minDistance=4, timeFormat=HH:mm:ss, boldLabel=false, textureSmall=true, showDeathpointlabel=true, showDistance=true, showRotatingBeam=true, fontScale=2, showTexture=true, managerEnabled=true, beaconEnabled=true}
 WebMapProperties{state=Valid, file=journeymap.webmap.config, configVersion=5.7.0b3, zoomLevel=0, showWaypoints=true, showCaves=true, showSelf=true, port=8080, showGrid=true, showEntityNames=true, enabled=false, preferredMapType=day}
 CoreProperties{state=Valid, file=journeymap.core.config, configVersion=5.7.0b3, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, renderOverlayEventTypeName=ALL, mapBlendWater=false, renderDistanceSurfaceMax=7, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=jm.minimap.shape_circle, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, browserPoll=2000, mapBlendFoliage=true, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, maxAnimalsData=32, mapTransparency=true, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=3, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, renderOverlayPreEvent=true, autoMapPoll=2000}
-[17:50:07] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.5-SNAPSHOT
-[17:50:07] [Render thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
-[17:50:07] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
-[17:50:07] [Render thread/DEBUG] [JourneymapClient] postInitialize ENTER
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.KeyEventHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.ChatEventHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.StateTickHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WorldEventHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WaypointBeaconHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.TextureAtlasHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.MiniMapOverlayHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.PlayerConnectHandler
-[17:50:07] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.world.ChunkMonitor
-[17:50:07] [Render thread/ERROR] [FileHandler] Couldn't locate icons for Default: E:\STT工业整合验证客户端1.15.2-4.0.5023%20Build-10230%20forge1.16.1test\.minecraft\mods\%5B旅行地图%5Djourneymap-1.15.2-5.7.0b3.jar\assets\journeymap\icon\entity
-[17:50:07] [Render thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
-[17:50:07] [Render thread/TRACE] [ThemeLoader] Initializing themes ...
-[17:50:07] [Render thread/ERROR] [FileHandler] Couldn't locate icons for flat: E:\STT工业整合验证客户端1.15.2-4.0.5023%20Build-10230%20forge1.16.1test\.minecraft\mods\%5B旅行地图%5Djourneymap-1.15.2-5.7.0b3.jar\assets\journeymap\theme\flat
-[17:50:07] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 0
-[17:50:07] [Render thread/DEBUG] [JourneymapClient] postInitialize EXIT, elapsed§8 count §r1§8 avg §r242.52§8ms§r
-[17:50:11] [JM-VersionCheck-1/INFO] [VersionCheck$1] Newer version online: JourneyMap 5.7.0beta1.jar for Minecraft 1.15.2 on http://minecraft.curseforge.com/projects/journeymap/files/2894436
-[17:50:27] [Netty Local Client IO #0/INFO] [PacketRegistry] Dev Mode?
-[17:50:27] [Netty Server IO #1/INFO] [PacketRegistry] Dev Mode?
-[17:50:30] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
-[17:50:30] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
-[17:50:30] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from E:\STT工业整合验证客户端1.15.2-4.0.5023 Build-10230 forge1.16.1test\.minecraft\journeymap\data\sp\新的世界 ~1~\waypoints
-[17:50:30] [Render thread/INFO] [JourneymapClient] Mapping started in E:\STT工业整合验证客户端1.15.2-4.0.5023 Build-10230 forge1.16.1test\.minecraft\journeymap\data\sp\新的世界 ~1~\DIM0. Memory: 10240MB total, 9166MB free 
-[17:50:30] [Render thread/INFO] [ChatLog] 旅行地图: 按下[J]键
-[17:51:34] [Render thread/INFO] [JourneymapClient] Mapping halted in E:\STT工业整合验证客户端1.15.2-4.0.5023 Build-10230 forge1.16.1test\.minecraft\journeymap\data\mp\offline\DIM0
+[21:04:05] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.5-SNAPSHOT
+[21:04:05] [Render thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[21:04:05] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
+[21:04:05] [Render thread/DEBUG] [JourneymapClient] postInitialize ENTER
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.KeyEventHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.ChatEventHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.StateTickHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WorldEventHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WaypointBeaconHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.TextureAtlasHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.MiniMapOverlayHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.PlayerConnectHandler
+[21:04:05] [Render thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.world.ChunkMonitor
+[21:04:05] [Render thread/ERROR] [FileHandler] Couldn't locate icons for Default: E:\STT工业整合验证客户端1.15.2beta-4.0.5790%20build12672%20forge1.15.2-31.2.31\.minecraft\mods\%5B旅行地图%5Djourneymap-1.15.2-5.7.0b3.jar\assets\journeymap\icon\entity
+[21:04:05] [Render thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
+[21:04:05] [Render thread/TRACE] [ThemeLoader] Initializing themes ...
+[21:04:05] [Render thread/ERROR] [FileHandler] Couldn't locate icons for flat: E:\STT工业整合验证客户端1.15.2beta-4.0.5790%20build12672%20forge1.15.2-31.2.31\.minecraft\mods\%5B旅行地图%5Djourneymap-1.15.2-5.7.0b3.jar\assets\journeymap\theme\flat
+[21:04:05] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 0
+[21:04:05] [Render thread/DEBUG] [JourneymapClient] postInitialize EXIT, elapsed§8 count §r1§8 avg §r217.65§8ms§r
+[21:04:08] [JM-VersionCheck-1/INFO] [VersionCheck$1] Newer version online: JourneyMap 5.7.0beta1.jar for Minecraft 1.15.2 on http://minecraft.curseforge.com/projects/journeymap/files/2894436
+[21:05:20] [Netty Local Client IO #0/INFO] [PacketRegistry] Dev Mode?
+[21:05:20] [Netty Server IO #1/INFO] [PacketRegistry] Dev Mode?
+[21:05:24] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[21:05:24] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[21:05:25] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from E:\STT工业整合验证客户端1.15.2beta-4.0.5790 build12672 forge1.15.2-31.2.31\.minecraft\journeymap\data\sp\新的世界\waypoints
+[21:05:25] [Render thread/INFO] [JourneymapClient] Mapping started in E:\STT工业整合验证客户端1.15.2beta-4.0.5790 build12672 forge1.15.2-31.2.31\.minecraft\journeymap\data\sp\新的世界\DIM0. Memory: 10240MB total, 8342MB free 
+[21:06:11] [Render thread/INFO] [ChatLog] 旅行地图: 按下[J]键
+[21:07:51] [Render thread/INFO] [JourneymapClient] Mapping halted in E:\STT工业整合验证客户端1.15.2beta-4.0.5790 build12672 forge1.15.2-31.2.31\.minecraft\journeymap\data\mp\offline\DIM0
