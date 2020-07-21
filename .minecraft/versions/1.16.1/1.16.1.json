@@ -49,12 +49,10 @@
           "${resolution_height}"
         ]
       },
-      "--tweakClass",
-      "optifine.OptiFineTweaker",
       "--launchTarget",
       "fmlclient",
       "--fml.forgeVersion",
-      "32.0.63",
+      "32.0.70",
       "--fml.mcVersion",
       "1.16.1",
       "--fml.forgeGroup",
@@ -122,8 +120,7 @@
       "-Dminecraft.launcher.brand\u003d${launcher_name}",
       "-Dminecraft.launcher.version\u003d${launcher_version}",
       "-cp",
-      "${classpath}",
-      "-Dhmcl.transformer.candidates\u003d${libraries_directory}/optifine/OptiFine/1.16.1_HD_U_G2_pre2/OptiFine-1.16.1_HD_U_G2_pre2.jar"
+      "${classpath}"
     ]
   },
   "mainClass": "cpw.mods.modlauncher.Launcher",
@@ -138,7 +135,7 @@
   "assets": "1.16",
   "libraries": [
     {
-      "name": "net.minecraftforge:forge:1.16.1-32.0.63",
+      "name": "net.minecraftforge:forge:1.16.1-32.0.70",
       "downloads": {}
     },
     {
@@ -1707,22 +1704,9 @@
           }
         }
       ]
-    },
-    {
-      "name": "org.jackhuang.hmcl:transformer-discovery-service:1.0"
     }
   ],
   "downloads": {
-    "server_mappings": {
-      "url": "https://launcher.mojang.com/v1/objects/618315f1fc2f56fe003612bb1fee1ad4060768a0/server.txt",
-      "sha1": "618315f1fc2f56fe003612bb1fee1ad4060768a0",
-      "size": 4329484
-    },
-    "client": {
-      "url": "https://launcher.mojang.com/v1/objects/c9abbe8ee4fa490751ca70635340b7cf00db83ff/client.jar",
-      "sha1": "c9abbe8ee4fa490751ca70635340b7cf00db83ff",
-      "size": 17492432
-    },
     "client_mappings": {
       "url": "https://launcher.mojang.com/v1/objects/539e30896eaacb9bf002a0e7e60f159856d369f7/client.txt",
       "sha1": "539e30896eaacb9bf002a0e7e60f159856d369f7",
@@ -1732,12 +1716,22 @@
       "url": "https://launcher.mojang.com/v1/objects/a412fd69db1f81db3f511c1463fd304675244077/server.jar",
       "sha1": "a412fd69db1f81db3f511c1463fd304675244077",
       "size": 37968964
+    },
+    "server_mappings": {
+      "url": "https://launcher.mojang.com/v1/objects/618315f1fc2f56fe003612bb1fee1ad4060768a0/server.txt",
+      "sha1": "618315f1fc2f56fe003612bb1fee1ad4060768a0",
+      "size": 4329484
+    },
+    "client": {
+      "url": "https://launcher.mojang.com/v1/objects/c9abbe8ee4fa490751ca70635340b7cf00db83ff/client.jar",
+      "sha1": "c9abbe8ee4fa490751ca70635340b7cf00db83ff",
+      "size": 17492432
     }
   },
   "logging": {},
   "type": "release",
-  "time": "2020-07-11T06:30:31+08:00",
-  "releaseTime": "2020-07-11T06:30:31+08:00",
+  "time": "2020-07-19T06:38:08+08:00",
+  "releaseTime": "2020-07-19T06:38:08+08:00",
   "minimumLauncherVersion": 21,
   "root": true,
   "patches": [
@@ -3261,16 +3255,6 @@
         }
       ],
       "downloads": {
-        "server_mappings": {
-          "url": "https://launcher.mojang.com/v1/objects/618315f1fc2f56fe003612bb1fee1ad4060768a0/server.txt",
-          "sha1": "618315f1fc2f56fe003612bb1fee1ad4060768a0",
-          "size": 4329484
-        },
-        "client": {
-          "url": "https://launcher.mojang.com/v1/objects/c9abbe8ee4fa490751ca70635340b7cf00db83ff/client.jar",
-          "sha1": "c9abbe8ee4fa490751ca70635340b7cf00db83ff",
-          "size": 17492432
-        },
         "server": {
           "url": "https://launcher.mojang.com/v1/objects/a412fd69db1f81db3f511c1463fd304675244077/server.jar",
           "sha1": "a412fd69db1f81db3f511c1463fd304675244077",
@@ -3280,6 +3264,16 @@
           "url": "https://launcher.mojang.com/v1/objects/539e30896eaacb9bf002a0e7e60f159856d369f7/client.txt",
           "sha1": "539e30896eaacb9bf002a0e7e60f159856d369f7",
           "size": 5632324
+        },
+        "server_mappings": {
+          "url": "https://launcher.mojang.com/v1/objects/618315f1fc2f56fe003612bb1fee1ad4060768a0/server.txt",
+          "sha1": "618315f1fc2f56fe003612bb1fee1ad4060768a0",
+          "size": 4329484
+        },
+        "client": {
+          "url": "https://launcher.mojang.com/v1/objects/c9abbe8ee4fa490751ca70635340b7cf00db83ff/client.jar",
+          "sha1": "c9abbe8ee4fa490751ca70635340b7cf00db83ff",
+          "size": 17492432
         }
       },
       "logging": {
@@ -3300,35 +3294,15 @@
       "minimumLauncherVersion": 21
     },
     {
-      "id": "optifine",
-      "version": "HD_U_G2_pre2",
-      "priority": 10000,
-      "arguments": {
-        "game": [
-          "--tweakClass",
-          "optifine.OptiFineTweaker"
-        ]
-      },
-      "mainClass": "net.minecraft.launchwrapper.Launch",
-      "libraries": [
-        {
-          "name": "optifine:OptiFine:1.16.1_HD_U_G2_pre2"
-        },
-        {
-          "name": "optifine:launchwrapper-of:2.1"
-        }
-      ]
-    },
-    {
       "id": "forge",
-      "version": "32.0.63",
+      "version": "32.0.70",
       "priority": 30000,
       "arguments": {
         "game": [
           "--launchTarget",
           "fmlclient",
           "--fml.forgeVersion",
-          "32.0.63",
+          "32.0.70",
           "--fml.mcVersion",
           "1.16.1",
           "--fml.forgeGroup",
@@ -3341,7 +3315,7 @@
       "inheritsFrom": "1.16.1",
       "libraries": [
         {
-          "name": "net.minecraftforge:forge:1.16.1-32.0.63",
+          "name": "net.minecraftforge:forge:1.16.1-32.0.70",
           "downloads": {}
         },
         {
@@ -3556,8 +3530,8 @@
       ],
       "logging": {},
       "type": "release",
-      "time": "2020-07-11T06:30:31+08:00",
-      "releaseTime": "2020-07-11T06:30:31+08:00"
+      "time": "2020-07-19T06:38:08+08:00",
+      "releaseTime": "2020-07-19T06:38:08+08:00"
     }
   ]
 }

@@ -43,4 +43,10 @@ INSIGHT_BOTTOM_X = 0
 #Insight Bottom Y Offset
 #Range: -10000 ~ 10000
 INSIGHT_BOTTOM_Y = 0
+#Chain Quality
+#Range: 3 ~ 10000
+CHAIN_QUALITY = 11
+#Chain Volume
+#Range: 0.0 ~ 10.0
+CHAIN_VOLUME = 0.01
 
