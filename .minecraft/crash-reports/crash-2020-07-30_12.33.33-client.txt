@@ -1,0 +1,159 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 20-7-30 下午12:33
+Description: Unexpected error
+
+java.lang.IllegalArgumentException: (256, 0) outside of image bounds (256, 8192)
+	at net.minecraft.client.renderer.texture.NativeImage.func_195709_a(NativeImage.java:261) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite$InterpolationData.func_229259_a_(TextureAtlasSprite.java:634) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite$InterpolationData.func_229257_a_(TextureAtlasSprite.java:619) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite$InterpolationData.access$600(TextureAtlasSprite.java:580) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite.func_94219_l(TextureAtlasSprite.java:497) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.AtlasTexture.func_94248_c(AtlasTexture.java:523) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.AtlasTexture.func_110550_d(AtlasTexture.java:639) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.renderer.texture.TextureManager.func_110550_d(TextureManager.java:197) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1405) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:928) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:582) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[1.16.1.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_251] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) ~[forge-1.16.1-32.0.97.jar:32.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-6.1.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-6.1.1.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.renderer.texture.NativeImage.func_195709_a(NativeImage.java:261)
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite$InterpolationData.func_229259_a_(TextureAtlasSprite.java:634)
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite$InterpolationData.func_229257_a_(TextureAtlasSprite.java:619)
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite$InterpolationData.access$600(TextureAtlasSprite.java:580)
+	at net.minecraft.client.renderer.texture.TextureAtlasSprite.func_94219_l(TextureAtlasSprite.java:497)
+	at net.minecraft.client.renderer.texture.AtlasTexture.func_94248_c(AtlasTexture.java:523)
+	at net.minecraft.client.renderer.texture.AtlasTexture.func_110550_d(AtlasTexture.java:639)
+	at net.minecraft.client.renderer.texture.TextureManager.func_110550_d(TextureManager.java:197)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['123'/251, l='ClientLevel', x=1138.51, y=36.00, z=1967.54]]
+	Chunk stats: Client Chunk Cache: 361, 169
+	Level dimension: twilightforest:twilightforest
+	Level spawn location: World: (192,67,81), Chunk: (at 0,4,1 in 12,5; contains blocks 192,0,80 to 207,255,95), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 8641 game time, 8641 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.func_72914_a(ClientWorld.java:616)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:1973)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:603)
+	at net.minecraft.client.main.Main.main(Main.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.1
+	Minecraft Version ID: 1.16.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 8464892872 bytes (8072 MB) / 10737418240 bytes (10240 MB) up to 10737418240 bytes (10240 MB)
+	CPUs: 16
+	JVM Flags: 11 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx10240m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 6.1.1+74+master.966c698
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.1-32.0.97.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.97.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.1-32.0.97.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.97.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.jar mixin TRANSFORMATIONSERVICE 
+		/OptiFine-1.16.1_HD_U_G2_pre10.jar OptiFine TRANSFORMATIONSERVICE 
+		/forge-1.16.1-32.0.97.jar fml TRANSFORMATIONSERVICE 
+	FML: 32.0
+	Forge: net.minecraftforge:32.0.97
+	FML Language Providers: 
+		javafml@32.0
+		minecraft@1
+	Mod List: 
+		forge-1.16.1-32.0.97-client.jar Minecraft {minecraft@1.16.1 DONE}
+		[Macaw的吊桥]mcw-bridges-1.0.4-mc1.16.1.jar Macaw's Bridges {mcwbridges@1.0.4 DONE}
+		[地狱传送修复]NetherPortalFix_1.16.1-7.0.0.jar NetherPortalFix {netherportalfix@7.0.0 DONE}
+		[MekA]通用机械附加MekanismAdditions-1.16.1-10.0.2.425.jar Mekanism: Additions {mekanismadditions@10.0.2 DONE}
+		[JEI]JEI物品管理器jei-1.16.1-7.0.0.6.jar Just Enough Items {jei@7.0.0.6 DONE}
+		[Mek]通用机械Mekanism-1.16.1-10.0.2.425.jar Mekanism {mekanism@10.0.2 DONE}
+		torohealth-1.16.1-forge-2.jar ToroHealth {torohealth@NONE DONE}
+		curios-FORGE-1.16.1-3.0.jar Curios API {curios@FORGE-1.16.1-3.0 DONE}
+		[R键整理]invtweaks-1.16.1-1.0.4.jar Inventory Tweaks Renewed {invtweaks@1.16.1-1.0.4 DONE}
+		[帕秋莉手册]Patchouli-1.16-39.jar Patchouli {patchouli@1.16-39 DONE}
+		[旅行地图]Xaeros_Minimap_20.16.0.1_Forge_1.16.1.jar Xaero's Minimap {xaerominimap@20.16.0 DONE}
+		[潘马斯农场2食物]pamhc2foodcore-1.16.1-1.0.5.jar Pam's HarvestCraft 2 Food Core {pamhc2foodcore@version DONE}
+		[旅行地图]XaerosWorldMap_1.7.4_Forge_1.16.1.jar Xaero's World Map {xaeroworldmap@1.7.4 DONE}
+		[CTM]连接材质CTM-MC1.16.1-1.1.0.1.jar ConnectedTexturesMod {ctm@MC1.16.1-1.1.0.1 DONE}
+		[CB]懒人厨房CookingForBlockheads_1.16.1-9.0.0.jar Cooking for Blockheads {cookingforblockheads@9.0.0 DONE}
+		polymorph-FORGE-1.16.1-0.11.jar Polymorph {polymorph@FORGE-1.16.1-0.11 DONE}
+		AutoRegLib-1.6-43.jar AutoRegLib {autoreglib@1.6-43 DONE}
+		[舒适用品]comforts-FORGE-1.16.1-3.0.jar Comforts {comforts@FORGE-1.16.1-3.0 DONE}
+		[前置]Placebo-1.16.1-4.0.1.jar Placebo {placebo@4.0.1 DONE}
+		[加速火把]torcherino-11.0.0+1.16.1.jar Torcherino {torcherino@11.0.0 DONE}
+		[高亮显示前置]Bookshelf-1.16.1-6.1.11.jar Bookshelf {bookshelf@6.1.11 DONE}
+		[熔炉性能优化]FastFurnace-1.16.1-4.0.0.jar FastFurnace {fastfurnace@4.0.0 DONE}
+		[MekT]通用机械工具MekanismTools-1.16.1-10.0.2.425.jar Mekanism: Tools {mekanismtools@10.0.2 DONE}
+		Project+MMO-1.16-3.11.3.jar Project MMO {pmmo@1.16-3.11.3 DONE}
+		[AI改进]AI-Improvements-1.16.1-0.3.0.jar AI-Improvements {aiimprovements@0.3.0 DONE}
+		Hwyla-forge-1.10.10-B77_1.16.1.jar Waila {waila@1.10.10-B77_1.16.1 DONE}
+		[MekG]通用机械发电机MekanismGenerators-1.16.1-10.0.2.425.jar Mekanism: Generators {mekanismgenerators@10.0.2 DONE}
+		[耐久显示]durabilityViewer-1.16.1-forge32.0.38-1.7.1.jar Giselbaers Durability Viewer {durabilityviewer@1.16.1-forge32.0.38-1.7.1 DONE}
+		[更好的燃烧机制]BetterBurning-1.16.1-2.0.2.jar BetterBurning {betterburning@2.0.2 DONE}
+		forge-1.16.1-32.0.97-universal.jar Forge {forge@32.0.97 DONE}
+		Quark-r2.2-258.jar Quark {quark@r2.2-258 DONE}
+		twilightforest-1.16.1-4.0.159-universal.jar The Twilight Forest {twilightforest@NONE DONE}
+		[YUNG的矿井优化]BetterMineshaftsForge-1.16.1-1.3.jar YUNG's Better Mineshafts {bettermineshafts@1.16.1-1.3 DONE}
+		[工业重生]Industrial-Reborn-1.16.1-0.8.1.jar Industrial Reborn {indreb@1.16.1-0.8.1 DONE}
+		[更多箱子]ironchest-1.16.1-11.0.1.jar Iron Chests {ironchest@1.16.1-11.0.1 DONE}
+	Patchouli open book context: n/a
+	Launched Version: HMCL 3.3.172
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: GeForce GTX 1080/PCIe/SSE2 GL version 4.6.0 NVIDIA 445.87, NVIDIA Corporation
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Resource Packs: vanilla, mod_resources
+	Current Language: 简体中文 (中国)
+	CPU: 16x AMD Ryzen 7 2700X Eight-Core Processor 
+	OptiFine Version: OptiFine_1.16.1_HD_U_G2_pre10
+	OptiFine Build: 20200724-194437
+	Render Distance Chunks: 7
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 445.87
+	OpenGlRenderer: GeForce GTX 1080/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 16

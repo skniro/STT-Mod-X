@@ -1,0 +1,133 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 20-8-1 下午9:48
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at twilightforest.item.ItemTFMagicMap.getMapColorPerBiome(ItemTFMagicMap.java:158) ~[?:?] {re:classloading}
+	at twilightforest.item.ItemTFMagicMap.func_77872_a(ItemTFMagicMap.java:122) ~[?:?] {re:classloading}
+	at net.minecraft.item.FilledMapItem.func_77663_a(FilledMapItem.java:336) ~[?:?] {re:classloading}
+	at net.minecraft.item.ItemStack.func_77945_a(ItemStack.java:431) ~[?:?] {re:classloading,xf:fml:quark:add-spacing-for-stack}
+	at net.minecraft.entity.player.PlayerInventory.func_70429_k(PlayerInventory.java:239) ~[?:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.func_70636_d(PlayerEntity.java:482) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_playerentity_iswearing,xf:fml:xaeroworldmap:xaero_wm_playerentity_iswearing}
+	at net.minecraft.entity.LivingEntity.func_70071_h_(LivingEntity.java:2157) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.PlayerEntity.func_70071_h_(PlayerEntity.java:222) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_playerentity_iswearing,xf:fml:xaeroworldmap:xaero_wm_playerentity_iswearing}
+	at net.minecraft.entity.player.ServerPlayerEntity.func_71127_g(ServerPlayerEntity.java:393) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.func_73660_a(ServerPlayNetHandler.java:194) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:226) ~[?:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:133) ~[?:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:866) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:788) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:81) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:643) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:230) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at twilightforest.item.ItemTFMagicMap.getMapColorPerBiome(ItemTFMagicMap.java:158)
+	at twilightforest.item.ItemTFMagicMap.func_77872_a(ItemTFMagicMap.java:122)
+	at net.minecraft.item.FilledMapItem.func_77663_a(FilledMapItem.java:336)
+	at net.minecraft.item.ItemStack.func_77945_a(ItemStack.java:431)
+	at net.minecraft.entity.player.PlayerInventory.func_70429_k(PlayerInventory.java:239)
+	at net.minecraft.entity.player.PlayerEntity.func_70636_d(PlayerEntity.java:482)
+	at net.minecraft.entity.LivingEntity.func_70071_h_(LivingEntity.java:2157)
+	at net.minecraft.entity.player.PlayerEntity.func_70071_h_(PlayerEntity.java:222)
+
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.entity.player.ServerPlayerEntity)
+	Entity ID: 365
+	Entity Name: 123
+	Entity's Exact location: -112.73, 44.56, 28.94
+	Entity's Block location: World: (-113,44,28), Chunk: (at 15,2,12 in -8,1; contains blocks -128,0,16 to -113,255,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.ServerPlayerEntity.func_71127_g(ServerPlayerEntity.java:393)
+	at net.minecraft.network.play.ServerPlayNetHandler.func_73660_a(ServerPlayNetHandler.java:194)
+	at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java:226)
+	at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:133)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:866)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:788)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:81)
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:643)
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:230)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.1
+	Minecraft Version ID: 1.16.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 8156231552 bytes (7778 MB) / 10737418240 bytes (10240 MB) up to 10737418240 bytes (10240 MB)
+	CPUs: 16
+	JVM Flags: 11 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx10240m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 6.1.1+74+master.966c698
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.1-32.0.98.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.98.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.1-32.0.98.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.98.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.1-32.0.98.jar fml TRANSFORMATIONSERVICE 
+	FML: 32.0
+	Forge: net.minecraftforge:32.0.98
+	FML Language Providers: 
+		javafml@32.0
+		minecraft@1
+	Mod List: 
+		forge-1.16.1-32.0.98-client.jar Minecraft {minecraft@1.16.1 DONE}
+		[Macaw的吊桥]mcw-bridges-1.0.4-mc1.16.1.jar Macaw's Bridges {mcwbridges@1.0.4 DONE}
+		[地狱传送修复]NetherPortalFix_1.16.1-7.0.0.jar NetherPortalFix {netherportalfix@7.0.0 DONE}
+		[MekA]通用机械附加MekanismAdditions-1.16.1-10.0.2.425.jar Mekanism: Additions {mekanismadditions@10.0.2 DONE}
+		[JEI]JEI物品管理器jei-1.16.1-7.0.0.6.jar Just Enough Items {jei@7.0.0.6 DONE}
+		[Mek]通用机械Mekanism-1.16.1-10.0.2.425.jar Mekanism {mekanism@10.0.2 DONE}
+		torohealth-1.16.1-forge-2.jar ToroHealth {torohealth@NONE DONE}
+		curios-FORGE-1.16.1-3.0.jar Curios API {curios@FORGE-1.16.1-3.0 DONE}
+		[R键整理]invtweaks-1.16.1-1.0.4.jar Inventory Tweaks Renewed {invtweaks@1.16.1-1.0.4 DONE}
+		[帕秋莉手册]Patchouli-1.16-39.jar Patchouli {patchouli@1.16-39 DONE}
+		[旅行地图]Xaeros_Minimap_20.16.0.1_Forge_1.16.1.jar Xaero's Minimap {xaerominimap@20.16.0 DONE}
+		[潘马斯农场2食物]pamhc2foodcore-1.16.1-1.0.5.jar Pam's HarvestCraft 2 Food Core {pamhc2foodcore@version DONE}
+		[旅行地图]XaerosWorldMap_1.7.4_Forge_1.16.1.jar Xaero's World Map {xaeroworldmap@1.7.4 DONE}
+		[CTM]连接材质CTM-MC1.16.1-1.1.0.1.jar ConnectedTexturesMod {ctm@MC1.16.1-1.1.0.1 DONE}
+		[CB]懒人厨房CookingForBlockheads_1.16.1-9.0.0.jar Cooking for Blockheads {cookingforblockheads@9.0.0 DONE}
+		polymorph-FORGE-1.16.1-0.11.jar Polymorph {polymorph@FORGE-1.16.1-0.11 DONE}
+		AutoRegLib-1.6-43.jar AutoRegLib {autoreglib@1.6-43 DONE}
+		[舒适用品]comforts-FORGE-1.16.1-3.0.jar Comforts {comforts@FORGE-1.16.1-3.0 DONE}
+		[前置]Placebo-1.16.1-4.0.1.jar Placebo {placebo@4.0.1 DONE}
+		[加速火把]torcherino-11.0.0+1.16.1.jar Torcherino {torcherino@11.0.0 DONE}
+		[高亮显示前置]Bookshelf-1.16.1-6.1.11.jar Bookshelf {bookshelf@6.1.11 DONE}
+		[熔炉性能优化]FastFurnace-1.16.1-4.0.0.jar FastFurnace {fastfurnace@4.0.0 DONE}
+		[MekT]通用机械工具MekanismTools-1.16.1-10.0.2.425.jar Mekanism: Tools {mekanismtools@10.0.2 DONE}
+		Project+MMO-1.16-3.11.3.jar Project MMO {pmmo@1.16-3.11.3 DONE}
+		[AI改进]AI-Improvements-1.16.1-0.3.0.jar AI-Improvements {aiimprovements@0.3.0 DONE}
+		Hwyla-forge-1.10.10-B77_1.16.1.jar Waila {waila@1.10.10-B77_1.16.1 DONE}
+		[MekG]通用机械发电机MekanismGenerators-1.16.1-10.0.2.425.jar Mekanism: Generators {mekanismgenerators@10.0.2 DONE}
+		[耐久显示]durabilityViewer-1.16.1-forge32.0.38-1.7.1.jar Giselbaers Durability Viewer {durabilityviewer@1.16.1-forge32.0.38-1.7.1 DONE}
+		[更好的燃烧机制]BetterBurning-1.16.1-2.0.2.jar BetterBurning {betterburning@2.0.2 DONE}
+		forge-1.16.1-32.0.98-universal.jar Forge {forge@32.0.98 DONE}
+		Quark-r2.2-258.jar Quark {quark@r2.2-258 DONE}
+		twilightforest-1.16.1-4.0.163-universal.jar The Twilight Forest {twilightforest@NONE DONE}
+		[YUNG的矿井优化]BetterMineshaftsForge-1.16.1-1.3.jar YUNG's Better Mineshafts {bettermineshafts@1.16.1-1.3 DONE}
+		[工业重生]Industrial-Reborn-1.16.1-0.8.1.jar Industrial Reborn {indreb@1.16.1-0.8.1 DONE}
+		[更多箱子]ironchest-1.16.1-11.0.1.jar Iron Chests {ironchest@1.16.1-11.0.1 DONE}
+	Patchouli open book context: n/a
+	Player Count: 1 / 8; [ServerPlayerEntity['123'/365, l='ServerLevel[新的世界]', x=-112.73, y=44.56, z=28.94]]
+	Data Packs: vanilla, mod:mcwbridges, mod:netherportalfix (incompatible), mod:mekanismadditions, mod:jei (incompatible), mod:mekanism, mod:torohealth, mod:curios (incompatible), mod:invtweaks (incompatible), mod:patchouli (incompatible), mod:xaerominimap, mod:pamhc2foodcore (incompatible), mod:xaeroworldmap, mod:ctm, mod:cookingforblockheads (incompatible), mod:polymorph, mod:autoreglib (incompatible), mod:comforts (incompatible), mod:placebo (incompatible), mod:torcherino, mod:bookshelf (incompatible), mod:fastfurnace (incompatible), mod:mekanismtools, mod:pmmo (incompatible), mod:aiimprovements (incompatible), mod:waila, mod:mekanismgenerators, mod:durabilityviewer (incompatible), mod:betterburning (incompatible), mod:forge, mod:quark, mod:twilightforest (incompatible), mod:bettermineshafts, mod:indreb, mod:ironchest
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

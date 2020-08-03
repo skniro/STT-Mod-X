@@ -1,0 +1,363 @@
+[30七月2020 12:27:43.724] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, 123, --version, HMCL 3.3.172, --gameDir, E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft, --assetsDir, E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\assets, --assetIndex, 1.16, --uuid, 75f41576c9ae3be19e5af6091a7fa867, --accessToken, ????????, --userType, mojang, --versionType, HMCL 3.3.172, --width, 854, --height, 480, --tweakClass, optifine.OptiFineTweaker, --launchTarget, fmlclient, --fml.forgeVersion, 32.0.97, --fml.mcVersion, 1.16.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20200625.160719]
+[30七月2020 12:27:43.728] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 6.1.1+74+master.966c698 starting: java version 1.8.0_251 by Oracle Corporation
+[30七月2020 12:27:43.897] [main/INFO] [optifine.OptiFineTransformationService/]: OptiFineTransformationService.onLoad
+[30七月2020 12:27:43.899] [main/INFO] [optifine.OptiFineTransformationService/]: OptiFine ZIP file: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\libraries\optifine\OptiFine\1.16.1_HD_U_G2_pre10\OptiFine-1.16.1_HD_U_G2_pre10.jar
+[30七月2020 12:27:44.335] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[30七月2020 12:27:44.376] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/E:/STT%e5%b7%a5%e4%b8%9a%e6%95%b4%e5%90%88%e9%aa%8c%e8%af%81%e5%ae%a2%e6%88%b7%e7%ab%af%5bReleases%5d1.16.1Beta-5.0.11081%20Build-16394%20forge1.16.1-32.0.70Beta/.minecraft/libraries/org/spongepowered/mixin/0.8/mixin-0.8.jar Service=ModLauncher Env=CLIENT
+[30七月2020 12:27:44.382] [main/INFO] [optifine.OptiFineTransformationService/]: OptiFineTransformationService.initialize
+[30七月2020 12:27:46.151] [main/INFO] [optifine.OptiFineTransformationService/]: OptiFineTransformationService.transformers
+[30七月2020 12:27:46.167] [main/INFO] [optifine.OptiFineTransformer/]: Targets: 291
+[30七月2020 12:27:46.901] [main/INFO] [optifine.OptiFineTransformationService/]: additionalClassesLocator: [optifine., net.optifine.]
+[30七月2020 12:27:46.939] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlclient' with arguments [--version, HMCL 3.3.172, --gameDir, E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft, --assetsDir, E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\assets, --uuid, 75f41576c9ae3be19e5af6091a7fa867, --username, 123, --assetIndex, 1.16, --accessToken, ????????, --userType, mojang, --versionType, HMCL 3.3.172, --width, 854, --height, 480, --tweakClass, optifine.OptiFineTweaker]
+[30七月2020 12:27:47.270] [main/INFO] [STDOUT/]: [net.minecraft.client.main.Main:main:80]: Completely ignored arguments: [--tweakClass, optifine.OptiFineTweaker]
+[30七月2020 12:28:01.653] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[30七月2020 12:28:01.666] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: 123
+[30七月2020 12:28:02.120] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
+[30七月2020 12:28:02.139] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[30七月2020 12:28:03.116] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] 
+[30七月2020 12:28:03.116] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] OptiFine_1.16.1_HD_U_G2_pre10
+[30七月2020 12:28:03.120] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Build: 20200724-194437
+[30七月2020 12:28:03.120] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[30七月2020 12:28:03.120] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Java: 1.8.0_251, Oracle Corporation
+[30七月2020 12:28:03.120] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+[30七月2020 12:28:03.120] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] LWJGL: 3.3.0 Win32 WGL EGL OSMesa VisualC DLL
+[30七月2020 12:28:03.121] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] OpenGL: GeForce GTX 1080/PCIe/SSE2, version 4.6.0 NVIDIA 445.87, NVIDIA Corporation
+[30七月2020 12:28:03.122] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] OpenGL Version: 4.6.0
+[30七月2020 12:28:03.137] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Maximum texture size: 32768x32768
+[30七月2020 12:28:03.139] [VersionCheck/INFO] [net.optifine.Config/]: [OptiFine] Checking for new version
+[30七月2020 12:28:03.208] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 445.87
+[30七月2020 12:28:03.209] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Vendor:  NVIDIA Corporation
+[30七月2020 12:28:03.209] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Renderer: GeForce GTX 1080/PCIe/SSE2
+[30七月2020 12:28:03.209] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[30七月2020 12:28:03.210] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[30七月2020 12:28:03.210] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[30七月2020 12:28:03.210] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[30七月2020 12:28:03.211] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Load shaders configuration.
+[30七月2020 12:28:03.219] [Render thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] No shaderpack loaded.
+[30七月2020 12:28:03.256] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
+[30七月2020 12:28:05.750] [modloading-worker-6/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 32.0.97, for MC 1.16.1 with MCP 20200625.160719
+[30七月2020 12:28:05.750] [modloading-worker-6/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v32.0.97 Initialized
+[30七月2020 12:28:05.795] [modloading-worker-7/INFO] [indreb Client Mod Event Subscriber/]: Loading config: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\indreb-client.toml
+[30七月2020 12:28:05.796] [modloading-worker-7/INFO] [indreb Client Mod Event Subscriber/]: Built config: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\indreb-client.toml
+[30七月2020 12:28:05.797] [modloading-worker-7/INFO] [indreb Client Mod Event Subscriber/]: Loaded config: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\indreb-client.toml
+[30七月2020 12:28:05.804] [modloading-worker-4/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: planttech2, class net.kaneka.planttech2.PlantTechMain
+java.lang.IllegalArgumentException: Listener for event class net.minecraftforge.event.entity.EntityJoinWorldEvent takes an argument that is not a subtype of the base type interface net.minecraftforge.fml.event.lifecycle.IModBusEvent
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:236) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:231) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:186) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:180) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.addListener(EventBus.java:174) ~[eventbus-3.0.3-service.jar:?]
+	at net.kaneka.planttech2.PlantTechMain.lambda$null$4(PlantTechMain.java:76) ~[?:0.02.13]
+	at net.minecraftforge.fml.DistExecutor.unsafeRunWhenOn(DistExecutor.java:125) ~[?:?]
+	at net.minecraftforge.fml.DistExecutor.runWhenOn(DistExecutor.java:109) ~[?:?]
+	at net.kaneka.planttech2.PlantTechMain.<init>(PlantTechMain.java:73) ~[?:0.02.13]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_251]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_251]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_251]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_251]
+	at java.lang.Class.newInstance(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:136) ~[?:32.0]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer$ErroringConsumer.accept(FMLModContainer.java:190) ~[?:32.0]
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:113) ~[?:?]
+	at net.minecraftforge.fml.ModList.lambda$null$11(ModList.java:135) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_251]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_251]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_251]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_251]
+[30七月2020 12:28:05.837] [modloading-worker-7/INFO] [indreb Client Mod Event Subscriber/]: Loading config: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\indreb-server.toml
+[30七月2020 12:28:05.837] [modloading-worker-4/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: An error occurred while dispatching event CONSTRUCT to planttech2
+[30七月2020 12:28:05.838] [modloading-worker-7/INFO] [indreb Client Mod Event Subscriber/]: Built config: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\indreb-server.toml
+[30七月2020 12:28:05.838] [modloading-worker-7/INFO] [indreb Client Mod Event Subscriber/]: Loaded config: E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\indreb-server.toml
+[30七月2020 12:28:05.838] [modloading-worker-4/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 10 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:317) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.afterEvent(FMLModContainer.java:123) ~[?:32.0]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer$ErroringConsumer.accept(FMLModContainer.java:190) ~[?:32.0]
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:113) ~[?:?]
+	at net.minecraftforge.fml.ModList.lambda$null$11(ModList.java:135) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_251]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_251]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_251]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_251]
+[30七月2020 12:28:07.124] [VersionCheck/INFO] [net.optifine.Config/]: [OptiFine] java.io.FileNotFoundException: http://optifine.net/version/1.16.1/HD_U.txt
+[30七月2020 12:28:08.929] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:wild_boar
+[30七月2020 12:28:08.938] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:bighorn_sheep
+[30七月2020 12:28:08.945] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:deer
+[30七月2020 12:28:08.986] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:redcap
+[30七月2020 12:28:09.002] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:swarm_spider
+[30七月2020 12:28:09.083] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:naga
+[30七月2020 12:28:09.119] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:skeleton_druid
+[30七月2020 12:28:09.130] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hostile_wolf
+[30七月2020 12:28:09.182] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:wraith
+[30七月2020 12:28:09.208] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hedge_spider
+[30七月2020 12:28:09.236] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hydra
+[30七月2020 12:28:09.274] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:lich
+[30七月2020 12:28:09.283] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:penguin
+[30七月2020 12:28:09.290] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:lich_minion
+[30七月2020 12:28:09.295] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:loyal_zombie
+[30七月2020 12:28:09.307] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:tiny_bird
+[30七月2020 12:28:09.327] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:squirrel
+[30七月2020 12:28:09.347] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:bunny
+[30七月2020 12:28:09.355] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:raven
+[30七月2020 12:28:09.395] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:quest_ram
+[30七月2020 12:28:09.428] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:kobold
+[30七月2020 12:28:09.436] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:mosquito_swarm
+[30七月2020 12:28:09.456] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:death_tome
+[30七月2020 12:28:09.474] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:minotaur
+[30七月2020 12:28:09.497] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:minoshroom
+[30七月2020 12:28:09.521] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:fire_beetle
+[30七月2020 12:28:09.536] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:slime_beetle
+[30七月2020 12:28:09.549] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:pinch_beetle
+[30七月2020 12:28:09.561] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:maze_slime
+[30七月2020 12:28:09.571] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:redcap_sapper
+[30七月2020 12:28:09.577] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:mist_wolf
+[30七月2020 12:28:09.585] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:king_spider
+[30七月2020 12:28:09.598] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:firefly
+[30七月2020 12:28:09.615] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:mini_ghast
+[30七月2020 12:28:09.616] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:tower_ghast
+[30七月2020 12:28:09.621] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:tower_golem
+[30七月2020 12:28:09.639] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:tower_termite
+[30七月2020 12:28:09.643] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:tower_broodling
+[30七月2020 12:28:09.657] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:ur_ghast
+[30七月2020 12:28:09.677] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:blockchain_goblin
+[30七月2020 12:28:09.688] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:goblin_knight_upper
+[30七月2020 12:28:09.709] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:goblin_knight_lower
+[30七月2020 12:28:09.716] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:helmet_crab
+[30七月2020 12:28:09.761] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:knight_phantom
+[30七月2020 12:28:09.806] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:yeti
+[30七月2020 12:28:09.865] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:yeti_alpha
+[30七月2020 12:28:09.872] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:winter_wolf
+[30七月2020 12:28:09.881] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:snow_guardian
+[30七月2020 12:28:09.892] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:stable_ice_core
+[30七月2020 12:28:09.899] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:unstable_ice_core
+[30七月2020 12:28:09.929] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:snow_queen
+[30七月2020 12:28:09.937] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:troll
+[30七月2020 12:28:09.960] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:giant_miner
+[30七月2020 12:28:09.966] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:armored_giant
+[30七月2020 12:28:09.968] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:ice_crystal
+[30七月2020 12:28:09.975] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:harbinger_cube
+[30七月2020 12:28:09.982] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:adherent
+[30七月2020 12:28:10.006] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:roving_cube
+[30七月2020 12:28:10.013] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:castle_guardian
+[30七月2020 12:28:10.016] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:naga_segment
+[30七月2020 12:28:10.018] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:snow_queen_ice_shield
+[30七月2020 12:28:10.029] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hydra_head
+[30七月2020 12:28:10.031] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hydra_neck
+[30七月2020 12:28:10.032] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hydra_part
+[30七月2020 12:28:10.038] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:goblin_chain
+[30七月2020 12:28:10.041] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:nature_bolt
+[30七月2020 12:28:10.044] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:lich_bolt
+[30七月2020 12:28:10.050] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:wand_bolt
+[30七月2020 12:28:10.053] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:tome_bolt
+[30七月2020 12:28:10.070] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:hydra_mortar
+[30七月2020 12:28:10.072] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:lich_bomb
+[30七月2020 12:28:10.079] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:moonworm_shot
+[30七月2020 12:28:10.081] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:slime_blob
+[30七月2020 12:28:10.083] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:charm_effect
+[30七月2020 12:28:10.090] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:thrown_wep
+[30七月2020 12:28:10.101] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:falling_ice
+[30七月2020 12:28:10.104] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:thrown_ice
+[30七月2020 12:28:10.116] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:seeker_arrow
+[30七月2020 12:28:10.123] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:ice_arrow
+[30七月2020 12:28:10.134] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:ice_snowball
+[30七月2020 12:28:10.142] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:chain_block
+[30七月2020 12:28:10.150] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:cube_of_annihilation
+[30七月2020 12:28:10.157] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:slider
+[30七月2020 12:28:10.174] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:boggard
+[30七月2020 12:28:10.179] [modloading-worker-11/ERROR] [net.minecraft.util.Util/]: No data fixer registered for twilightforest:rising_zombie
+[30七月2020 12:28:10.617] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for foxhound
+[30七月2020 12:28:10.766] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for chest_passenger
+[30七月2020 12:28:10.785] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for crab
+[30七月2020 12:28:10.827] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for pickarang
+[30七月2020 12:28:11.243] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for toretoise
+[30七月2020 12:28:11.302] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for stoneling
+[30七月2020 12:28:11.351] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for gravisand
+[30七月2020 12:28:11.399] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for totem
+[30七月2020 12:28:11.432] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for frog
+[30七月2020 12:28:11.461] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for wrapped
+[30七月2020 12:28:11.489] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for glass_frame
+[30七月2020 12:28:11.490] [modloading-worker-0/ERROR] [net.minecraft.util.Util/]: No data fixer registered for colored_frame
+[30七月2020 12:28:11.955] [Render thread/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after CONSTRUCT: 1 jobs
+[30七月2020 12:28:11.989] [Render thread/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.026
+[30七月2020 12:28:11.990] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found
+[30七月2020 12:28:11.991] [Render thread/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:317) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:111) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:93) ~[?:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:425) ~[?:?]
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[1.16.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_251]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) ~[forge-1.16.1-32.0.97.jar:32.0]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-6.1.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-6.1.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-6.1.1.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-6.1.1.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-6.1.1.jar:?]
+[30七月2020 12:28:13.728] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[30七月2020 12:28:13.839] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources, quark-emote-pack
+[30七月2020 12:28:13.868] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] *** Reloading textures ***
+[30七月2020 12:28:13.869] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Resource packs: Mod Resources, quark-emote-pack
+[30七月2020 12:28:14.017] [Worker-Main-12/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:14.017] [Worker-Main-14/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:14.018] [Worker-Main-10/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:14.023] [Render thread/INFO] [net.optifine.reflect.Reflector/]: [OptiFine] *** Reflector Forge ***
+[30七月2020 12:28:14.024] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
+[30七月2020 12:28:14.159] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.DimensionManager
+[30七月2020 12:28:14.162] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Method not present: net.minecraftforge.common.extensions.IForgeBlock.getExtendedState
+[30七月2020 12:28:14.171] [Worker-Main-8/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file E:\STT工业整合验证客户端[Releases]1.16.1Beta-5.0.11081 Build-16394 forge1.16.1-32.0.70Beta\.minecraft\config\twilightforest-common.toml is not correct. Correcting
+[30七月2020 12:28:14.182] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Field not present: net.minecraft.entity.LivingEntity.NAMETAG_DISTANCE
+[30七月2020 12:28:14.185] [Worker-Main-8/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites.largeHill was corrected from [] to []
+[30七月2020 12:28:14.189] [Worker-Main-8/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites.mediumHill was corrected from [] to []
+[30七月2020 12:28:14.195] [Worker-Main-8/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key portalCreationItems was corrected from [minecraft:diamond] to [minecraft:diamond]
+[30七月2020 12:28:14.294] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IModel
+[30七月2020 12:28:14.297] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Method not present: net.minecraftforge.common.extensions.IForgeTileEntity.canRenderBreaking
+[30七月2020 12:28:14.298] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.extensions.IForgeDimension
+[30七月2020 12:28:14.338] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.pipeline.LightUtil.itemConsumer
+[30七月2020 12:28:14.339] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.pipeline.LightUtil.tessellator
+[30七月2020 12:28:14.363] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.ModContainer
+[30七月2020 12:28:14.371] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.ModelLoader.stateModels
+[30七月2020 12:28:14.373] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader$VanillaLoader
+[30七月2020 12:28:14.373] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.ModelLoaderRegistry.textures
+[30七月2020 12:28:14.382] [Worker-Main-8/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event SETUP, 1 errors found.
+[30七月2020 12:28:14.383] [Worker-Main-8/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event SETUP, 1 errors found
+[30七月2020 12:28:14.383] [Worker-Main-8/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:317) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:111) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.startModLoading(ClientModLoader.java:119) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$3(ClientModLoader.java:101) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:109) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_251]
+[30七月2020 12:28:14.635] [Render thread/INFO] [net.optifine.reflect.Reflector/]: [OptiFine] *** Reflector Vanilla ***
+[30七月2020 12:28:18.921] [Worker-Main-11/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:18.922] [Worker-Main-11/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:18.922] [Worker-Main-11/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:18.922] [Worker-Main-11/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:19.256] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:19.272] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multipass connected textures: false
+[30七月2020 12:28:19.278] [Worker-Main-11/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:19.279] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multipass connected textures: false
+[30七月2020 12:28:19.285] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/00_glass_white/glass_pane_white.properties
+[30七月2020 12:28:19.303] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/00_glass_white/glass_white.properties
+[30七月2020 12:28:19.310] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/01_glass_orange/glass_orange.properties
+[30七月2020 12:28:19.318] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/01_glass_orange/glass_pane_orange.properties
+[30七月2020 12:28:19.325] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/02_glass_magenta/glass_magenta.properties
+[30七月2020 12:28:19.334] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/02_glass_magenta/glass_pane_magenta.properties
+[30七月2020 12:28:19.340] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/03_glass_light_blue/glass_light_blue.properties
+[30七月2020 12:28:19.348] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/03_glass_light_blue/glass_pane_light_blue.properties
+[30七月2020 12:28:19.355] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/04_glass_yellow/glass_pane_yellow.properties
+[30七月2020 12:28:19.371] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/04_glass_yellow/glass_yellow.properties
+[30七月2020 12:28:19.377] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/05_glass_lime/glass_lime.properties
+[30七月2020 12:28:19.385] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/05_glass_lime/glass_pane_lime.properties
+[30七月2020 12:28:19.391] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/06_glass_pink/glass_pane_pink.properties
+[30七月2020 12:28:19.399] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/06_glass_pink/glass_pink.properties
+[30七月2020 12:28:19.406] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/07_glass_gray/glass_gray.properties
+[30七月2020 12:28:19.415] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/07_glass_gray/glass_pane_gray.properties
+[30七月2020 12:28:19.421] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/08_glass_light_gray/glass_light_gray.properties
+[30七月2020 12:28:19.429] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/08_glass_light_gray/glass_pane_light_gray.properties
+[30七月2020 12:28:19.436] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/09_glass_cyan/glass_cyan.properties
+[30七月2020 12:28:19.443] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/09_glass_cyan/glass_pane_cyan.properties
+[30七月2020 12:28:19.450] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/10_glass_purple/glass_pane_purple.properties
+[30七月2020 12:28:19.458] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/10_glass_purple/glass_purple.properties
+[30七月2020 12:28:19.465] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/11_glass_blue/glass_blue.properties
+[30七月2020 12:28:19.473] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/11_glass_blue/glass_pane_blue.properties
+[30七月2020 12:28:19.480] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/12_glass_brown/glass_brown.properties
+[30七月2020 12:28:19.488] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/12_glass_brown/glass_pane_brown.properties
+[30七月2020 12:28:19.494] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/13_glass_green/glass_green.properties
+[30七月2020 12:28:19.502] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/13_glass_green/glass_pane_green.properties
+[30七月2020 12:28:19.509] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/14_glass_red/glass_pane_red.properties
+[30七月2020 12:28:19.517] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/14_glass_red/glass_red.properties
+[30七月2020 12:28:19.524] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/15_glass_black/glass_black.properties
+[30七月2020 12:28:19.533] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/15_glass_black/glass_pane_black.properties
+[30七月2020 12:28:19.539] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/20_glass/glass.properties
+[30七月2020 12:28:19.547] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/20_glass/glass_pane.properties
+[30七月2020 12:28:19.554] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/30_bookshelf/bookshelf.properties
+[30七月2020 12:28:19.556] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/40_sandstone/sandstone.properties
+[30七月2020 12:28:19.557] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] ConnectedTextures: optifine/ctm/default/41_red_sandstone/red_sandstone.properties
+[30七月2020 12:28:19.558] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multipass connected textures: false
+[30七月2020 12:28:19.560] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[30七月2020 12:28:22.261] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 4
+[30七月2020 12:28:22.753] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:22.761] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Sprite size: 64
+[30七月2020 12:28:22.762] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 6
+[30七月2020 12:28:22.765] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:22.811] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Sprite size: 64
+[30七月2020 12:28:22.811] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 6
+[30七月2020 12:28:22.821] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:22.866] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Sprite size: 64
+[30七月2020 12:28:22.866] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 6
+[30七月2020 12:28:22.875] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:22.886] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Sprite size: 64
+[30七月2020 12:28:22.886] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 6
+[30七月2020 12:28:22.889] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:22.906] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Sprite size: 64
+[30七月2020 12:28:22.906] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 6
+[30七月2020 12:28:22.910] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Multitexture: false
+[30七月2020 12:28:22.928] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Sprite size: 64
+[30七月2020 12:28:22.928] [Worker-Main-11/INFO] [net.optifine.Config/]: [OptiFine] Mipmap levels: 6
+[30七月2020 12:28:22.936] [Worker-Main-11/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event ENQUEUE_IMC, 1 errors found.
+[30七月2020 12:28:22.936] [Worker-Main-11/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event ENQUEUE_IMC, 1 errors found
+[30七月2020 12:28:22.936] [Worker-Main-11/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:317) ~[eventbus-3.0.3-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:111) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.finishModLoading(ClientModLoader.java:133) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$4(ClientModLoader.java:103) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniRun(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_251]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_251]
+[30七月2020 12:28:23.102] [Render thread/WARN] [net.minecraft.client.resources.ClientLanguageMap/]: Skipped language file: torcherino:lang/zh_cn.json (com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected name at line 8 column 2 path $.block.torcherino.double_compressed_lanterino)
+[30七月2020 12:28:23.830] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[30七月2020 12:28:23.831] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[30七月2020 12:28:24.198] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[30七月2020 12:28:24.243] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 43
+[30七月2020 12:28:24.245] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[30七月2020 12:28:24.245] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:24.245] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[30七月2020 12:28:24.247] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:24.247] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[30七月2020 12:28:24.248] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:24.249] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[30七月2020 12:28:24.249] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:24.249] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[30七月2020 12:28:24.250] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:24.250] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[30七月2020 12:28:24.251] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:25.122] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[30七月2020 12:28:25.123] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:25.125] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[30七月2020 12:28:25.126] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:25.126] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[30七月2020 12:28:25.127] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Animated sprites: 0
+[30七月2020 12:28:25.131] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] *** Reloading custom textures ***
+[30七月2020 12:28:25.144] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:25.238] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:25.240] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:39.497] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:39.880] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:39.885] [Render thread/WARN] [net.optifine.Config/]: [OptiFine] Unknown resource pack file: mod_resources
+[30七月2020 12:28:39.890] [Render thread/INFO] [net.optifine.Config/]: [OptiFine] Disable Forge light pipeline
+[30七月2020 12:28:39.892] [Render thread/INFO] [net.optifine.Log/]: [OptiFine] Set ForgeConfig.CLIENT.forgeLightPipelineEnabled=false

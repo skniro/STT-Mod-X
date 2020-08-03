@@ -1,0 +1,1 @@
+waypoint:gui.xaero_deathpoint:D:-298:25:-159:0:false:1:gui.xaero_default:false:0:true
