@@ -49,4 +49,7 @@ CHAIN_QUALITY = 11
 #Chain Volume
 #Range: 0.0 ~ 10.0
 CHAIN_VOLUME = 0.01
+#Smite Volume
+#Range: 0.0 ~ 10.0
+SMITE_VOLUME = 1.0
 
