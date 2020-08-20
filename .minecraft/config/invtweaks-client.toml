@@ -33,6 +33,10 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
+		containerClass = "tfar.dankstorage.container.DankContainers"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "mcjty.rftoolsutility.modules.crafter.blocks.CrafterContainer"
 		sortRange = ""
 
