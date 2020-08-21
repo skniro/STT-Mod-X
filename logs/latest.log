@@ -1,0 +1,1017 @@
+[16八月2020 14:06:21.062] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 31.2.36, --fml.mcpVersion, 20200515.085601, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge]
+[16八月2020 14:06:21.066] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.2+70+master.2845bb9 starting: java version 1.8.0_251 by Oracle Corporation
+[16八月2020 14:06:21.800] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[16八月2020 14:06:21.934] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/E:/STT工业整合服务端1.15.2beta-4.0.5023%20Build-12230%20forge1.15.2-31.2.36/mods/%5B前置%5DMixinBootstrap-1.0.3-1.15.2.jar Service=ModLauncher Env=SERVER
+[16八月2020 14:06:24.040] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, .]
+[16八月2020 14:06:32.819] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16八月2020 14:06:32.822] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16八月2020 14:06:32.825] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16八月2020 14:06:32.826] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16八月2020 14:06:32.828] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16八月2020 14:06:33.587] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.15.2
+[16八月2020 14:06:34.483] [modloading-worker-10/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.2.36, for MC 1.15.2 with MCP 20200515.085601
+[16八月2020 14:06:34.495] [modloading-worker-10/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.2.36 Initialized
+[16八月2020 14:06:34.931] [modloading-worker-10/INFO] [atomicstryker.ruins.common.RuinsMod/]: Ruins instance built, events registered
+[16八月2020 14:06:35.103] [modloading-worker-13/INFO] [indreb Client Mod Event Subscriber/]: Loading config: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\indreb-client.toml
+[16八月2020 14:06:35.114] [modloading-worker-13/INFO] [indreb Client Mod Event Subscriber/]: Built config: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\indreb-client.toml
+[16八月2020 14:06:35.190] [modloading-worker-13/INFO] [indreb Client Mod Event Subscriber/]: Loaded config: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\indreb-client.toml
+[16八月2020 14:06:35.199] [modloading-worker-13/INFO] [indreb Client Mod Event Subscriber/]: Loading config: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\indreb-server.toml
+[16八月2020 14:06:35.212] [modloading-worker-13/INFO] [indreb Client Mod Event Subscriber/]: Built config: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\indreb-server.toml
+[16八月2020 14:06:35.215] [modloading-worker-13/INFO] [indreb Client Mod Event Subscriber/]: Loaded config: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\indreb-server.toml
+[16八月2020 14:06:36.685] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity gravisand
+[16八月2020 14:06:37.386] [modloading-worker-5/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity cfm:seat
+[16八月2020 14:06:37.482] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity toretoise
+[16八月2020 14:06:37.793] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity totem
+[16八月2020 14:06:37.834] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity foxhound
+[16八月2020 14:06:37.838] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity glass_frame
+[16八月2020 14:06:37.839] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity colored_frame
+[16八月2020 14:06:37.864] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity wrapped
+[16八月2020 14:06:37.897] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity crab
+[16八月2020 14:06:37.924] [modloading-worker-9/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity appliedenergistics2:tiny_tnt_primed
+[16八月2020 14:06:38.063] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity chest_passenger
+[16八月2020 14:06:38.082] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity pickarang
+[16八月2020 14:06:38.116] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity stoneling
+[16八月2020 14:06:38.186] [modloading-worker-12/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity frog
+[16八月2020 14:06:39.664] [modloading-worker-9/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity appliedenergistics2:singularity
+[16八月2020 14:06:39.672] [modloading-worker-9/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity appliedenergistics2:charged_quartz
+[16八月2020 14:06:40.581] [modloading-worker-9/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity appliedenergistics2:growing_crystal
+[16八月2020 14:06:41.802] [Server thread/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after CONSTRUCT: 2 jobs
+[16八月2020 14:06:41.952] [Server thread/INFO] [thelm.jaopca.data.DataCollector/]: Found 1641 unique defined tags
+[16八月2020 14:06:42.282] [Server thread/INFO] [thelm.jaopca.data.DataCollector/]: Found 6979 unique defined recipes
+[16八月2020 14:06:42.356] [Server thread/INFO] [thelm.jaopca.data.DataCollector/]: Found 4378 unique defined loot tables
+[16八月2020 14:06:42.421] [Server thread/INFO] [thelm.jaopca.data.DataCollector/]: Found 2335 unique defined advancements
+[16八月2020 14:06:42.480] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.wtbwmachines.WTBWMachinesModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.480] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.wtbwmachines.WTBWMachinesDustModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.482] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.wtbwmachines.WTBWMachinesCompatModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.482] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.uselessmod.UselessModNonIngotModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.483] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.uselessmod.UselessModModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.484] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.uselessmod.UselessModCompatModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.484] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.usefulmachinery.UsefulMachineryModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.485] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.silentsmechanisms.SilentsMechanismsNonIngotModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.485] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.silentsmechanisms.SilentsMechanismsModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.486] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.silentsmechanisms.SilentsMechanismsCompatModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.486] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.omegacraft.OmegaCraftNonIngotModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.487] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.omegacraft.OmegaCraftModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.488] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.omegacraft.OmegaCraftCompatModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.501] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.flux.FluxModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.501] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.flux.FluxCompatModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.502] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.create.CreateNonIngotModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.503] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.create.CreateModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.503] [Server thread/INFO] [thelm.jaopca.modules.ModuleHandler/]: Module thelm.jaopca.compat.create.CreateCompatModule has missing mod dependencies, skipping
+[16八月2020 14:06:42.549] [Server thread/INFO] [thelm.jaopca.materials.MaterialHandler/]: Added 41 materials
+[16八月2020 14:06:42.737] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.biotite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.739] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.biotite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.742] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.brass`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.742] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.brass`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.743] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.brick`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.744] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.brick`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.745] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.certus_quartz`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.745] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.certus_quartz`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.746] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.dragonstone`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.747] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.dragonstone`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.748] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.glowstone`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.748] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.glowstone`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.749] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.lapis_lazuli`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.750] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.lapis_lazuli`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.750] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.lithium`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.751] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.lithium`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.752] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.mana`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.752] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.mana`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.753] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.mana_diamond`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.753] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.mana_diamond`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.754] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.nether_brick`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.755] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.nether_brick`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.755] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.obsidian`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.756] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.obsidian`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.757] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.prismarine`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.757] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.prismarine`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.759] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.salt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.759] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.salt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.760] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.sulfur`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.760] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.sulfur`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.761] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.wood`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.762] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `storage_blocks.wood`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.767] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `dusts.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.768] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `dusts.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.768] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_clumps.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.768] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_clumps.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.769] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_crystals.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.770] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_crystals.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.770] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_dirty_dusts.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.771] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_dirty_dusts.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.772] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_shards.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.772] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_shards.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.773] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_clean_slurry.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.774] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_clean_slurry.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.774] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_dirty_slurry.ardite`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.775] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `jaopca` for name `mekanism_dirty_slurry.cobalt`, expected `minecraft`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:42.784] [Server thread/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.978
+[16八月2020 14:06:44.554] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `anvil`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.554] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `chipped_anvil`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.557] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `damaged_anvil`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.561] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `enchanting_table`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.563] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `enchanting_table`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.565] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `spawner`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.565] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `spawner`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.567] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `cactus`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.567] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `cactus`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.568] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `sugar_cane`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.568] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `sugar_cane`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.569] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `bamboo`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.570] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `bamboo`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.572] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `fletching_table`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:44.572] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `fletching_table`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.403] [Server thread/INFO] [mcwbridges/]: Blocks registered.
+[16八月2020 14:06:46.953] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `crafting_table`, expected `fastbench`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.953] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `crafting_table`, expected `fastbench`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.968] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `furnace`, expected `fastfurnace`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.968] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `furnace`, expected `fastfurnace`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.972] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `blast_furnace`, expected `fastfurnace`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.973] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `blast_furnace`, expected `fastfurnace`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.976] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `smoker`, expected `fastfurnace`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:46.976] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `smoker`, expected `fastfurnace`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.181] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `shears`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.182] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `anvil`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.183] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `chipped_anvil`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.184] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `damaged_anvil`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.278] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tconstruct:blue_slime
+[16八月2020 14:06:47.280] [Server thread/INFO] [mcwbridges/]: Items registered.
+[16八月2020 14:06:47.595] [Server thread/INFO] [Bookshelf/]: Registering 10 global loot modifier serializers.
+[16八月2020 14:06:47.629] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension planttech2:planttopia of type planttech2:planttopia and id 3
+[16八月2020 14:06:47.675] [Server thread/INFO] [STDOUT/]: [stepsword.mahoutsukai.dimensions.ModBiomes:registerBiome:21]: mahoutsukai:marbleregistered
+[16八月2020 14:06:47.732] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `enchanting_table`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.806] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `bane_of_arthropods`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.806] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `smite`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.808] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `sharpness`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.809] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `protection`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.810] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `fire_protection`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.811] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `blast_protection`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.812] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `projectile_protection`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.813] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `feather_falling`, expected `apotheosis`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:47.818] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity planttech2:techvillager
+[16八月2020 14:06:47.821] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity planttech2:techghoul
+[16八月2020 14:06:47.822] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity planttech2:techpenguin
+[16八月2020 14:06:47.823] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity flame
+[16八月2020 14:06:47.823] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity robit
+[16八月2020 14:06:47.825] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity ob_arrow
+[16八月2020 14:06:47.825] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity bh_arrow
+[16八月2020 14:06:47.828] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity weapon_projectile_entity
+[16八月2020 14:06:47.831] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity gate_weapon_projectile_entity
+[16八月2020 14:06:47.833] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity mental_displacement
+[16八月2020 14:06:47.837] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity familiar_entity
+[16八月2020 14:06:47.837] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity kodoku_entity
+[16八月2020 14:06:47.838] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity mahoujin_entity
+[16八月2020 14:06:47.839] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity mahoujin_beam_entity
+[16八月2020 14:06:47.841] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity smite_entity
+[16八月2020 14:06:47.842] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity morgan_ball_entity
+[16八月2020 14:06:47.847] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity rho_aias_mahoujin_entity
+[16八月2020 14:06:47.848] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity gate_chain_mahoujin_entity
+[16八月2020 14:06:47.849] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity spatial_mahoujin_entity
+[16八月2020 14:06:47.851] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity authority_mahoujin_entity
+[16八月2020 14:06:47.856] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity fae
+[16八月2020 14:06:47.857] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tconstruct:fancy_item_frame
+[16八月2020 14:06:47.858] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tconstruct:glow_ball
+[16八月2020 14:06:47.863] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tconstruct:efln_ball
+[16八月2020 14:06:47.864] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tconstruct:indestructible_item
+[16八月2020 14:06:47.865] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity baby_creeper
+[16八月2020 14:06:47.865] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity baby_enderman
+[16八月2020 14:06:47.866] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity baby_skeleton
+[16八月2020 14:06:47.866] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity baby_stray
+[16八月2020 14:06:47.867] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity baby_wither_skeleton
+[16八月2020 14:06:47.867] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity balloon
+[16八月2020 14:06:47.868] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity obsidian_tnt
+[16八月2020 14:06:47.869] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.870] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.870] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.871] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.871] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.909] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.910] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.912] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.912] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.913] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.913] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.914] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.915] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.915] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.916] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.916] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.917] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.918] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.918] [Server thread/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16八月2020 14:06:47.935] [Server thread/INFO] [STDOUT/]: [net.kaneka.planttech2.registries.ModStructures:registerAll:18]: {pillager_outpost=net.minecraft.world.gen.feature.structure.PillagerOutpostStructure@30b0de1d, mineshaft=net.minecraft.world.gen.feature.structure.MineshaftStructure@1ff55eff, mansion=net.minecraft.world.gen.feature.structure.WoodlandMansionStructure@7f7b15d4, jungle_pyramid=net.minecraft.world.gen.feature.structure.JunglePyramidStructure@4d4bb9cd, desert_pyramid=net.minecraft.world.gen.feature.structure.DesertPyramidStructure@6cb2e94, igloo=net.minecraft.world.gen.feature.structure.IglooStructure@39055e0d, shipwreck=net.minecraft.world.gen.feature.structure.ShipwreckStructure@151daca9, swamp_hut=net.minecraft.world.gen.feature.structure.SwampHutStructure@63af8885, stronghold=net.minecraft.world.gen.feature.structure.StrongholdStructure@576c8cea, monument=net.minecraft.world.gen.feature.structure.OceanMonumentStructure@30694e0e, ocean_ruin=net.minecraft.world.gen.feature.structure.OceanRuinStructure@2566428f, fortress=net.minecraft.world.gen.feature.structure.FortressStructure@71a48be1, endcity=net.minecraft.world.gen.feature.structure.EndCityStructure@9aa9e4a, buried_treasure=net.minecraft.world.gen.feature.structure.BuriedTreasureStructure@4237d6e4, village=net.minecraft.world.gen.feature.structure.VillageStructure@6ffd0aa8, techvillage=net.kaneka.planttech2.dimensions.structure.tech.TechVillageStructure@765652c2}
+[16八月2020 14:06:47.966] [Server thread/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `mineshaft`, expected `bettermineshafts`. This could be a intended override, but in most cases indicates a broken mod.
+[16八月2020 14:06:48.837] [Server thread/INFO] [Bookshelf/]: Registering 2 recipe serializers.
+[16八月2020 14:06:48.837] [Server thread/INFO] [Bookshelf/]: Registering 6 ingredient serializers.
+[16八月2020 14:06:48.988] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[16八月2020 14:06:48.989] [Thread-1/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[16八月2020 14:06:48.992] [Thread-1/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[16八月2020 14:06:49.023] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\config\appliedenergistics2-common.toml is not correct. Correcting
+[16八月2020 14:06:49.049] [modloading-worker-2/INFO] [Bookshelf/]: Registering 2 command argument types.
+[16八月2020 14:06:49.049] [modloading-worker-2/INFO] [Bookshelf/]: Registering 13 loot condition types.
+[16八月2020 14:06:49.049] [modloading-worker-4/INFO] [mcwbridges/]: Setup method registered
+[16八月2020 14:06:49.080] [modloading-worker-8/INFO] [Mekanism/]: Loaded 'Mekanism Generators' module.
+[16八月2020 14:06:49.087] [modloading-worker-1/INFO] [atomicstryker.ruins.common.RuinsMod/]: Ruins preInit
+[16八月2020 14:06:49.091] [modloading-worker-1/INFO] [atomicstryker.ruins.common.RuinsMod/]: config/ruins_config exists, not extracting
+[16八月2020 14:06:49.093] [modloading-worker-12/WARN] [net.minecraftforge.common.BiomeDictionary/]: No types have been added to Biome minecraft:bamboo_jungle, types have been assigned on a best-effort guess: [WET, JUNGLE, HOT]
+[16八月2020 14:06:49.094] [modloading-worker-12/WARN] [net.minecraftforge.common.BiomeDictionary/]: No types have been added to Biome minecraft:bamboo_jungle_hills, types have been assigned on a best-effort guess: [WET, JUNGLE, HOT]
+[16八月2020 14:06:49.095] [modloading-worker-0/INFO] [Mekanism/]: Loaded 'Mekanism: Tools' module.
+[16八月2020 14:06:49.097] [modloading-worker-12/WARN] [net.minecraftforge.common.BiomeDictionary/]: No types have been added to Biome appliedenergistics2:storage, types have been assigned on a best-effort guess: [HILLS]
+[16八月2020 14:06:49.136] [modloading-worker-7/INFO] [Mekanism/]: Version 9.10.9 initializing...
+[16八月2020 14:06:49.168] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [planttech2] Starting version check at https://bitbucket.org/kaneka/planttech2/raw/1.15.x/update.json
+[16八月2020 14:06:49.185] [modloading-worker-5/INFO] [quark/]: Loading Module Chain Linkage
+[16八月2020 14:06:49.189] [modloading-worker-5/INFO] [quark/]: Loading Module Chute
+[16八月2020 14:06:49.191] [modloading-worker-5/INFO] [quark/]: Loading Module Color Slime
+[16八月2020 14:06:49.192] [modloading-worker-5/INFO] [quark/]: Loading Module Dispensers Place Blocks
+[16八月2020 14:06:49.193] [modloading-worker-5/INFO] [quark/]: Loading Module Ender Watcher
+[16八月2020 14:06:49.194] [modloading-worker-5/INFO] [quark/]: Loading Module Endermites Form Shulkers
+[16八月2020 14:06:49.199] [modloading-worker-5/INFO] [quark/]: Loading Module Feeding Trough
+[16八月2020 14:06:49.206] [modloading-worker-5/INFO] [quark/]: Loading Module Gravisand
+[16八月2020 14:06:49.207] [modloading-worker-5/INFO] [quark/]: Loading Module Iron Rod
+[16八月2020 14:06:49.208] [modloading-worker-5/INFO] [quark/]: Loading Module Metal Buttons
+[16八月2020 14:06:49.209] [modloading-worker-5/INFO] [quark/]: Loading Module Obsidian Plate
+[16八月2020 14:06:49.210] [modloading-worker-5/INFO] [quark/]: Loading Module Pistons Move Tile Entities
+[16八月2020 14:06:49.216] [modloading-worker-5/INFO] [quark/]: Loading Module Redstone Circuit
+[16八月2020 14:06:49.216] [modloading-worker-5/INFO] [quark/]: Loading Module Weather Sensor
+[16八月2020 14:06:49.217] [modloading-worker-5/INFO] [quark/]: Loading Module Cobblestone Bricks
+[16八月2020 14:06:49.218] [modloading-worker-5/INFO] [quark/]: Loading Module Compressed Blocks
+[16八月2020 14:06:49.219] [modloading-worker-5/INFO] [quark/]: Loading Module Duskbound Blocks
+[16八月2020 14:06:49.220] [modloading-worker-5/INFO] [quark/]: Loading Module Framed Glass
+[16八月2020 14:06:49.222] [modloading-worker-5/INFO] [quark/]: Loading Module Gold Bars
+[16八月2020 14:06:49.222] [modloading-worker-5/INFO] [quark/]: Loading Module Grate
+[16八月2020 14:06:49.223] [modloading-worker-5/INFO] [quark/]: Loading Module Iron Plates
+[16八月2020 14:06:49.226] [modloading-worker-5/INFO] [quark/]: Loading Module Item Frames
+[16八月2020 14:06:49.227] [modloading-worker-5/INFO] [quark/]: Loading Module Leaf Carpet
+[16八月2020 14:06:49.228] [modloading-worker-5/INFO] [quark/]: Loading Module Lit Lamp
+[16八月2020 14:06:49.232] [modloading-worker-5/INFO] [quark/]: Loading Module Midori
+[16八月2020 14:06:49.233] [modloading-worker-5/INFO] [quark/]: Loading Module More Brick Types
+[16八月2020 14:06:49.233] [modloading-worker-5/INFO] [quark/]: Loading Module More Potted Plants
+[16八月2020 14:06:49.234] [modloading-worker-5/INFO] [quark/]: Loading Module More Stone Variants
+[16八月2020 14:06:49.235] [modloading-worker-5/INFO] [quark/]: Loading Module Nether Brick Fence Gate
+[16八月2020 14:06:49.235] [modloading-worker-5/INFO] [quark/]: Loading Module Paper Decor
+[16八月2020 14:06:49.236] [modloading-worker-5/INFO] [quark/]: Loading Module Quilted Wool
+[16八月2020 14:06:49.237] [modloading-worker-5/INFO] [quark/]: Loading Module Rope
+[16八月2020 14:06:49.237] [modloading-worker-5/INFO] [quark/]: Loading Module Shingles
+[16八月2020 14:06:49.238] [modloading-worker-5/INFO] [quark/]: Loading Module Soul Sandstone
+[16八月2020 14:06:49.239] [modloading-worker-5/INFO] [quark/]: Loading Module Stained Planks
+[16八月2020 14:06:49.240] [modloading-worker-5/INFO] [quark/]: Loading Module Sturdy Stone
+[16八月2020 14:06:49.241] [modloading-worker-5/INFO] [quark/]: Loading Module Tallow And Candles
+[16八月2020 14:06:49.243] [modloading-worker-5/INFO] [quark/]: Loading Module Thatch
+[16八月2020 14:06:49.243] [modloading-worker-5/INFO] [quark/]: Loading Module Turf
+[16八月2020 14:06:49.244] [modloading-worker-5/INFO] [quark/]: Loading Module Variant Bookshelves
+[16八月2020 14:06:49.249] [modloading-worker-5/INFO] [quark/]: Loading Module Variant Chests
+[16八月2020 14:06:49.258] [modloading-worker-5/INFO] [quark/]: Loading Module Variant Ladders
+[16八月2020 14:06:49.258] [modloading-worker-5/INFO] [quark/]: Loading Module Vertical Planks
+[16八月2020 14:06:49.259] [modloading-worker-5/INFO] [quark/]: Loading Module Vertical Slabs
+[16八月2020 14:06:49.261] [modloading-worker-5/INFO] [quark/]: Loading Module Fairy Rings
+[16八月2020 14:06:49.262] [modloading-worker-5/INFO] [quark/]: Loading Module Chests In Boats
+[16八月2020 14:06:49.263] [modloading-worker-5/INFO] [quark/]: Loading Module Easy Transfering
+[16八月2020 14:06:49.264] [modloading-worker-5/INFO] [quark/]: Loading Module F To Switch
+[16八月2020 14:06:49.265] [modloading-worker-5/INFO] [quark/]: Loading Module Hotbar Changer
+[16八月2020 14:06:49.266] [modloading-worker-5/INFO] [quark/]: Loading Module Inventory Sorting
+[16八月2020 14:06:49.267] [modloading-worker-5/INFO] [quark/]: Loading Module Item Sharing
+[16八月2020 14:06:49.267] [modloading-worker-5/INFO] [quark/]: Loading Module Shulker Box Right Click
+[16八月2020 14:06:49.269] [modloading-worker-5/INFO] [quark/]: Loading Module Ancient Tomes
+[16八月2020 14:06:49.271] [modloading-worker-7/INFO] [Mekanism/]: Fake player readout: UUID = 46e82cd0-d480-3d48-800a-77431ede078e, name = [Mekanism]
+[16八月2020 14:06:49.271] [modloading-worker-5/INFO] [quark/]: Loading Module Bottled Cloud
+[16八月2020 14:06:49.271] [modloading-worker-7/INFO] [Mekanism/]: Loading complete.
+[16八月2020 14:06:49.272] [modloading-worker-5/INFO] [quark/]: Loading Module Camera
+[16八月2020 14:06:49.273] [modloading-worker-7/INFO] [Mekanism/]: Mod loaded.
+[16八月2020 14:06:49.273] [modloading-worker-5/INFO] [quark/]: Loading Module Color Runes
+[16八月2020 14:06:49.276] [modloading-worker-5/INFO] [quark/]: Loading Module Pathfinder Maps
+[16八月2020 14:06:49.281] [modloading-worker-5/INFO] [quark/]: Loading Module Pickarang
+[16八月2020 14:06:49.281] [modloading-worker-5/INFO] [quark/]: Loading Module Slime In A Bucket
+[16八月2020 14:06:49.282] [modloading-worker-5/INFO] [quark/]: Loading Module Trowel
+[16八月2020 14:06:49.282] [modloading-worker-5/INFO] [quark/]: Loading Module Armed Armor Stands
+[16八月2020 14:06:49.283] [modloading-worker-5/INFO] [quark/]: Loading Module Automatic Recipe Unlock
+[16八月2020 14:06:49.284] [modloading-worker-5/INFO] [quark/]: Loading Module Axe Leaf Harvesting
+[16八月2020 14:06:49.285] [modloading-worker-5/INFO] [quark/]: Loading Module Campfires Boost Elytra
+[16八月2020 14:06:49.286] [modloading-worker-5/INFO] [quark/]: Loading Module Compasses Work Everywhere
+[16八月2020 14:06:49.286] [modloading-worker-5/INFO] [quark/]: Loading Module Dirt To Path
+[16八月2020 14:06:49.287] [modloading-worker-5/INFO] [quark/]: Loading Module Double Door Opening
+[16八月2020 14:06:49.287] [modloading-worker-5/INFO] [quark/]: Loading Module Dragon Scales
+[16八月2020 14:06:49.288] [modloading-worker-5/INFO] [quark/]: Loading Module Emotes
+[16八月2020 14:06:49.288] [modloading-worker-5/INFO] [quark/]: Loading Module Enhanced Ladders
+[16八月2020 14:06:49.290] [modloading-worker-5/INFO] [quark/]: Loading Module Glass Shard
+[16八月2020 14:06:49.291] [modloading-worker-5/INFO] [quark/]: Loading Module Hoe Harvesting
+[16八月2020 14:06:49.295] [modloading-worker-5/INFO] [quark/]: Loading Module Improved Sleeping
+[16八月2020 14:06:49.296] [modloading-worker-5/INFO] [quark/]: Loading Module Lock Rotation
+[16八月2020 14:06:49.298] [modloading-worker-5/INFO] [quark/]: Loading Module Note Block Mob Sounds
+[16八月2020 14:06:49.591] [modloading-worker-5/INFO] [quark/]: Loading Module Pat The Dogs
+[16八月2020 14:06:49.593] [modloading-worker-5/INFO] [quark/]: Loading Module Poison Potato Usage
+[16八月2020 14:06:49.595] [modloading-worker-5/INFO] [quark/]: Loading Module Reacharound Placing
+[16八月2020 14:06:49.599] [modloading-worker-5/INFO] [quark/]: Loading Module Replace Scaffolding
+[16八月2020 14:06:49.600] [modloading-worker-5/INFO] [quark/]: Loading Module Sign Editing
+[16八月2020 14:06:49.601] [modloading-worker-5/INFO] [quark/]: Loading Module Simple Harvest
+[16八月2020 14:06:49.602] [modloading-worker-5/INFO] [quark/]: Loading Module Snow Golem Player Heads
+[16八月2020 14:06:49.603] [modloading-worker-5/INFO] [quark/]: Loading Module Springy Slime
+[16八月2020 14:06:49.603] [modloading-worker-5/INFO] [quark/]: Loading Module Utility Recipes
+[16八月2020 14:06:49.605] [modloading-worker-5/INFO] [quark/]: Loading Module Villagers Follow Emeralds
+[16八月2020 14:06:49.606] [modloading-worker-5/INFO] [quark/]: Loading Module Big Dungeon
+[16八月2020 14:06:49.606] [modloading-worker-5/INFO] [quark/]: Loading Module Big Stone Clusters
+[16八月2020 14:06:49.608] [modloading-worker-5/INFO] [quark/]: Loading Module Biotite
+[16八月2020 14:06:49.609] [modloading-worker-5/INFO] [quark/]: Loading Module Blossom Trees
+[16八月2020 14:06:49.614] [modloading-worker-5/INFO] [quark/]: Loading Module Cave Roots
+[16八月2020 14:06:49.615] [modloading-worker-5/INFO] [quark/]: Loading Module Crevices
+[16八月2020 14:06:49.616] [modloading-worker-5/INFO] [quark/]: Loading Module Mega Caves
+[16八月2020 14:06:49.617] [modloading-worker-5/INFO] [quark/]: Loading Module Monster Box
+[16八月2020 14:06:49.618] [modloading-worker-5/INFO] [quark/]: Loading Module Nether Obsidian Spikes
+[16八月2020 14:06:49.618] [modloading-worker-5/INFO] [quark/]: Loading Module New Stone Types
+[16八月2020 14:06:49.620] [modloading-worker-5/INFO] [quark/]: Loading Module Speleothems
+[16八月2020 14:06:49.621] [modloading-worker-5/INFO] [quark/]: Loading Module Underground Clay
+[16八月2020 14:06:49.622] [modloading-worker-5/INFO] [quark/]: Loading Module Brimstone Underground Biome
+[16八月2020 14:06:49.623] [modloading-worker-5/INFO] [quark/]: Loading Module Cave Crystal Underground Biome
+[16八月2020 14:06:49.624] [modloading-worker-5/INFO] [quark/]: Loading Module Elder Prismarine Underground Biome
+[16八月2020 14:06:49.624] [modloading-worker-5/INFO] [quark/]: Loading Module Glowshroom Underground Biome
+[16八月2020 14:06:49.625] [modloading-worker-5/INFO] [quark/]: Loading Module Lush Underground Biome
+[16八月2020 14:06:49.629] [modloading-worker-5/INFO] [quark/]: Loading Module Overgrown Underground Biome
+[16八月2020 14:06:49.630] [modloading-worker-5/INFO] [quark/]: Loading Module Permafrost Underground Biome
+[16八月2020 14:06:49.630] [modloading-worker-5/INFO] [quark/]: Loading Module Sandstone Underground Biome
+[16八月2020 14:06:49.631] [modloading-worker-5/INFO] [quark/]: Loading Module Slime Underground Biome
+[16八月2020 14:06:49.632] [modloading-worker-5/INFO] [quark/]: Loading Module Spider Nest Underground Biome
+[16八月2020 14:06:49.633] [modloading-worker-5/INFO] [quark/]: Loading Module Crabs
+[16八月2020 14:06:49.634] [modloading-worker-5/INFO] [quark/]: Loading Module Foxhound
+[16八月2020 14:06:49.635] [modloading-worker-5/INFO] [quark/]: Loading Module Frogs
+[16八月2020 14:06:49.636] [modloading-worker-5/INFO] [quark/]: Loading Module Stonelings
+[16八月2020 14:06:49.636] [modloading-worker-5/INFO] [quark/]: Loading Module Toretoise
+[16八月2020 14:06:49.637] [modloading-worker-5/INFO] [quark/]: Loading Module Back Button Keybind
+[16八月2020 14:06:49.638] [modloading-worker-5/INFO] [quark/]: Loading Module Chest Searching
+[16八月2020 14:06:49.638] [modloading-worker-5/INFO] [quark/]: Loading Module Greener Grass
+[16八月2020 14:06:49.639] [modloading-worker-5/INFO] [quark/]: Loading Module Improved Mount Hud
+[16八月2020 14:06:49.640] [modloading-worker-5/INFO] [quark/]: Loading Module Improved Tooltips
+[16八月2020 14:06:49.640] [modloading-worker-5/INFO] [quark/]: Loading Module Usage Ticker
+[16八月2020 14:06:49.642] [modloading-worker-5/INFO] [quark/]: Loading Module Variant Animal Textures
+[16八月2020 14:06:49.646] [modloading-worker-5/INFO] [quark/]: Loading Module Backpack
+[16八月2020 14:06:49.646] [modloading-worker-5/INFO] [quark/]: Loading Module Magnets
+[16八月2020 14:06:49.647] [modloading-worker-5/INFO] [quark/]: Loading Module Matrix Enchanting
+[16八月2020 14:06:49.648] [modloading-worker-5/INFO] [quark/]: Loading Module Pipes
+[16八月2020 14:06:49.648] [modloading-worker-5/INFO] [quark/]: Loading Module Totem Of Holding
+[16八月2020 14:06:49.649] [modloading-worker-5/INFO] [quark/]: Loading Module Adjustable Chat
+[16八月2020 14:06:49.650] [modloading-worker-5/INFO] [quark/]: Loading Module Custom Underground Biome
+[16八月2020 14:06:49.652] [modloading-worker-6/INFO] [AE2:S/]: Post Initialization ( started )
+[16八月2020 14:06:49.704] [modloading-worker-6/INFO] [AE2:S/]: Post Initialization ( ended after 58ms )
+[16八月2020 14:06:49.725] [Server thread/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after COMMON_SETUP: 8 jobs
+[16八月2020 14:06:49.731] [Quark Contributor Loading Thread/ERROR] [quark/]: Failed to load patreon information
+java.net.UnknownHostException: raw.githubusercontent.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.URL.openStream(Unknown Source) ~[?:1.8.0_251]
+	at vazkii.quark.base.handler.ContributorRewardHandler$ThreadContributorListLoader.run(ContributorRewardHandler.java:143) [?:r2.1-245]
+[16八月2020 14:06:49.747] [Server thread/INFO] [journeymap/]: Initializing Packet Registry
+[16八月2020 14:06:49.761] [Server thread/INFO] [Mekanism/]: Loaded 'Mekanism: Additions' module.
+[16八月2020 14:06:49.818] [Server thread/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.092
+[16八月2020 14:06:49.825] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[16八月2020 14:06:49.833] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[16八月2020 14:06:49.834] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Generating keypair
+[16八月2020 14:06:49.906] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[16八月2020 14:06:49.911] [Server thread/INFO] [net.minecraft.network.NetworkSystem/]: Using default channel type
+[16八月2020 14:06:50.504] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16八月2020 14:06:50.505] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[16八月2020 14:06:50.507] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16八月2020 14:06:50.507] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[16八月2020 14:06:50.545] [modloading-worker-9/INFO] [Waila/]: Registered plugin at shadows.apotheosis.spawn.compat.SpawnerHwylaPlugin
+[16八月2020 14:06:50.547] [modloading-worker-9/INFO] [Waila/]: Registered plugin at shadows.apotheosis.ench.compat.EnchHwylaPlugin
+[16八月2020 14:06:50.553] [modloading-worker-9/INFO] [Waila/]: Registered plugin at mcp.mobius.waila.addons.minecraft.PluginMinecraft
+[16八月2020 14:06:50.554] [modloading-worker-9/INFO] [Waila/]: Registered plugin at net.darkhax.wawla.WawlaPlugin
+[16八月2020 14:06:50.558] [modloading-worker-9/INFO] [Waila/]: Registered plugin at team.chisel.common.integration.waila.ChiselDataHandler
+[16八月2020 14:06:50.560] [modloading-worker-9/INFO] [Waila/]: Registered plugin at squeek.wailaharvestability.WailaHandler
+[16八月2020 14:06:50.698] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [planttech2] Found status: UP_TO_DATE Current: 0.02.11 Target: null
+[16八月2020 14:06:50.705] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bookshelf] Starting version check at https://updates.blamejared.com/get?n=bookshelf&gv=1.15.2
+[16八月2020 14:06:51.937] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bookshelf] Found status: BETA Current: 5.6.40 Target: 5.6.40
+[16八月2020 14:06:51.937] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [wawla] Starting version check at https://updates.blamejared.com/get?n=wawla&gv=1.15.2
+[16八月2020 14:06:52.245] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [wawla] Found status: BETA_OUTDATED Current: 3.0.3 Target: 3.0.4
+[16八月2020 14:06:52.246] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[16八月2020 14:06:53.678] [Netty Server IO #1/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:53.702] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 31.2.36 Target: null
+[16八月2020 14:06:53.703] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [ruins] Starting version check at http://www.atomicstryker.net/updatemanager/ruins.json
+[16八月2020 14:06:55.033] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [ruins] Found status: UP_TO_DATE Current: 1.15.2.1 Target: null
+[16八月2020 14:06:55.033] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [indreb] Starting version check at https://raw.githubusercontent.com/Maciej916/Industrial-Reborn/master/update.json
+[16八月2020 14:06:55.036] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.net.UnknownHostException: raw.githubusercontent.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+[16八月2020 14:06:55.037] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwbridges] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/bridges.json
+[16八月2020 14:06:55.038] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.net.UnknownHostException: raw.githubusercontent.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+[16八月2020 14:06:55.039] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [torcherino] Starting version check at https://raw.githubusercontent.com/NinjaPhenix/Torcherino/master/update.json
+[16八月2020 14:06:55.040] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.net.UnknownHostException: raw.githubusercontent.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+[16八月2020 14:06:55.042] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cfm] Starting version check at https://raw.githubusercontent.com/MrCrayfish/ModUpdates/master/cfm/update.json
+[16八月2020 14:06:55.043] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.net.UnknownHostException: raw.githubusercontent.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Unknown Source) [?:1.8.0_251]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+[16八月2020 14:06:55.044] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [codechickenlib] Starting version check at https://version-check.covers1624.net/check/?mod=CodeChickenLib&mc=1.15.2
+[16八月2020 14:06:55.742] [Netty Server IO #2/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:55.754] [Netty Server IO #3/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:56.826] [Netty Server IO #4/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:56.914] [Netty Server IO #5/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:56.918] [Netty Server IO #6/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:57.490] [Netty Server IO #7/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:57.494] [Netty Server IO #8/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:57.712] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [codechickenlib] Found status: OUTDATED Current: 3.3.1.376 Target: 3.3.1.379
+[16八月2020 14:06:57.721] [Netty Server IO #9/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:57.723] [Netty Server IO #10/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:57.922] [Netty Server IO #11/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:57.926] [Netty Server IO #12/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:58.017] [Netty Server IO #13/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:58.024] [Netty Server IO #14/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:58.418] [Netty Server IO #16/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:58.460] [Netty Server IO #15/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:59.019] [Netty Server IO #17/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:59.023] [Netty Server IO #18/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:59.368] [Netty Server IO #19/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:59.372] [Netty Server IO #20/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:59.818] [Netty Server IO #21/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:06:59.822] [Netty Server IO #22/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.051] [Netty Server IO #23/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.070] [Netty Server IO #24/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.368] [Netty Server IO #25/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.373] [Netty Server IO #26/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.655] [Netty Server IO #27/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.664] [Netty Server IO #28/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.820] [Netty Server IO #29/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.824] [Netty Server IO #30/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.952] [Netty Server IO #31/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:00.956] [Netty Server IO #0/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:21.269] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[16八月2020 14:07:21.325] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension planttech2:planttopia of type planttech2:planttopia and id 3
+[16八月2020 14:07:21.329] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension mahoutsukai:reality_marble of type mahoutsukai:reality_marble and id 4
+[16八月2020 14:07:31.291] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: [旧版攻击]SwordBlockingCombat-v1.4-1.15.2.jar, [前置]MaterialMaster-v1.2-1.15.2.jar, [通用拼音搜索]JustEnoughCharacters-1.15.2-4.1.0.jar, [潘马斯农场2食物扩展]pamhc2foodextended-1.15.2-1.0.0.jar, Chisel_DEV-MC1.15.2-0.0.1.12.jar, FutureVersions+v3.0.jar, [匠魂3]TConstruct-1.15.2-3.0.1.67.jar, [前置]Mantle-1.15.2-1.5.17.jar, [前置]AutoRegLib-1.5-40.jar, [AI改进]AI-Improvements-1.15.2-0.3.0.jar, [夸克]Quark-r2.1-245.jar, Default, inmemory:jaopca, [Macaw的吊桥]mcw-bridges-1.0.4fix-mc1.15.2.jar, [R键整理]inventorysorter-1.15.2-17.0.0.jar, [地狱传送修复]NetherPortalFix_1.15.2-6.0.2.jar, [潘马斯农场2植物]pamhc2trees-1.15.2-1.0.6.jar, [MekA]通用机械附加MekanismAdditions-1.15.2-9.10.9.422.jar, [潘马斯农场2作物]pamhc2crops-1.15.2-1.0.5.jar, [JEI]JEI物品管理器jei-1.15.2-6.0.2.12.jar, [植物科技2]planttech2-0.02.11+-+1.15.2.jar, [Mek]通用机械Mekanism-1.15.2-9.10.9.422.jar, [前置]curios-FORGE-1.15.2-2.0.2.4.jar, [植物魔法]Botania-r1.15-387.jar, [帕秋莉手册]Patchouli-1.15.2-1.2-35.jar, [矿石兼容]JAOPCA-1.15.2-3.2.0.11.jar, [潘马斯农场2食物]pamhc2foodcore-1.15.2-1.0.9.jar, [旅行地图]journeymap-1.15.2-5.7.0b3.jar, [工作台性能优化]FastWorkbench-1.15.2-3.1.1.jar, [CTM]连接材质CTM-MC1.15.2-1.1.0.10.jar, [CB]懒人厨房CookingForBlockheads_1.15.2-8.0.3.jar, [舒适用品]comforts-FORGE-1.15.2-2.0.0.3.jar, [合成冲突消除]polymorph-FORGE-1.15.2-0.3.jar, [前置]Placebo-1.15.2-3.1.0.jar, [AE2]应用能源2appliedenergistics2-7.0.0-1.15.2-alpha.7.jar, [加速火把]torcherino-10.0.1.jar, [静谧四季]SereneSeasons-1.15.2-3.0.0.72-universal.jar, [高亮显示前置]Bookshelf-1.15.2-5.6.40.jar, [熔炉性能优化]FastFurnace-1.15.1-3.0.0.jar, [MekT]通用机械工具MekanismTools-1.15.2-9.10.9.422.jar, [神化]Apotheosis-1.15.2-3.2.4.jar, [家具]furniture-7.0.0-pre16-1.15.1.jar, [魔法使]mahoutsukai-1.15.2-v1.21.6.jar, [高亮显示]Hwyla-forge-1.10.8-B72_1.15.2.jar, [高亮显示]WAWLA-1.15.2-3.0.3.jar, [MekG]通用机械发电机MekanismGenerators-1.15.2-9.10.9.422.jar, [更好的燃烧机制]BetterBurning-1.15.2-1.3.4.jar, forge-1.15.2-31.2.36-universal.jar, [遗迹]Ruins-1.15.2.1.jar, [CCL]CodeChickenLib-1.15.2-3.3.1.376-universal.jar, [YUNG的矿井优化]BetterMineshaftsForge-1.15.2-1.3.jar, [工业重生]Industrial-Reborn-1.15.2-0.4.0.jar, [高亮显示]WailaHarvestability-mc1.15.2-1.1.12.jar, [更多箱子]ironchest-1.15.2-10.0.3.jar
+[16八月2020 14:07:32.551] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe ironchest:upgrades/copper_to_silver_chest_upgrade
+com.google.gson.JsonSyntaxException: Unknown item tag 'forge:ingots/silver'
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:221) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.581] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe ironchest:chests/iron_silver_chest
+com.google.gson.JsonSyntaxException: Unknown item tag 'forge:ingots/silver'
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:221) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.595] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:bluestainedpanerecipe2
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:unknown_element'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.596] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:whitestainedpanerecipe
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:unknown_element'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.612] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe ironchest:upgrades/silver_to_gold_chest_upgrade
+com.google.gson.JsonSyntaxException: Unknown item tag 'forge:ingots/silver'
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:221) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.642] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:blackstainedpanerecipe2
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:unknown_element'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.650] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:pumpkinseedrecipe
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:unknown_element'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199568_a(ShapelessRecipe.java:95) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199425_a_(ShapelessRecipe.java:80) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199425_a_(ShapelessRecipe.java:76) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.665] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:brownstainedpanerecipe2
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:unknown_element'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.701] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:sugarrecipe
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:honeybottle'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199568_a(ShapelessRecipe.java:95) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199425_a_(ShapelessRecipe.java:80) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199425_a_(ShapelessRecipe.java:76) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.776] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe ironchest:chests/copper_silver_chest
+com.google.gson.JsonSyntaxException: Unknown item tag 'forge:ingots/silver'
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:221) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.func_192408_a(ShapedRecipe.java:254) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe.access$000(ShapedRecipe.java:24) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:278) ~[?:?]
+	at net.minecraft.item.crafting.ShapedRecipe$Serializer.func_199425_a_(ShapedRecipe.java:274) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.783] [Server thread/ERROR] [net.minecraft.item.crafting.RecipeManager/]: Parsing error loading recipe futureversions:pumpkinpierecipe
+com.google.gson.JsonSyntaxException: Unknown item 'futureversions:unknown_element'
+	at net.minecraft.item.crafting.Ingredient.lambda$deserializeItemList$12(Ingredient.java:214) ~[?:?]
+	at java.util.Optional.orElseThrow(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.item.crafting.Ingredient.func_199803_a(Ingredient.java:213) ~[?:?]
+	at net.minecraftforge.common.crafting.VanillaIngredientSerializer.parse(VanillaIngredientSerializer.java:41) ~[?:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.getIngredient(CraftingHelper.java:155) ~[?:?]
+	at net.minecraft.item.crafting.Ingredient.func_199802_a(Ingredient.java:187) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199568_a(ShapelessRecipe.java:95) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199425_a_(ShapelessRecipe.java:80) ~[?:?]
+	at net.minecraft.item.crafting.ShapelessRecipe$Serializer.func_199425_a_(ShapelessRecipe.java:76) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_215377_a(RecipeManager.java:134) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:60) ~[?:?]
+	at net.minecraft.item.crafting.RecipeManager.func_212853_a_(RecipeManager.java:37) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(Unknown Source) ~[?:1.8.0_251]
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source) ~[?:1.8.0_251]
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?]
+	at net.minecraft.util.concurrent.TickDelayedTask.run(SourceFile:18) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213166_h(SourceFile:144) [?:?]
+	at net.minecraft.util.concurrent.RecursiveEventLoop.func_213166_h(SourceFile:23) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:731) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213166_h(MinecraftServer.java:141) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213168_p(SourceFile:118) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213205_aW(MinecraftServer.java:714) [?:?]
+	at net.minecraft.server.MinecraftServer.func_213168_p(MinecraftServer.java:708) [?:?]
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.func_213161_c(SourceFile:127) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195568_a(MinecraftServer.java:1464) [?:?]
+	at net.minecraft.server.MinecraftServer.func_195560_a(MinecraftServer.java:450) [?:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:363) [?:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:212) [?:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+[16八月2020 14:07:32.789] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 48 recipes
+[16八月2020 14:07:32.793] [Server thread/INFO] [placebo/]: Registered 27 additional recipes.
+[16八月2020 14:07:32.797] [Server thread/INFO] [placebo/]: Beginning replacement of all shapeless recipes...
+[16八月2020 14:07:32.829] [Server thread/INFO] [placebo/]: Successfully replaced 1611 recipes with fast recipes.
+[16八月2020 14:07:32.843] [Server thread/WARN] [thelm.jaopca.data.DataInjector/]: Recipe with ID jaopca:storage_blocks.to_material.brass received invalid arguments: Empty output in recipe jaopca:storage_blocks.to_material.brass: forge:ingots/brass
+[16八月2020 14:07:32.856] [Server thread/INFO] [thelm.jaopca.data.DataInjector/]: Injected 63 recipes, 6899 recipes total
+[16八月2020 14:07:33.469] [Server thread/INFO] [placebo/]: Registered 13 additional loot tables.
+[16八月2020 14:07:33.738] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2335 advancements
+[16八月2020 14:07:33.741] [Server thread/INFO] [planttech2/]: Load crop configuration from data packs
+[16八月2020 14:07:33.866] [Server thread/INFO] [Apotheosis : Deadly/]: Loaded 19 affix loot entries from resources.
+[16八月2020 14:07:33.871] [Server thread/INFO] [slimeknights.tconstruct.library.materials.MaterialManager/]: 40 materials loaded
+[16八月2020 14:07:33.884] [Server thread/INFO] [slimeknights.tconstruct.library.materials.stats.MaterialStatsManager/]: 81 stats loaded for 27 materials
+[16八月2020 14:07:43.795] [Server thread/INFO] [STDOUT/]: [com.maciej916.indreb.common.capabilities.energy.EnergyNetworkList:deserializeNBT:212]: deserializeNBT
+[16八月2020 14:07:43.795] [Server thread/INFO] [STDOUT/]: [com.maciej916.indreb.common.capabilities.energy.EnergyNetworkList:deserializeNBT:213]: 0
+[16八月2020 14:07:43.811] [Server thread/INFO] [Mekanism ChunkManager/]: Loading 0 chunks for dimension minecraft:the_nether
+[16八月2020 14:07:43.814] [Server thread/INFO] [Mekanism ChunkManager/]: Loading 0 chunks for dimension minecraft:overworld
+[16八月2020 14:07:43.830] [Server thread/INFO] [Mekanism ChunkManager/]: Loading 0 chunks for dimension minecraft:the_end
+[16八月2020 14:07:43.835] [Server thread/INFO] [Mekanism ChunkManager/]: Loading 0 chunks for dimension planttech2:planttopia
+[16八月2020 14:07:43.843] [Server thread/INFO] [Mekanism ChunkManager/]: Loading 0 chunks for dimension mahoutsukai:reality_marble
+[16八月2020 14:07:43.844] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[16八月2020 14:07:44.508] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[16八月2020 14:07:44.508] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[16八月2020 14:07:44.901] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 25%
+[16八月2020 14:07:46.453] [Netty Server IO #1/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:46.460] [Netty Server IO #2/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:46.723] [Server-Worker-15/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[16八月2020 14:07:46.723] [Server-Worker-13/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[16八月2020 14:07:46.726] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[16八月2020 14:07:46.853] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[16八月2020 14:07:48.021] [Netty Server IO #3/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:48.027] [Netty Server IO #4/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:48.205] [Server-Worker-9/WARN] [net.minecraft.world.gen.feature.jigsaw.JigsawManager/]: Empty or none existent pool: minecraft:none
+[16八月2020 14:07:48.692] [Server-Worker-9/WARN] [net.minecraft.world.gen.feature.jigsaw.JigsawManager/]: Empty or none existent pool: minecraft:none
+[16八月2020 14:07:48.693] [Server-Worker-9/WARN] [net.minecraft.world.gen.feature.jigsaw.JigsawManager/]: Empty or none existent pool: minecraft:none
+[16八月2020 14:07:49.132] [Server-Worker-9/WARN] [net.minecraft.world.gen.feature.jigsaw.JigsawManager/]: Empty or none existent pool: minecraft:none
+[16八月2020 14:07:49.135] [Server-Worker-9/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[16八月2020 14:07:49.136] [Server-Worker-9/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[16八月2020 14:07:49.137] [Server-Worker-1/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[16八月2020 14:07:49.138] [Server-Worker-9/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[16八月2020 14:07:49.166] [Netty Server IO #5/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:49.218] [Netty Server IO #6/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:49.348] [Server-Worker-1/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[16八月2020 14:07:49.773] [Netty Server IO #7/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:49.791] [Netty Server IO #8/INFO] [net.minecraftforge.fml.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[16八月2020 14:07:49.881] [Server-Worker-14/INFO] [atomicstryker.ruins.common.RuinsMod/]: Ruins mod determines World Save Dir to be at: .\world
+[16八月2020 14:07:49.897] [Server-Worker-14/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[16八月2020 14:07:50.000] [Thread-54/INFO] [atomicstryker.ruins.common.RuinsMod/]: Loading options from: E:\STT工业整合服务端1.15.2beta-4.0.5023 Build-12230 forge1.15.2-31.2.36\world
+[16八月2020 14:07:50.005] [Thread-54/INFO] [atomicstryker.ruins.common.RuinsMod/]: Ruins mod loaded successfully for world .\world template files: 23
+[16八月2020 14:07:50.346] [Server-Worker-1/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 96%
+[16八月2020 14:07:50.846] [Server-Worker-9/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 97%
+[16八月2020 14:07:51.291] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 7446 ms
+[16八月2020 14:07:51.293] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (30.120s)! For help, type "help"
+[16八月2020 14:07:51.447] [Server thread/INFO] [Bookshelf/]: Registering 1 commands.
+[16八月2020 14:07:51.462] [Server thread/INFO] [atomicstryker.ruins.common.RuinsMod/]: Ruins serverStarted
+[16八月2020 14:07:52.150] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (planttopia): All chunks are saved
+[16八月2020 14:07:52.152] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16八月2020 14:07:52.153] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16八月2020 14:07:52.157] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (reality_marble): All chunks are saved
+[16八月2020 14:07:53.206] [Netty Server IO #11/INFO] [codechicken.lib.config.ConfigSyncManager/]: Skipping config sync, No mods have registered a syncable config.
+[16八月2020 14:07:53.427] [Netty Server IO #11/INFO] [journeymap/]: Dev Mode?
+[16八月2020 14:07:59.849] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@293b64f3
+[16八月2020 14:07:59.902] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: YuukiSkniro[/127.0.0.1:54352] logged in with entity id 159 at (-71.5, 66.0, 79.5)
+[16八月2020 14:07:59.931] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: YuukiSkniro joined the game
+[16八月2020 14:08:00.028] [Server thread/INFO] [Waila/]: Syncing config to YuukiSkniro (9fa3a992-90a2-3e98-8124-1c0a3159b2d0)
+[16八月2020 14:08:00.064] [Netty Server IO #11/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.ModIdArgument@50f231e3 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[16八月2020 14:08:00.063] [Quark Contributor Loading Thread/ERROR] [quark/]: Failed to load patreon information
+java.net.UnknownHostException: raw.githubusercontent.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at java.net.Socket.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at java.net.URL.openStream(Unknown Source) ~[?:1.8.0_251]
+	at vazkii.quark.base.handler.ContributorRewardHandler$ThreadContributorListLoader.run(ContributorRewardHandler.java:143) [?:r2.1-245]
+[16八月2020 14:08:00.064] [Netty Server IO #11/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.EnumArgument@29decd22 (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[16八月2020 14:08:19.877] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: YuukiSkniro lost connection: Disconnected
+[16八月2020 14:08:19.878] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: YuukiSkniro left the game
+[16八月2020 14:08:23.372] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Stopping the server
+[16八月2020 14:08:23.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[16八月2020 14:08:23.443] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[16八月2020 14:08:23.445] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[16八月2020 14:08:23.445] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'world'/minecraft:overworld
+[16八月2020 14:08:23.449] [Server thread/INFO] [STDOUT/]: [com.maciej916.indreb.common.capabilities.energy.EnergyNetworkList:serializeNBT:203]: serializeNBT
+[16八月2020 14:08:23.449] [Server thread/INFO] [STDOUT/]: [com.maciej916.indreb.common.capabilities.energy.EnergyNetworkList:serializeNBT:204]: 0
+[16八月2020 14:08:24.185] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16八月2020 14:08:24.230] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved

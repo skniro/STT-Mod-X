@@ -1,0 +1,100 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 20-7-21 下午12:10
+Description: Exception in server tick loop
+
+net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
+	Giselbaers Durability Viewer (durabilityviewer) encountered an error during the common_setup event phase
+§7Attempted to load class net/minecraft/client/settings/KeyBinding for invalid dist DEDICATED_SERVER
+]
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:218) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.loadMods(ModLoader.java:156) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.server.ServerModLoader.begin(ServerModLoader.java:46) ~[?:?] {re:classloading}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:122) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:613) [?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2779812520 bytes (2651 MB) / 3728736256 bytes (3556 MB) up to 3817865216 bytes (3641 MB)
+	CPUs: 16
+	JVM Flags: 4 total; -Xms4096M -Xmx4096M -XX:+AggressiveOpts -XX:+UseCompressedOops
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.2.31.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.31.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.1.3-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.2.31.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.31.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.2.31.jar fml TRANSFORMATIONSERVICE 
+		/%5B前置%5DMixinBootstrap-1.0.3-1.15.2.jar mixinbootstrap TRANSFORMATIONSERVICE 
+		/%5B前置%5DMixinBootstrap-1.0.3-1.15.2.jar mixin PLUGINSERVICE 
+		/%5B前置%5DMixinBootstrap-1.0.3-1.15.2.jar mixinbootstrap PLUGINSERVICE 
+	FML: 31.2
+	Forge: net.minecraftforge:31.2.31
+	FML Language Providers: 
+		javafml@31.2
+		minecraft@1
+	Mod List: 
+		forge-1.15.2-31.2.31-server.jar Minecraft {minecraft@1.15.2 SIDED_SETUP}
+		[Macaw的吊桥]mcw-bridges-1.0.4fix-mc1.15.2.jar Macaw's Bridges {mcwbridges@1.0.4 SIDED_SETUP}
+		[R键整理]inventorysorter-1.15.2-17.0.0.jar Simple Inventory Sorter {inventorysorter@17.0.0 SIDED_SETUP}
+		[自然音效]AmbientSounds_v3.0.20_mc1.15.2.jar Ambient Sounds {ambientsounds@3.0.3 SIDED_SETUP}
+		[地狱传送修复]NetherPortalFix_1.15.2-6.0.2.jar NetherPortalFix {netherportalfix@6.0.2 SIDED_SETUP}
+		[潘马斯农场2植物]pamhc2trees-1.15.2-1.0.5.jar Pam's HarvestCraft 2 Fruit Trees {pamhc2trees@version SIDED_SETUP}
+		[照明优化]phosphor-forge-mc1.15.2-0.5.2+build.4.jar Phosphor {phosphor@0.5.2+build.4 SIDED_SETUP}
+		[MekA]通用机械附加MekanismAdditions-1.15.2-9.10.9.422.jar Mekanism: Additions {mekanismadditions@9.10.9 SIDED_SETUP}
+		[潘马斯农场2作物]pamhc2crops-1.15.2-1.0.5.jar Pam's HarvestCraft 2 Crops {pamhc2crops@version SIDED_SETUP}
+		[JEI]JEI物品管理器jei-1.15.2-6.0.2.12.jar Just Enough Items {jei@6.0.2.12 SIDED_SETUP}
+		[植物科技2]planttech2-0.02.11+-+1.15.2.jar PlantTech 2 {planttech2@0.02.11 SIDED_SETUP}
+		[Mek]通用机械Mekanism-1.15.2-9.10.9.422.jar Mekanism {mekanism@9.10.9 SIDED_SETUP}
+		[前置]curios-FORGE-1.15.2-2.0.2.4.jar Curios API {curios@FORGE-1.15.2-2.0.2.4 SIDED_SETUP}
+		[植物魔法]Botania-r1.15-387.jar Botania {botania@r1.15-387 SIDED_SETUP}
+		[帕秋莉手册]Patchouli-1.15.2-1.2-35.jar Patchouli {patchouli@1.15.2-1.2-35 SIDED_SETUP}
+		[矿石兼容]JAOPCA-1.15.2-3.2.0.11.jar JAOPCA {jaopca@3.2.0.11 SIDED_SETUP}
+		[潘马斯农场2食物]pamhc2foodcore-1.15.2-1.0.5.jar Pam's HarvestCraft 2 Food Core {pamhc2foodcore@version SIDED_SETUP}
+		[旅行地图]journeymap-1.15.2-5.7.0b3.jar Journeymap {journeymap@5.7.0b3 SIDED_SETUP}
+		[工作台性能优化]FastWorkbench-1.15.2-3.1.1.jar FastWorkbench {fastbench@3.1.1 SIDED_SETUP}
+		[CTM]连接材质CTM-MC1.15.2-1.1.0.10.jar ConnectedTexturesMod {ctm@MC1.15.2-1.1.0.10 SIDED_SETUP}
+		[CB]懒人厨房CookingForBlockheads_1.15.2-8.0.3.jar Cooking for Blockheads {cookingforblockheads@8.0.3 SIDED_SETUP}
+		[舒适用品]comforts-FORGE-1.15.2-2.0.0.3.jar Comforts {comforts@FORGE-1.15.2-2.0.0.3 SIDED_SETUP}
+		[合成冲突消除]polymorph-FORGE-1.15.2-0.3.jar Polymorph {polymorph@FORGE-1.15.2-0.3 SIDED_SETUP}
+		[前置]Placebo-1.15.2-3.1.0.jar Placebo {placebo@3.1.0 SIDED_SETUP}
+		[AE2]应用能源2appliedenergistics2-7.0.0-1.15.2-alpha.7.jar Applied Energistics 2 {appliedenergistics2@7.0.0-alpha.7 SIDED_SETUP}
+		[加速火把]torcherino-10.0.1.jar Torcherino {torcherino@10.0.1 SIDED_SETUP}
+		[静谧四季]SereneSeasons-1.15.2-3.0.0.72-universal.jar Serene Seasons {sereneseasons@1.15.2-3.0.0.72 SIDED_SETUP}
+		[高亮显示前置]Bookshelf-1.15.2-5.6.40.jar Bookshelf {bookshelf@5.6.40 SIDED_SETUP}
+		[熔炉性能优化]FastFurnace-1.15.1-3.0.0.jar FastFurnace {fastfurnace@3.0.0 SIDED_SETUP}
+		[MekT]通用机械工具MekanismTools-1.15.2-9.10.9.422.jar Mekanism: Tools {mekanismtools@9.10.9 SIDED_SETUP}
+		[神化]Apotheosis-1.15.2-3.2.4.jar Apotheosis {apotheosis@3.2.4 SIDED_SETUP}
+		[家具]furniture-7.0.0-pre16-1.15.1.jar MrCrayfish's Furniture Mod {cfm@7.0.0-pre16 SIDED_SETUP}
+		[魔法使]mahoutsukai-1.15.2-v1.20.3.jar Mahou Tsukai {mahoutsukai@1.15.2-v1.20.3 SIDED_SETUP}
+		[高亮显示]Hwyla-forge-1.10.8-B72_1.15.2.jar Waila {waila@version SIDED_SETUP}
+		[高亮显示]WAWLA-1.15.2-3.0.3.jar WAWLA {wawla@3.0.3 SIDED_SETUP}
+		[MekG]通用机械发电机MekanismGenerators-1.15.2-9.10.9.422.jar Mekanism: Generators {mekanismgenerators@9.10.9 SIDED_SETUP}
+		[耐久显示]DurabilityViewer-1.15.2-forge31.1.30-1.7.1.jar Giselbaers Durability Viewer {durabilityviewer@1.15.2-forge31.1.30-1.7.1 ERROR}
+		[更好的燃烧机制]BetterBurning-1.15.2-1.3.4.jar BetterBurning {betterburning@1.3.4 SIDED_SETUP}
+		forge-1.15.2-31.2.31-universal.jar Forge {forge@31.2.31 SIDED_SETUP}
+		[遗迹]Ruins-1.15.2.1.jar Ruins {ruins@1.15.2.1 SIDED_SETUP}
+		[CCL]CodeChickenLib-1.15.2-3.3.1.376-universal.jar CodeChicken Lib {codechickenlib@3.3.1.376 SIDED_SETUP}
+		[YUNG的矿井优化]BetterMineshaftsForge-1.15.2-1.3.jar YUNG's Better Mineshafts {bettermineshafts@1.15.2-1.3 SIDED_SETUP}
+		[工业重生]Industrial-Reborn-1.15.2-0.4.0.jar Industrial Reborn {indreb@1.15.2-0.4.0 SIDED_SETUP}
+		[高亮显示]WailaHarvestability-mc1.15.2-1.1.12.jar Waila Harvestability {wailaharvestability@1.1.12 SIDED_SETUP}
+		[更多箱子]ironchest-1.15.2-10.0.3.jar Iron Chests {ironchest@1.15.2-10.0.1 SIDED_SETUP}
+	AE2 Version: @aechannel@ @version@ for Forge 31.2.31
+	Data Packs: 
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

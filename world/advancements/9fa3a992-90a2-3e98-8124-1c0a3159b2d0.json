@@ -1,0 +1,15 @@
+{
+  "apotheosis:spawner/root": {
+    "criteria": {
+      "game_start": "2020-08-16 14:08:00 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2020-08-16 14:08:00 +0800"
+    },
+    "done": false
+  },
+  "DataVersion": 2230
+}
