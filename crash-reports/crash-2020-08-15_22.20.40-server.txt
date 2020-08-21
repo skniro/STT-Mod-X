@@ -1,0 +1,56 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 20-8-15 下午10:20
+Description: Exception in server tick loop
+
+Missing Mods:
+	endercore : [1.7.10-0.0.1.10_alpha,)
+
+cpw.mods.fml.common.MissingModsException
+	at cpw.mods.fml.common.Loader.sortModList(Loader.java:243)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:493)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:89)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:320)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:183)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:627)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	KCauldron Version: cc.uraniummc:Uranium:1710-dev-5-B271-31d6587 UNOFFICIAL DON'T REPORT THIS CRASH
+	Plugins: ~~ERROR~~ NullPointerException: null
+	Disabled Plugins: ~~ERROR~~ NullPointerException: null
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 649125672 bytes (619 MB) / 1016594432 bytes (969 MB) up to 9525788672 bytes (9084 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 16 mods loaded, 16 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	U	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	U	FML{7.10.99.99} [Forge Mod Loader] (Uranium-1710-dev-5-B271-31d6587-server.jar) 
+	U	Forge{10.13.4.1614} [Minecraft Forge] (Uranium-1710-dev-5-B271-31d6587-server.jar) 
+	U	kimagine{0.2} [KImagine] (minecraft.jar) 
+	U	UraniumPlus{${UMP_VER}} [Added title and actionbar support for client and server] (Uranium-1710-dev-5-B271-31d6587-server.jar) 
+	U	CodeChickenCore{1.0.7.47} [CodeChicken Core] (minecraft.jar) 
+	U	LambdaLib|Core{1.2.3} [LambdaLib|Core] (minecraft.jar) 
+	U	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	U	journeymap{5.1.4p2} [JourneyMap] ([旅行地图]journeymap-1.7.10-5.1.4p2-unlimited.jar) 
+	U	Waila{1.5.10} [Waila] ([高亮显示]Waila-1.5.10_1.7.10.jar) 
+	U	WailaHarvestability{1.1.6} [Waila Harvestability] ([高亮显示]WailaHarvestability-mc1.7.10-1.1.6.jar) 
+	U	wailaplugins{MC1.7.10-0.2.0-25} [WAILA Plugins] ([高亮显示]WAILAPlugins-MC1.7.10-0.2.0-25.jar) 
+	U	wawla{1.3.1} [What Are We Looking At] ([高亮显示]Wawla-1.0.5.120.jar) 
+	U	CoFHCore{1.7.10R3.1.4} [CoFH Core] (CoFHCore-[1.7.10]3.1.4-329.jar) 
+	U	LambdaLib{1.2.3} [LambdaLib] (LambdaLib-1.2.3.jar) 
+	U	bspkrsCore{6.16} [bspkrsCore] ([1.7.10][前置]bspkrsCore-universal-6.16.jar) 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'uranium,kcauldron,cauldron,craftbukkit,mcpc,fml,forge'
+	Type: Dedicated Server (map_server.txt)

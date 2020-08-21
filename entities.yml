@@ -1,0 +1,7 @@
+# Made By Imcc,to skip entity tick
+# Setting: settings.skip-entity-ticks Default: true   # If enabled, turns on entity tick skip feature
+
+settings:
+  skip-entity-ticks: true
+EntitiesBlacklist: []
+config-version: 1

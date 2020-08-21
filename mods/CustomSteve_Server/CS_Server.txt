@@ -1,0 +1,12 @@
+whitelist:no
+modelVerify:no
+maxEntity:0
+modelLimits:no
+maxVertex:0
+maxTexture:0
+maxTexturexSize:0
+maxIK:0
+maxRigidBody:0
+maxScaleX:0.0
+maxScaleY:0.0
+maxScaleZ:0.0

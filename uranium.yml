@@ -1,0 +1,99 @@
+# Setting: capture.captureBlockOnItemRightClick Default: true # Capture block to prevent brush things.
+# Setting: uuid.mode Default: 0 # Offline UUID Mode 0 is normal mode 1 is lowercase mode 2 is upcase mode
+# Setting: updatechecker.quiet Default: false # Print less info during update
+# Setting: language Default: en_US # Set server i18n language (You can show any different language such as Chinese(zh_CN), Japanese(ja_JP) like client.)
+# Setting: plugin-settings.default.remap-Reflection Default: true # This options can remap Class.forName getMethod getField to support plugins which using the net.minecraft.server.Rxxx package, but it will make some plugin work slow, if server is slow, can disable this option or only enabled for some plugins.
+# Setting: updatechecker.symlinks Default: Uranium.jar # (Re)create symlinks after update
+# Setting: common.fastLeavesDecay.maxTickTime Default: 10 # Minimal amount of tick between block updates
+# Setting: onlinemode.customServer Default: https://sessionserver.mojang.com/session/minecraft/join # Custom online mode server URL
+# Setting: experimental.guava21 Default: false # EXPERIMENTAL! Using guava21 to replace guava 10 in com.google.common package. Lots of plugins will not working.
+# Setting: updatechecker.enable Default: false # Enable Uranium update checker
+# Setting: updatechecker.autorestart Default: false # Restart server after updating without confirming (set restart script in spigot.yml)
+# Setting: experimental.UraniumName Default:  # EXPERIMENTAL! Some plugins not support Uranium as server name, you can change it to KCauldron or Cauldron to improve compatibility
+# Setting: experimental.tileEntityListRecreation Default: false # EXPERIMENTAL! Recreate list of TE each tick.
+# Setting: forge.clone-player-on-respawn Default: false # Original forge will clone a new player when player respawn, some mods needs this feature.
+# Setting: command.allowShowCommandThrowableOnClient Default: true # Allow show throwable information on client.
+# Setting: onlinemode.usingCustomServer Default: false # Using custom online mode server like netease "我的世界"
+# Setting: EndlessLoopCheck.enable Default: false # enable a check to prevent endless loop
+# Setting: common.allowNetherPortalBesidesOverworld Default: false # Allow nether portals in dimensions besides overworld
+# Setting: op.onlyConsole Default: false # Only allow console using op command
+# Setting: EndlessLoopCheck.deep Default: 2 # same event type,default loop deep
+# Setting: experimental.guava17 Default: false # EXPERIMENTAL! Using guava17 to replace guava 10 in com.google.common package. Lots of plugins will not working.
+# Setting: common.fastLeavesDecay.enable Default: false # Enable fast decaying of leaves, not affects drop chanches /etc
+# Setting: capture.captureBlockOnMetaChange Default: true # Capture block to prevent such wrench change direction of block.
+# Setting: logging.materialInjection Default: false # Log material injection event
+# Setting: uuid.forceUseOfflineUUID Default: false # Force use offline uuid when using bungeecord or fake online mode
+# Setting: logging.clientModList Default: true # Print client's mod list during attempt to join
+# Setting: common.maxChunkGenPerTick Default: 1 # How many chunks generate during tick
+# Setting: command.enable Default: true # Enable Uranium command
+# Setting: updatechecker.autoinstall Default: false # Install updates without confirming
+# Setting: common.fastLeavesDecay.minTickTime Default: 5 # Minimal amount of tick between block updates
+
+plugin-settings:
+  PermissionsEx:
+    remap-guava17-ver: '*^(1.23|2)'
+  WorldGuard:
+    remap-guava17-ver: '*^(\d[6-9]|\d\d+)'
+  LuckPerms:
+    remap-guava17: true
+  ProtocolLib:
+    remap-Reflection: false
+  MyPet:
+    remap-Reflection: true
+  default:
+    remap-Reflection: true
+capture:
+  blockNotCaptureOnMetaChange:
+  - minecraft:stone_button
+  - minecraft:wooden_button
+  - minecraft:wooden_door
+  - minecraft:iron_door
+  - minecraft:trapdoor
+  - minecraft:wooden_pressure_plate
+  - minecraft:stone_pressure_plate
+  - minecraft:light_weighted_pressure_plate
+  - minecraft:heavy_weighted_pressure_plate
+  - minecraft:lever
+  - minecraft:fence_gate
+  captureBlockOnItemRightClick: true
+  captureBlockOnMetaChange: true
+uuid:
+  mode: 0
+  forceUseOfflineUUID: false
+updatechecker:
+  quiet: false
+  symlinks: Uranium.jar
+  enable: false
+  autorestart: false
+  autoinstall: false
+language: en_US
+common:
+  fastLeavesDecay:
+    maxTickTime: 10
+    enable: false
+    minTickTime: 5
+  allowNetherPortalBesidesOverworld: false
+  maxChunkGenPerTick: 1
+onlinemode:
+  customServer: https://sessionserver.mojang.com/session/minecraft/join
+  usingCustomServer: false
+experimental:
+  guava21: false
+  UraniumName: ''
+  tileEntityListRecreation: false
+  guava17: false
+  PerventChunkLoad: false
+  BukkitForgeEvent: false
+forge:
+  clone-player-on-respawn: false
+command:
+  allowShowCommandThrowableOnClient: true
+  enable: true
+EndlessLoopCheck:
+  enable: false
+  deep: 2
+op:
+  onlyConsole: false
+logging:
+  materialInjection: false
+  clientModList: true
