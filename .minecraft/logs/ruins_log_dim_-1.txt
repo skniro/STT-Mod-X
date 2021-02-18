@@ -1,7 +1,7 @@
 
-Loading options from: E:\STT工业整合客户端[Releases]1.10.2-2.8.1.0 Build-2768 forge1.10.2-12.18.3.2511\.minecraft\saves\新的世界\DIM-1
+Loading options from: E:\STT工业整合客户端[Releases]1.11.2-2.9.1.0 Build-3112 forge1.11.2-13.20.1.2588\.minecraft\saves\新的世界\DIM-1
 tries_per_chunk_normal = 6
 chance_to_spawn_normal = 10.0
 templateInstancesMinDistance = 256.0
 anyRuinsMinDistance = 64.0
-Ruins mod loaded successfully for world E:\STT工业整合客户端[Releases]1.10.2-2.8.1.0 Build-2768 forge1.10.2-12.18.3.2511\.minecraft\saves\新的世界\DIM-1, template files: 31
+Ruins mod loaded successfully for world E:\STT工业整合客户端[Releases]1.11.2-2.9.1.0 Build-3112 forge1.11.2-13.20.1.2588\.minecraft\saves\新的世界\DIM-1, template files: 31

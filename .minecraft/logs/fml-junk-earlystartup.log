@@ -1,487 +1,57 @@
-[13:54:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:54:10] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:54:10] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[13:54:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:56:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:56:10] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:56:10] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[13:56:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:25:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:25:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:25:31] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:25:31] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:33:39] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:33:39] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:33:39] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:33:39] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:34:13] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:34:13] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:34:13] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:34:13] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:35:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:35:50] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:35:50] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:35:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:36:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:36:37] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:36:37] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:36:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:38:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:38:40] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:38:40] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:38:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:39:45] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:45] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:45] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:46] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:39:47] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:42:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:42:27] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:42:27] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:42:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:43:23] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:23] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:23] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:24] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-10/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:43:25] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:25] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:43:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:43:49] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:43:49] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:43:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:44:31] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:31] [ForkJoinPool.commonPool-worker-14/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:44:31] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:44:32] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:45:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:45:16] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:45:16] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:45:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:46:08] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:46:08] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:46:08] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:46:08] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:46:42] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-1/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:46:42] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:42] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:46:43] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:47:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:47:00] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:47:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:47:40] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-6/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:47:40] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:40] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:47:41] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:48:24] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:48:24] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:48:24] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:48:24] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:49:11] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:11] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-9/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:49:12] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:12] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:49:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:49:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:49:31] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:49:31] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:50:19] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:19] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:19] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:19] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:19] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-12/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:50:20] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:20] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:50:42] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:50:42] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:50:42] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:50:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:51:36] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:36] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:36] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:36] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:36] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:36] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:37] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:51:38] [ForkJoinPool.commonPool-worker-11/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:52:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:52:06] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:52:06] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[14:52:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[14:52:57] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:57] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-9/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:52:58] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:52:58] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-1/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:53:50] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:50] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:53:51] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:03] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-5/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[14:54:04] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:04] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[14:54:05] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:54:43] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:54:43] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:54:43] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
-[13:54:43] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[13:56:11] [ForkJoinPool.commonPool-worker-11/DEBUG] [IC2.Resource]: Baking at state: AVAILABLE
-[13:56:11] [ForkJoinPool.commonPool-worker-13/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-4/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-10/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:11] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-1/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-6/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-8/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-7/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-12/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-0/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-11/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-14/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-2/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-3/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-9/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
-[13:56:12] [ForkJoinPool.commonPool-worker-15/ERROR] [FML]: MultiModel minecraft:builtin/missing is empty (no base model or parts were provided/resolved)
+[13:53:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:53:17] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:53:17] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[13:53:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:57:08] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:57:08] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:57:08] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[13:57:08] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:58:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:58:22] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:58:22] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[13:58:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:59:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:59:38] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:59:38] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[13:59:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:25:22] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:25:22] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:25:22] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:25:22] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:29:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:29:19] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:29:19] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:29:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:30:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:30:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:30:31] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:30:31] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:34:11] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:34:11] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:34:11] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:34:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:35:15] [ForkJoinPool.commonPool-worker-5/DEBUG] [ic2.Resource]: Baking at state: AVAILABLE
+[14:35:45] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:35:45] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:35:45] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:35:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:52:51] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:52:51] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:52:51] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:52:51] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:53:31] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:53:31] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:53:31] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[14:53:31] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[14:54:27] [ForkJoinPool.commonPool-worker-6/DEBUG] [ic2.Resource]: Baking at state: AVAILABLE
+[14:54:55] [ForkJoinPool.commonPool-worker-10/DEBUG] [ic2.Resource]: Baking at state: AVAILABLE
+[14:55:10] [ForkJoinPool.commonPool-worker-15/DEBUG] [ic2.Resource]: Baking at state: AVAILABLE
+[13:55:18] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:55:18] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:55:18] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[13:55:18] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:57:32] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:57:32] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:57:32] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[13:57:32] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[13:59:07] [ForkJoinPool.commonPool-worker-11/DEBUG] [ic2.Resource]: Baking at state: AVAILABLE

@@ -9,19 +9,15 @@
 # It should also prevent Ruins re-spawning under any circumstances. Areas registered in here block any overlapping new Ruins.
 # Empty lines and those prefixed by '#' are ignored by the parser. Don't save notes in here, file gets wiped upon flushing.
 #
--217 62 -558 -187 100 -528 PirateShip.tml
--212 46 -231 -204 59 -205 shipwreck.tml
--182 46 -361 -146 66 -350 SunkenShip-v2.tml
--88 47 -259 -52 59 -248 SunkenShip-v3.tml
--32 -32 -32 32 32 32 SpawnPointBlock
--22 66 -167 -12 78 -159 ArrowTrapTomb.tml
--19 66 -334 -16 71 -330 StonePillar.tml
-8 54 -507 34 67 -499 shipwreck.tml
-50 78 -326 53 81 -323 EmeraldOreOutcrop.tml
-51 96 -256 58 104 -249 Outcrop.tml
-53 68 -153 56 71 -150 StoneGrill.tml
-58 62 -420 65 66 -415 ZombieHut.tml
-123 74 -252 128 79 -247 CaveSpiderBurrow.tml
-130 62 -434 132 66 -431 SkeletonHeadStatue.tml
-130 69 -163 142 77 -153 StoneHouseMruined.tml
-138 65 -353 145 68 -346 TinyFarmField.tml
+-441 70 307 -438 74 309 SkeletonHeadStatue.tml
+-435 73 403 -432 76 406 EmeraldOreOutcrop.tml
+-359 67 363 -352 70 370 TinyFarmField.tml
+-341 41 87 -315 54 95 shipwreck.tml
+-288 32 224 -224 96 288 SpawnPointBlock
+-286 68 437 -274 78 449 VolcanicVent.tml
+-255 68 357 -240 75 372 Mausoleum.tml
+-235 62 129 -223 66 141 AncientFountain.tml
+-159 66 341 -156 69 344 StoneGrill.tml
+-141 46 230 -130 58 266 SunkenShip-v3.tml
+-139 65 417 -136 68 420 EmeraldOreOutcrop.tml
+-96 62 129 -66 100 159 PirateShip.tml

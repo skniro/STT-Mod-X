@@ -9,4 +9,4 @@
 # It should also prevent Ruins re-spawning under any circumstances. Areas registered in here block any overlapping new Ruins.
 # Empty lines and those prefixed by '#' are ignored by the parser. Don't save notes in here, file gets wiped upon flushing.
 #
--63 32 -339 1 96 -275 SpawnPointBlock
+-288 32 224 -224 96 288 SpawnPointBlock
