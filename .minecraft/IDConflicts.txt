@@ -1,0 +1,3 @@
+#Blocks
+4039: ic2.blockFluidcoolant from IC2 - growingBlock from B0bGrowsOre
+Suggested Ranges: 1532-2159 (628 IDs), 3398-3940 (543 IDs), 2845-3346 (502 IDs)

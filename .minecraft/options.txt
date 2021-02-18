@@ -1,0 +1,94 @@
+music:1.0
+sound:1.0
+invertYMouse:false
+mouseSensitivity:0.5
+fov:0.0
+gamma:0.0
+viewDistance:0
+guiScale:0
+particles:0
+bobView:true
+anaglyph3d:false
+advancedOpengl:false
+fpsLimit:1
+difficulty:2
+fancyGraphics:true
+ao:2
+clouds:true
+skin:Default
+lastServer:
+lang:zh_CN
+chatVisibility:0
+chatColors:true
+chatLinks:true
+chatLinksPrompt:true
+chatOpacity:1.0
+serverTextures:true
+snooperEnabled:true
+fullscreen:false
+enableVsync:true
+hideServerAddress:false
+advancedItemTooltips:false
+pauseOnLostFocus:true
+showCape:true
+touchscreen:false
+overrideWidth:0
+overrideHeight:0
+heldItemTooltips:true
+chatHeightFocused:1.0
+chatHeightUnfocused:0.44366196
+chatScale:1.0
+chatWidth:1.0
+key_key.attack:-100
+key_key.use:-99
+key_key.forward:17
+key_key.left:30
+key_key.back:31
+key_key.right:32
+key_key.jump:57
+key_key.sneak:42
+key_key.drop:16
+key_key.inventory:18
+key_key.chat:20
+key_key.playerlist:15
+key_key.pickItem:-98
+key_Zoom:29
+key_key.command:53
+key_IC2 ALT Key:56
+key_IC2 Boost Key:29
+key_IC2 Mode Switch Key:50
+key_IC2 Side Inventory Key:46
+key_IC2 Hub Expand Key:45
+key_Open CraftGuide:34
+key_Horn:35
+key_Invent:19
+key_Up:44
+key_Down:45
+key_Idle:46
+key_Furnace:33
+key_[GC] 星系地图:50
+key_[GC] 打开飞船仓库:33
+key_[GC] 切换传感器护目镜模式:37
+key_[GC] 载具前进键:17
+key_[GC] 载具后退键:31
+key_[GC] 载具左转键:30
+key_[GC] 载具右转键:32
+key_[GC] 载具上升键:57
+key_[GC] 载具下降键:42
+key_key.craftingGrid:46
+key_key.journeymap.hotkeys_toggle:36
+key_key.journeymap.zoom_in:13
+key_key.journeymap.zoom_out:12
+key_key.journeymap.day:26
+key_key.journeymap.night:27
+key_key.journeymap.minimap_position:43
+key_key.journeymap.create_waypoint:48
+key_keybind.loco.faster:52
+key_keybind.loco.slower:51
+key_keybind.loco.mode:50
+key_keybind.loco.whistle:49
+key_waila.keybind.wailaconfig:82
+key_waila.keybind.wailadisplay:79
+key_waila.keybind.liquid:80
+key_waila.keybind.recipe:81
+key_waila.keybind.usage:75

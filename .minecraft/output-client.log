@@ -1,0 +1,180 @@
+2020-10-05 21:10:25 [CLIENT] [INFO] Setting user: 123
+2020-10-05 21:10:25 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2020-10-05 21:10:26 [CLIENT] [INFO] Reloading ResourceManager: Default
+2020-10-05 21:10:28 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+2020-10-05 21:10:28 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+2020-10-05 21:10:29 [CLIENT] [SEVERE] Realms: Server not available!
+2020-10-05 21:10:41 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+2020-10-05 21:36:16 [CLIENT] [INFO] Stopping!
+2020-10-06 11:09:45 [CLIENT] [INFO] Setting user: 123
+2020-10-06 11:09:46 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2020-10-06 11:09:46 [CLIENT] [INFO] Reloading ResourceManager: Default
+2020-10-06 11:09:49 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:B0bGary's Growable Ores!, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:09:55 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:09:57 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:B0bGary's Growable Ores!, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:09:57 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/silver.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/royaljelly.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:09:58 [CLIENT] [SEVERE] Realms: Server not available!
+2020-10-06 11:10:20 [CLIENT] [INFO] Stopping!
+2020-10-06 11:10:45 [CLIENT] [INFO] Setting user: 123
+2020-10-06 11:10:45 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2020-10-06 11:10:46 [CLIENT] [INFO] Reloading ResourceManager: Default
+2020-10-06 11:10:48 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:B0bGary's Growable Ores!, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:10:55 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:11:03 [CLIENT] [SEVERE] Realms: Server not available!
+2020-10-06 11:11:09 [CLIENT] [INFO] Stopping!
+2020-10-06 11:11:13 [CLIENT] [INFO] Setting user: 123
+2020-10-06 11:11:13 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2020-10-06 11:11:14 [CLIENT] [INFO] Reloading ResourceManager: Default
+2020-10-06 11:11:17 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:B0bGary's Growable Ores!, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:11:23 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:11:24 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:11:37 [CLIENT] [SEVERE] Realms: Server not available!
+2020-10-06 11:11:58 [CLIENT] [INFO] Stopping!
+2020-10-06 11:12:03 [CLIENT] [INFO] Setting user: 123
+2020-10-06 11:12:03 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2020-10-06 11:12:04 [CLIENT] [INFO] Reloading ResourceManager: Default
+2020-10-06 11:12:07 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:12:13 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:12:16 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:12:16 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/silver.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/royaljelly.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:12:17 [CLIENT] [SEVERE] Realms: Server not available!
+2020-10-06 11:12:43 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 2670 to go!
+2020-10-06 11:12:43 [CLIENT] [INFO] [CHAT] A new OptiFine version is available: HD_U C9
+2020-10-06 11:12:44 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 1753 to go!
+2020-10-06 11:12:45 [CLIENT] [INFO] [CHAT] New Galacticraft version available! v4.0.2 http://micdoodle8.com/
+2020-10-06 11:13:05 [CLIENT] [INFO] [CHAT] JourneyMap: JourneyMap 4.0.3 Unlimited 已成功载入
+2020-10-06 11:13:05 [CLIENT] [INFO] [CHAT] JourneyMap: 按下 [J] 或者在浏览器中打开网址 http://localhost:8080 
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 28620 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 26181 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 23680 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 21179 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 18678 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 16177 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 13699 to go!
+2020-10-06 11:13:12 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 11198 to go!
+2020-10-06 11:13:13 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 8718 to go!
+2020-10-06 11:13:13 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 6229 to go!
+2020-10-06 11:13:13 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 3766 to go!
+2020-10-06 11:13:13 [CLIENT] [WARNING] Memory connection overburdened; after processing 2500 packets, we still have 1343 to go!
+2020-10-06 11:15:18 [CLIENT] [INFO] [CHAT] 当前监视类型: 锚
+2020-10-06 11:15:19 [CLIENT] [INFO] [CHAT] 当前监视类型: 调谐
+2020-10-06 11:15:21 [CLIENT] [INFO] [CHAT] 当前监视类型: 踪迹
+2020-10-06 11:15:22 [CLIENT] [INFO] [CHAT] 当前监视类型: 无
+2020-10-06 11:16:01 [CLIENT] [INFO] Stopping!
+2020-10-06 11:20:10 [CLIENT] [INFO] Setting user: 123
+2020-10-06 11:20:10 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2020-10-06 11:20:11 [CLIENT] [INFO] Reloading ResourceManager: Default
+2020-10-06 11:20:14 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:20:20 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2020-10-06 11:20:20 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:20:20 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2020-10-06 11:20:20 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2020-10-06 11:20:20 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:20:21 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:20:21 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2020-10-06 11:20:21 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:20:21 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:20:21 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:20:21 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:20:23 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila, FMLFileResourcePack:Waila Harvestability
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/silver.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2020-10-06 11:20:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2020-10-06 11:20:25 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2020-10-06 11:20:25 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/royaljelly.png
+2020-10-06 11:20:25 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2020-10-06 11:20:25 [CLIENT] [SEVERE] Realms: Server not available!
+2020-10-06 11:20:41 [CLIENT] [INFO] Stopping!
+2021-02-03 16:31:07 [CLIENT] [INFO] Setting user: 123
+2021-02-03 16:31:08 [CLIENT] [INFO] LWJGL Version: 2.9.0
+2021-02-03 16:31:09 [CLIENT] [INFO] Reloading ResourceManager: Default
+2021-02-03 16:31:11 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila, FMLFileResourcePack:Waila Harvestability
+2021-02-03 16:31:18 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2021-02-03 16:31:18 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2021-02-03 16:31:18 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2021-02-03 16:31:18 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2021-02-03 16:31:19 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2021-02-03 16:31:23 [CLIENT] [INFO] Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:SlashBlade, FMLFileResourcePack:Ender IO, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:Advanced Solar Panels, FMLFileResourcePack:BiblioCraft, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Factory, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Transport, FMLFileResourcePack:Chisel, FMLFileResourcePack:CraftGuide, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:Galacticraft Mars, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Iron Chest, FMLFileResourcePack:JourneyMap, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Traincraft, FMLFileResourcePack:Translocator, FMLFileResourcePack:The Twilight Forest, FMLFileResourcePack:Waila, FMLFileResourcePack:Waila Harvestability
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_front.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/blocks/treasure_front_single.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_top.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ironchest:textures/blocks/dirtchest9000_side.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/blocks/wood/planks.giganteum.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: galacticraftcore:textures/items/key_T1.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/silver.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: ic2:textures/items/plasmaLauncher.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/empty.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/analyzer/natural.png
+2021-02-03 16:31:24 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/misc/liquid.png
+2021-02-03 16:31:25 [CLIENT] [SEVERE] Using missing texture, unable to load: forestry:textures/items/crates/royaljelly.png
+2021-02-03 16:31:25 [CLIENT] [SEVERE] Using missing texture, unable to load: minecraft:textures/items/meteorChunk.png
+2021-02-03 16:31:25 [CLIENT] [SEVERE] Realms: Server not available!
+2021-02-03 16:31:41 [CLIENT] [INFO] Stopping!

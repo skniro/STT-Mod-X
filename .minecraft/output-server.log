@@ -1,0 +1,39 @@
+2020-10-06 11:12:35 [SERVER] [INFO] Starting integrated minecraft server version 1.6.4
+2020-10-06 11:12:35 [SERVER] [INFO] Generating keypair
+2020-10-06 11:12:35 [SERVER] [INFO] Converting map!
+2020-10-06 11:12:35 [SERVER] [INFO] Scanning folders...
+2020-10-06 11:12:35 [SERVER] [INFO] Total conversion count is 0
+2020-10-06 11:12:36 [SERVER] [INFO] Preparing start region for level 0
+2020-10-06 11:12:37 [SERVER] [INFO] Preparing spawn area: 16%
+2020-10-06 11:12:38 [SERVER] [INFO] Preparing spawn area: 41%
+2020-10-06 11:12:39 [SERVER] [INFO] Preparing spawn area: 73%
+2020-10-06 11:12:40 [SERVER] [INFO] 123[/127.0.0.1:0] logged in with entity id 460 at (106.5, 64.0, 268.5)
+2020-10-06 11:12:40 [SERVER] [INFO] 123 加入了游戏
+2020-10-06 11:13:06 [SERVER] [INFO] Saving and pausing game...
+2020-10-06 11:13:06 [SERVER] [INFO] Saving chunks for level '新的世界'/Overworld
+2020-10-06 11:13:06 [SERVER] [INFO] Saving chunks for level '新的世界'/Nether
+2020-10-06 11:13:06 [SERVER] [INFO] Saving chunks for level '新的世界'/The End
+2020-10-06 11:13:06 [SERVER] [INFO] Saving chunks for level '新的世界'/Twilight Forest
+2020-10-06 11:13:21 [SERVER] [INFO] Saving and pausing game...
+2020-10-06 11:13:21 [SERVER] [INFO] Saving chunks for level '新的世界'/Overworld
+2020-10-06 11:13:21 [SERVER] [INFO] Saving chunks for level '新的世界'/Nether
+2020-10-06 11:13:21 [SERVER] [INFO] Saving chunks for level '新的世界'/The End
+2020-10-06 11:13:21 [SERVER] [INFO] Saving chunks for level '新的世界'/Twilight Forest
+2020-10-06 11:15:36 [SERVER] [INFO] Saving and pausing game...
+2020-10-06 11:15:36 [SERVER] [INFO] Saving chunks for level '新的世界'/Overworld
+2020-10-06 11:15:36 [SERVER] [INFO] Saving chunks for level '新的世界'/Nether
+2020-10-06 11:15:36 [SERVER] [INFO] Saving chunks for level '新的世界'/The End
+2020-10-06 11:15:36 [SERVER] [INFO] Saving chunks for level '新的世界'/Twilight Forest
+2020-10-06 11:15:54 [SERVER] [INFO] Saving and pausing game...
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/Overworld
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/Nether
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/The End
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/Twilight Forest
+2020-10-06 11:15:54 [SERVER] [INFO] Stopping server
+2020-10-06 11:15:54 [SERVER] [INFO] Saving players
+2020-10-06 11:15:54 [SERVER] [INFO] 123 退出了游戏
+2020-10-06 11:15:54 [SERVER] [INFO] Saving worlds
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/Overworld
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/Nether
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/The End
+2020-10-06 11:15:54 [SERVER] [INFO] Saving chunks for level '新的世界'/Twilight Forest
