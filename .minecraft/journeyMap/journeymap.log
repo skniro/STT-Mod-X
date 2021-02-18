@@ -1,0 +1,16 @@
+16:31:22 INFO [MC] [JourneyMap.initialize] JourneyMap 4.0.3 Unlimited initialize ENTER
+16:31:22 INFO [MC] [JMLogger.logProperties] Version: JourneyMap 4.0.3 Unlimited, built with Forge 1.6.4
+Forge: 9.11.1.1345
+Memory: 768MB total, 441MB free
+Environment: os.name=Windows 10, os.arch=amd64, java.version=1.8.0_261, user.country=CN, user.language=zh, game language=zh_CN, locale=zh_cn
+CoreProperties: revision=2, logLevel=INFO, chunkOffset=8, entityPoll=1800, playerPoll=1900, chunkPoll=2000, cacheAnimalsData=3100, maxAnimalsData=32, cacheMobsData=3000, maxMobsData=32, cachePlayerData=1000, cachePlayersData=2000, maxPlayersData=32, cacheVillagersData=2200, maxVillagersData=32, caveLighting=true, caveGreySurface=false, announceMod=true, checkUpdates=true
+FullMapProperties: revision=2, showCaves=true, showMobs=true, showAnimals=true, showVillagers=true, showPets=true, showPlayers=true, showWaypoints=true, showGrid=true, forceUnicode=false, fontSmall=true
+MiniMapProperties: revision=2, showSelf=true, showMobs=true, showAnimals=true, showVillagers=true, showPets=true, showPlayers=true, showWaypoints=true, managerEnabled=true, shape=SmallSquare, position=TopRight, showFps=false, enableHotkeys=true, showWaypointLabels=true, forceUnicode=false, fontSmall=true
+WaypointProperties: revision=2, managerEnabled=true, beaconEnabled=true, showTexture=true, showStaticBeam=true, showRotatingBeam=true, showName=true, showDistance=true, autoHideLabel=true, boldLabel=false, forceUnicode=false, fontSmall=true, textureSmall=true, maxDistance=0
+WebMapProperties: revision=2, showMobs=true, showAnimals=true, showVillagers=true, showPets=true, showPlayers=true, showWaypoints=true, managerEnabled=true, port=8080, browserPoll=2000
+16:31:22 INFO [MC] [JourneyMap.initialize] JourneyMap 4.0.3 Unlimited initialize EXIT
+16:31:23 INFO [MC] [JourneyMap.postInitialize] JourneyMap 4.0.3 Unlimited postInitialize ENTER
+16:31:23 INFO [MC] [JMServer.start] Started webserver on port 8080
+16:31:23 INFO [MC] [JourneyMap.postInitialize] Initialization complete.
+16:31:23 INFO [MC] [JourneyMap.postInitialize] JourneyMap 4.0.3 Unlimited postInitialize EXIT
+16:31:41 INFO [JM-svr-3] [JMServer.stop] Stopped webserver without errors
