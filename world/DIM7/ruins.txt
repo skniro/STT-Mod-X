@@ -7,31 +7,33 @@
 #     try in this chunk.  This may still fail if the ruin does not have a
 #     suitable place to generate.
 #
-# chance_for_site is the chance, out of 100, that another ruin will attempt to
-#     spawn nearby if a ruin was already successfully spawned.  This bypasses
-#     the normal tries per chunk, so if this chance is set high you may end up
-#     with a lot of ruins even with a low tries per chunk and chance to spawn.
-#
 # specific_<biome name> is the chance, out of 100, that a ruin spawning in the
 #     specified biome will be chosen from the biome specific folder.  If not,
 #     it will choose a generic ruin from the folder of the same name.
 
 tries_per_chunk_normal=6
-chance_to_spawn_normal=10.0
-chance_for_site_normal=15.0
+chance_to_spawn_normal=10
 
 tries_per_chunk_nether=6
 chance_to_spawn_nether=10
-chance_for_site_nether=15
+# prevent a message from being logged every time a ruin is built
 disableRuinSpawnCoordsLogging=true
 
 # minimum distance a template must have from instances of itself
 templateInstancesMinDistance=256
 # minimum distance a template must have from any other template
 anyRuinsMinDistance=64
+# min/max distances overworld templates can have from world spawn (0 = no limit)
+anySpawnMinDistance=32
+anySpawnMaxDistance=0
+# allow displaying a block's data by hitting it with a stick
+enableStick=true
 # dimension IDs whitelisted for ruins spawning, add custom dimensions IDs here as needed
 allowedDimensions=0,1,-1
 
+# make /parseruin rule IDs line up nicely in template files
+# note: overworld (i.e., dimension 0) setting applies to all dimensions
+enableFixedWidthRuleIds=false
 # tileentity blocks, those (nonvanilla)blocks which cannot function without storing their nbt data, full name as stick dictates, seperated by commata
 teblocks=
 
@@ -97,25 +99,42 @@ specific_mutated_plains=75
 specific_taiga_cold=75
 specific_mutated_taiga=75
 specific_mutated_birch_forest=75
-specific_oil_desert=75
+specific_artictundra=75
+specific_realitymarble=75
+specific_mangrove=75
 specific_firefly_forest=75
+specific_oil_desert=75
 specific_enchanted_forest=75
 specific_highlands_center=75
-specific_dark_forest_center=75
+specific_chapparaldesert=75
 specific_deep_mushroom_forest=75
 specific_spooky_forest=75
-specific_twilight_stream=75
+specific_theshallows=75
 specific_twilight_clearing=75
 specific_mushroom_forest=75
-specific_twilight_forest=75
-specific_oil_ocean=75
-specific_snowy_forest=75
+specific_mtlaunakea=75
 specific_dense_twilight_forest=75
+specific_marshland=75
 specific_thornlands=75
+specific_twilight_highlands=75
+specific_twilight_lake=75
+specific_fire_swamp=75
+specific_venttrench=75
+specific_seagrassprarie=75
+specific_dark_forest_center=75
+specific_whalegraveyard=75
+specific_twilight_stream=75
+specific_royalcoralreef=75
+specific_mangrovesubmerged=75
+specific_twilight_forest=75
+specific_snowy_forest=75
+specific_oil_ocean=75
+specific_lakebaikal=75
+specific_abyssaldepths=75
+specific_expansivebeach=75
 specific_oak_savannah=75
 specific_dark_forest=75
 specific_twilight_swamp=75
-specific_twilight_highlands=75
-specific_twilight_lake=75
 specific_twilight_glacier=75
-specific_fire_swamp=75
+specific_royalcoralreefvillage=75
+specific_dwarfmangrove=75

@@ -1,20 +1,33 @@
-async:
-  hopper: false
-  entityMove: true
-  chunkGen: false
-  modMob: false
-  entityAI: true
-  asyncPoolNum: 3
-check:
-  threadLag: true
 world:
-  keepSpawnInMemory: false
-  enableSkipTick: true
-  worldGen:
-    disableForgeGenWorld:
-    - xxxxxxx
-maxTickTime:
-  worldGen: 15
-disableUpdateGameProfile: true
+  keepSpawnInMemory: true
+  enableSkipEntityTick: true
+  enableSkipTileEntityTick: false
+  worldGenMaxTick: 15
+  disableForgeGenerateWorlds:
+  - ExampleCustomWorld
+  preventBlockLoadChunk: false
+  autoUnloadDimensions:
+  - 99999999
+  enableRealtime: false
+  forceSaveOnWatchdog: true
+  maxEntityCollision: 8
 fakePlayer:
+  permissions:
+  - essentials.build
   eventPass: false
+vanilla:
+  fixPlayBossSoundToOtherWorld: true
+  fixLessCrystalRespawnDragon: false
+  preventPistonPushRail: false
+  preventPistonPushSlimeBlock: false
+plugin:
+  patcher:
+    enableDynmapCompatible: true
+    enableCoreProtectModBlockCompatible: true
+    enableEssentialsNewVersionCompatible: true
+  disableHopperMoveEventWorlds: []
+disableUpdateGameProfile: false
+disableFMLHandshake: false
+disableFMLStatusModInfo: false
+disableAsyncCatchWarn: false
+versionCheck: true

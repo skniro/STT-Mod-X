@@ -1,0 +1,6 @@
+# This is the main configuration file for TileEntities.
+# Use carefully, it may break some mechanics
+
+settings:
+  skip-tileentity-ticks: true
+config-version: 1

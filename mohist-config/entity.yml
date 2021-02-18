@@ -1,0 +1,7 @@
+# This is the main configuration file for Entities.
+# Use carefully, it may break some mechanics
+
+settings:
+  skip-entity-ticks: true
+  skip-activation-range: false
+config-version: 1

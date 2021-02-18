@@ -22,7 +22,7 @@ cls
 @echo. 
 @echo.
 @echo. -----------------------------------------------------------------
-java -Xms10000M -Xmx10000M -XX:+AggressiveOpts -XX:+UseCompressedOops -jar CatServer-27d41d1-universal.jar
+java -jar CatServer-6677882-universal.jar
 @echo.
 @echo. ----------------------------------------------------------------- 
 @echo.               Minecraft --- 玩家数据保存完毕 已关服
