@@ -1,0 +1,81 @@
+[14:42:43] [Client thread/INFO] [JMLogger] JourneyMap log initialized.
+[14:42:43] [Client thread/INFO] [JourneymapClient] initialize ENTER
+[14:42:43] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[14:42:43] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[14:42:43] [Client thread/INFO] [?] Version: JourneyMap 1.9.4-5.5.2, built with Forge 12.17.0.1976
+Forge: 12.17.0.2051
+Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_US, locale=en_us
+Features: 
+	RadarPlayers : singleplayer = true , multiplayer = true
+	RadarAnimals : singleplayer = true , multiplayer = true
+	RadarMobs : singleplayer = true , multiplayer = true
+	RadarVillagers : singleplayer = true , multiplayer = true
+	MapTopo : singleplayer = true , multiplayer = true
+	MapSurface : singleplayer = true , multiplayer = true
+	MapCaves : singleplayer = true , multiplayer = true
+MiniMapProperties{state=Valid, file=journeymap.minimap.config, configVersion=5.5.2, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, shape=Circle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
+MiniMapProperties{state=Valid, file=journeymap.minimap2.config, configVersion=5.5.2, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, shape=Rectangle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
+FullMapProperties{state=Valid, file=journeymap.fullmap.config, configVersion=5.5.2, mobDisplay=Small Dots, zoomLevel=0, showPlayers=true, showSelf=true, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, showEntityNames=true, showPlayerHeading=true, showVillagers=true, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showKeys=true, showWaypointLabels=true, locationFormatVerbose=true, showMobs=true, showPets=true, fontScale=1, preferredMapType=day}
+WaypointProperties{state=Valid, file=journeymap.waypoint.config, configVersion=5.5.2, createDeathpoints=true, showName=true, maxDistance=0, autoHideLabel=true, showStaticBeam=true, minDistance=4, boldLabel=false, textureSmall=true, showDistance=true, showRotatingBeam=true, fontScale=2, showTexture=true, managerEnabled=true, beaconEnabled=true}
+WebMapProperties{state=Valid, file=journeymap.webmap.config, configVersion=5.5.2, zoomLevel=0, showWaypoints=true, showCaves=true, showSelf=true, port=8080, showGrid=true, showEntityNames=true, enabled=false, googleMapApiDomain=.com, preferredMapType=day}
+CoreProperties{state=Valid, file=journeymap.core.config, configVersion=5.5.2, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, renderOverlayEventTypeName=ALL, mapBlendWater=false, renderDistanceSurfaceMax=7, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=Circle, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, browserPoll=2000, mapBlendFoliage=true, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, maxAnimalsData=32, mapTransparency=true, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=3, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, renderOverlayPreEvent=true, autoMapPoll=2000}
+[14:42:43] [Client thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.4
+[14:42:43] [Client thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[14:42:43] [Client thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg �ms
+[14:42:44] [Client thread/DEBUG] [JourneymapClient] postInitialize ENTER
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.KeyEventHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.ChatEventHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.StateTickHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WorldEventHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.WaypointBeaconHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.TextureAtlasHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.forge.event.MiniMapOverlayHandler
+[14:42:44] [Client thread/DEBUG] [EventHandlerManager] Handler registered: journeymap.client.world.ChunkMonitor
+[14:42:44] [Client thread/ERROR] [FileHandler] Couldn't locate icons for Default: E:\STT工业整合验证客户端%5BReleases%5D1.9.4-2.7.%20Build-10302%20forge1.12.2-14.23.5.2854\.minecraft\mods\journeymap-1.9.4-5.5.2.jar\assets\journeymap\icon\entity
+[14:42:44] [Client thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
+[14:42:44] [Client thread/TRACE] [ThemeLoader] Initializing themes ...
+[14:42:44] [Client thread/ERROR] [FileHandler] Couldn't locate icons for flat: E:\STT工业整合验证客户端%5BReleases%5D1.9.4-2.7.%20Build-10302%20forge1.12.2-14.23.5.2854\.minecraft\mods\journeymap-1.9.4-5.5.2.jar\assets\journeymap\theme\flat
+[14:42:44] [Client thread/INFO] [ThemeLoader] Preloaded theme textures: 0
+[14:42:44] [Client thread/DEBUG] [JourneymapClient] postInitialize EXIT, elapsed§8 count §r1§8 avg §r378.01§8ms§r
+[14:42:58] [Client thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for bibliocraft
+[14:42:58] [Client thread/INFO] [ColorManager] Loaded color palette for 1394 blockstates in 177ms
+[14:43:05] [JM-VersionCheck-1/ERROR] [VersionCheck$1] Could not check version URL
+java.net.ConnectException: Connection timed out: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method) ~[?:1.8.0_261]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[?:1.8.0_261]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[?:1.8.0_261]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[?:1.8.0_261]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[?:1.8.0_261]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[?:1.8.0_261]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_261]
+	at java.net.Socket.connect(Socket.java:555) ~[?:1.8.0_261]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[?:1.8.0_261]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[?:1.8.0_261]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[?:1.8.0_261]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:1.8.0_261]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[?:1.8.0_261]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1046) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1044) ~[?:1.8.0_261]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_261]
+	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1043) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1570) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:92) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1490) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1488) ~[?:1.8.0_261]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_261]
+	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784) ~[?:1.8.0_261]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1487) ~[?:1.8.0_261]
+	at java.net.URL.openStream(URL.java:1067) ~[?:1.8.0_261]
+	at journeymap.common.version.VersionCheck$1.run(VersionCheck.java:125) [VersionCheck$1.class:1.9.4-5.5.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_261]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_261]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_261]
+[14:43:30] [Client thread/INFO] [ColorManager] Loaded color palette for 1394 blockstates in 18ms
+[14:43:30] [Client thread/INFO] [ColorManager] Loaded color palette for 1394 blockstates in 22ms

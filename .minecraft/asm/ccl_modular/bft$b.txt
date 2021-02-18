@@ -1,0 +1,81 @@
+// class version 50.0 (50)
+// access flags 0x20
+class bft$b extends bft$d  {
+
+  // compiled from: SourceFile
+  // access flags 0x0
+  INNERCLASS bft$b bft b
+  // access flags 0x8
+  static INNERCLASS bft$d bft d
+
+  // access flags 0x1010
+  final synthetic Lbft; o
+
+  // access flags 0x1
+  public <init>(Lbft;III)V
+   L0
+    LINENUMBER 257 L0
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD bft$b.o : Lbft;
+   L1
+    LINENUMBER 258 L1
+    ALOAD 0
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESTATIC bft.a ()Lkl;
+    BIPUSH 90
+    SIPUSH 220
+    INVOKESPECIAL bft$d.<init> (IIILkl;II)V
+   L2
+    LINENUMBER 259 L2
+    RETURN
+   L3
+    LOCALVARIABLE this Lbft$b; L0 L3 0
+    LOCALVARIABLE ? I L0 L3 2
+    LOCALVARIABLE ? I L0 L3 3
+    LOCALVARIABLE ? I L0 L3 4
+    MAXSTACK = 7
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public b(II)V
+    ALOAD 0
+    GETFIELD bft$b.o : Lbft;
+    DUP
+    GETFIELD bfr.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    SWAP
+    DUP
+    GETFIELD bfr.i : I
+    ILOAD 1
+    IADD
+    SWAP
+    GETFIELD bfr.r : I
+    ILOAD 2
+    IADD
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.objectUnderMouse (II)Z
+    IFEQ L0
+    RETURN
+   L0
+    LINENUMBER 263 L0
+   FRAME FULL [bft$b I I] []
+    ALOAD 0
+    GETFIELD bft$b.o : Lbft;
+    LDC "gui.done"
+    ICONST_0
+    ANEWARRAY java/lang/Object
+    INVOKESTATIC bwl.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    ILOAD 1
+    ILOAD 2
+    INVOKESTATIC bft.b (Lbft;Ljava/lang/String;II)V
+   L1
+    LINENUMBER 264 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lbft$b; L0 L2 0
+    LOCALVARIABLE ? I L0 L2 1
+    LOCALVARIABLE ? I L0 L2 2
+    MAXSTACK = 4
+    MAXLOCALS = 3
+}
