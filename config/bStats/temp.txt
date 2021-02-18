@@ -1,2 +1,0 @@
-io.github.djxy.permissionmanager.metrics.Metrics
-Note: This class only exists for internal purpose. You can ignore it :)

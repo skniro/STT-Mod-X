@@ -1,0 +1,1371 @@
+[11:39:38] [main/DEBUG] [FML/]: Injecting tracing printstreams for STDOUT/STDERR.
+[11:39:38] [main/INFO] [FML/]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
+[11:39:38] [main/INFO] [FML/]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_261, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_261\jre
+[11:39:38] [main/DEBUG] [FML/]: Java classpath at launch is E:\1.8.9\.minecraft\libraries\net\minecraftforge\forge\1.8.9-11.15.1.2318-1.8.9\forge-1.8.9-11.15.1.2318-1.8.9.jar;E:\1.8.9\.minecraft\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;E:\1.8.9\.minecraft\libraries\org\ow2\asm\asm-all\5.0.3\asm-all-5.0.3.jar;E:\1.8.9\.minecraft\libraries\jline\jline\2.13\jline-2.13.jar;E:\1.8.9\.minecraft\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;E:\1.8.9\.minecraft\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;E:\1.8.9\.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;E:\1.8.9\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;E:\1.8.9\.minecraft\libraries\java3d\vecmath\1.5.2\vecmath-1.5.2.jar;E:\1.8.9\.minecraft\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;E:\1.8.9\.minecraft\libraries\com\mojang\netty\1.6\netty-1.6.jar;E:\1.8.9\.minecraft\libraries\oshi-project\oshi-core\1.1\oshi-core-1.1.jar;E:\1.8.9\.minecraft\libraries\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;E:\1.8.9\.minecraft\libraries\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;E:\1.8.9\.minecraft\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;E:\1.8.9\.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;E:\1.8.9\.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;E:\1.8.9\.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;E:\1.8.9\.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;E:\1.8.9\.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;E:\1.8.9\.minecraft\libraries\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar;E:\1.8.9\.minecraft\libraries\com\google\guava\guava\17.0\guava-17.0.jar;E:\1.8.9\.minecraft\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;E:\1.8.9\.minecraft\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;E:\1.8.9\.minecraft\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;E:\1.8.9\.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;E:\1.8.9\.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;E:\1.8.9\.minecraft\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;E:\1.8.9\.minecraft\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar;E:\1.8.9\.minecraft\libraries\com\mojang\realms\1.7.59\realms-1.7.59.jar;E:\1.8.9\.minecraft\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;E:\1.8.9\.minecraft\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar;E:\1.8.9\.minecraft\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;E:\1.8.9\.minecraft\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;E:\1.8.9\.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;E:\1.8.9\.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;E:\1.8.9\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar;E:\1.8.9\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4-nightly-20150209\lwjgl_util-2.9.4-nightly-20150209.jar;E:\1.8.9\.minecraft\libraries\tv\twitch\twitch\6.5\twitch-6.5.jar;E:\1.8.9\.minecraft\versions\1.8.9\1.8.9.jar
+[11:39:38] [main/DEBUG] [FML/]: Java library path at launch is E:\1.8.9\.minecraft\versions\1.8.9\natives
+[11:39:38] [main/DEBUG] [FML/]: Enabling runtime deobfuscation
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[11:39:38] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[11:39:38] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[11:39:38] [main/DEBUG] [FML/]: Attempting to load commandline specified mods, relative to E:\1.8.9\.minecraft
+[11:39:38] [main/DEBUG] [FML/]: Discovering coremods
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [BC]buildcraft-7.2.8.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [BC]buildcraft-7.2.8.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [BC扩展]buildcraft-compat-7.2.1.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [BC扩展]buildcraft-compat-7.2.1.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar
+[11:39:38] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar, it will be examined later for regular @Mod instances
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class IC2core
+[11:39:38] [main/WARN] [FML/]: The coremod ic2.core.coremod.IC2core does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod IC2core
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [R键整理]InventoryTweaks-1.60-40-1.8.9.jar
+[11:39:38] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in [R键整理]InventoryTweaks-1.60-40-1.8.9.jar, it will be examined later for regular @Mod instances
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class FMLPlugin
+[11:39:38] [main/WARN] [FML/]: The coremod invtweaks.forge.asm.FMLPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[11:39:38] [main/DEBUG] [FML/]: Added access transformer class invtweaks.forge.asm.ITAccessTransformer to enqueued access transformers
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod FMLPlugin
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [优化]BetterFps-1.2.0-1.8.9.jar
+[11:39:38] [main/INFO] [FML/]: Loading tweaker me.guichaguri.betterfps.tweaker.BetterFpsTweaker from [优化]BetterFps-1.2.0-1.8.9.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [伤害显示]torohealth-1.8.9-7.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [伤害显示]torohealth-1.8.9-7.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [凿子]Chisel-MC1.8.9-0.0.2.6.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [凿子]Chisel-MC1.8.9-0.0.2.6.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [前置][1.8]bspkrsCore-universal-7.01.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [前置][1.8]bspkrsCore-universal-7.01.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [前置]GalacticraftCore-1.8.9-4.0.2.190.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [前置]GalacticraftCore-1.8.9-4.0.2.190.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [前置]MicdoodleCore-1.8.9-4.0.2.190.jar
+[11:39:38] [main/TRACE] [FML/]: Adding [前置]MicdoodleCore-1.8.9-4.0.2.190.jar to the list of known coremods, it will not be examined again
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class MicdoodlePlugin
+[11:39:38] [main/WARN] [FML/]: The coremod micdoodle8.mods.miccore.MicdoodlePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[11:39:38] [main/DEBUG] [FML/]: Added access transformer class micdoodle8.mods.miccore.MicdoodleAccessTransformer to enqueued access transformers
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod MicdoodlePlugin
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [拔刀剑]SlashBlade-mc1.8.9-r11.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [拔刀剑]SlashBlade-mc1.8.9-r11.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar
+[11:39:38] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar, it will be examined later for regular @Mod instances
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class BattlegearLoadingPlugin
+[11:39:38] [main/TRACE] [FML/]: coremod named Mine and Blade: Battlegear2 is loading
+[11:39:38] [main/WARN] [FML/]: The coremod mods.battlegear2.coremod.BattlegearLoadingPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[11:39:38] [main/DEBUG] [FML/]: Added access transformer class mods.battlegear2.coremod.transformers.BattlegearAccessTransformer to enqueued access transformers
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod Mine and Blade: Battlegear2
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [更多箱子]ironchest-1.8.9-6.0.125.770.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [更多箱子]ironchest-1.8.9-6.0.125.770.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar
+[11:39:38] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar, it will be examined later for regular @Mod instances
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class EnderCorePlugin
+[11:39:38] [main/DEBUG] [FML/]: The coremod com.enderio.core.common.transform.EnderCorePlugin requested minecraft version 1.8.9 and minecraft is 1.8.9. It will be loaded.
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod EnderCorePlugin
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [材质修复]TexFix+V-1.8.9-4.0.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [材质修复]TexFix+V-1.8.9-4.0.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [泡沫修复]foamfix-0.6.3-law-1.8.x.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [泡沫修复]foamfix-0.6.3-law-1.8.x.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [苹果核]AppleCore-mc1.8.9-3.1.1.jar
+[11:39:38] [main/TRACE] [FML/]: Found FMLCorePluginContainsFMLMod marker in [苹果核]AppleCore-mc1.8.9-3.1.1.jar, it will be examined later for regular @Mod instances
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class AppleCore
+[11:39:38] [main/DEBUG] [FML/]: The coremod squeek.applecore.AppleCore requested minecraft version 1.8.9 and minecraft is 1.8.9. It will be loaded.
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod AppleCore
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [输入修复]InputFix-1.8.x-v2.jar
+[11:39:38] [main/TRACE] [FML/]: Adding [输入修复]InputFix-1.8.x-v2.jar to the list of known coremods, it will not be examined again
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class InputFix
+[11:39:38] [main/TRACE] [FML/]: coremod named InputFix is loading
+[11:39:38] [main/WARN] [FML/]: The coremod lain.mods.inputfix.InputFix does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod InputFix
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [遗迹]Ruins-1.8.8.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [遗迹]Ruins-1.8.8.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [高亮显示]Waila-1.6.0-B3_1.8.8.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [高亮显示]Waila-1.6.0-B3_1.8.8.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [高亮显示]Wawla-1.8.9-1.1.4.171.jar
+[11:39:38] [main/DEBUG] [FML/]: Not found coremod data in [高亮显示]Wawla-1.8.9-1.1.4.171.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy [高清修复]OptiFine-1.8.9_HD_U_L5.jar
+[11:39:38] [main/INFO] [FML/]: Loading tweaker optifine.OptiFineForgeTweaker from [高清修复]OptiFine-1.8.9_HD_U_L5.jar
+[11:39:38] [main/DEBUG] [FML/]: Examining for coremod candidacy CodeChickenLib-1.8-1.1.2.133-universal.jar
+[11:39:38] [main/TRACE] [FML/]: Adding CodeChickenLib-1.8-1.1.2.133-universal.jar to the list of known coremods, it will not be examined again
+[11:39:38] [main/DEBUG] [FML/]: Instantiating coremod class CCLCorePlugin
+[11:39:38] [main/WARN] [FML/]: The coremod codechicken.lib.asm.CCLCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[11:39:38] [main/DEBUG] [FML/]: Enqueued coremod CCLCorePlugin
+[11:39:38] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[11:39:38] [main/INFO] [LaunchWrapper/]: Loading tweak class name me.guichaguri.betterfps.tweaker.BetterFpsTweaker
+[11:39:38] [main/INFO] [LaunchWrapper/]: Loading tweak class name optifine.OptiFineForgeTweaker
+[11:39:38] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[11:39:38] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[11:39:38] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[11:39:38] [main/INFO] [LaunchWrapper/]: Calling tweak class optifine.OptiFineForgeTweaker
+[11:39:38] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: acceptOptions
+[11:39:38] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: injectIntoClassLoader
+[11:39:38] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:242]: OptiFine ClassTransformer
+[11:39:38] [main/INFO] [STDOUT/]: [optifine.OptiFineClassTransformer:dbg:242]: OptiFine ZIP file: E:\1.8.9\.minecraft\mods\[高清修复]OptiFine-1.8.9_HD_U_L5.jar
+[11:39:38] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:38] [main/DEBUG] [FML/]: Injecting coremod FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin} class transformers
+[11:39:38] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[11:39:38] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[11:39:38] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[11:39:38] [main/TRACE] [FML/]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[11:39:38] [main/DEBUG] [FML/]: Injection complete
+[11:39:38] [main/DEBUG] [FML/]: Running coremod plugin for FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin}
+[11:39:38] [main/DEBUG] [FML/]: Running coremod plugin FMLCorePlugin
+[11:39:39] [main/DEBUG] [FML/]: Read 825 binary patches
+[11:39:39] [main/DEBUG] [FML/]: Loading deobfuscation resource /deobfuscation_data-1.8.9.lzma with 27891 records
+[11:39:39] [main/INFO] [FML/]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[11:39:40] [main/INFO] [FML/]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class FMLCorePlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin FMLForgePlugin
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class FMLForgePlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod IC2core {ic2.core.coremod.IC2core} class transformers
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for IC2core {ic2.core.coremod.IC2core}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin IC2core
+[11:39:40] [main/INFO] [IC2-core/]: Loaded library EJML-core-0.26.jar.
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class IC2core run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod FMLPlugin {invtweaks.forge.asm.FMLPlugin} class transformers
+[11:39:40] [main/TRACE] [FML/]: Registering transformer invtweaks.forge.asm.ContainerTransformer
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for FMLPlugin {invtweaks.forge.asm.FMLPlugin}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin FMLPlugin
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class FMLPlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod MicdoodlePlugin {micdoodle8.mods.miccore.MicdoodlePlugin} class transformers
+[11:39:40] [main/INFO] [STDOUT/]: [micdoodle8.mods.miccore.MicdoodlePlugin:getASMTransformerClass:99]: Successfully Registered Transformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer micdoodle8.mods.miccore.MicdoodleTransformer
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for MicdoodlePlugin {micdoodle8.mods.miccore.MicdoodlePlugin}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin MicdoodlePlugin
+[11:39:40] [main/INFO] [STDOUT/]: [micdoodle8.mods.miccore.MicdoodlePlugin:injectData:292]: [Micdoodle8Core]: Patching game...
+[11:39:40] [main/INFO] [STDOUT/]: [micdoodle8.mods.miccore.MicdoodlePlugin:injectData:292]: [Micdoodle8Core]: Patching game...
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class MicdoodlePlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod InputFix {lain.mods.inputfix.InputFix} class transformers
+[11:39:40] [main/TRACE] [FML/]: Registering transformer lain.mods.inputfix.InputFixTransformer
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for InputFix {lain.mods.inputfix.InputFix}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin InputFix
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class InputFix run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod CCLCorePlugin {codechicken.lib.asm.CCLCorePlugin} class transformers
+[11:39:40] [main/TRACE] [FML/]: Registering transformer codechicken.lib.asm.ClassHeirachyManager
+[11:39:40] [main/TRACE] [FML/]: Registering transformer codechicken.lib.asm.RenderHookTransformer
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for CCLCorePlugin {codechicken.lib.asm.CCLCorePlugin}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin CCLCorePlugin
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class CCLCorePlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class me.guichaguri.betterfps.tweaker.BetterFpsTweaker
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[11:39:40] [main/DEBUG] [FML/]: Loaded 165 rules from AccessTransformer config file forge_at.cfg
+[11:39:40] [main/DEBUG] [FML/]: Loaded 10 rules from AccessTransformer config file invtweaks_at.cfg
+[11:39:40] [main/DEBUG] [FML/]: Loaded 38 rules from AccessTransformer config file micdoodlecore_at.cfg
+[11:39:40] [main/DEBUG] [FML/]: Loaded 14 rules from AccessTransformer config file battlegear_at.cfg
+[11:39:40] [main/DEBUG] [FML/]: Loaded 4 rules from AccessTransformer mod jar file E:\1.8.9\.minecraft\mods\[地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar!META-INF/netherportalfix_at.cfg
+
+[11:39:40] [main/DEBUG] [FML/]: Loaded 6 rules from AccessTransformer mod jar file E:\1.8.9\.minecraft\mods\1.8.9\CodeChickenLib-1.8-1.1.2.133-universal.jar!META-INF/ccl_at.cfg
+
+[11:39:40] [main/DEBUG] [FML/]: Loaded 1 rules from AccessTransformer mod jar file E:\1.8.9\.minecraft\mods\[凿子]Chisel-MC1.8.9-0.0.2.6.jar!META-INF/chisel_at.cfg
+
+[11:39:40] [main/DEBUG] [FML/]: Loaded 7 rules from AccessTransformer mod jar file E:\1.8.9\.minecraft\mods\[JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar!META-INF/jei_at.cfg
+
+[11:39:40] [main/DEBUG] [FML/]: Validating minecraft
+[11:39:40] [main/DEBUG] [FML/]: Minecraft validated, launching...
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod AppleCore {squeek.applecore.AppleCore} class transformers
+[11:39:40] [main/TRACE] [FML/]: Registering transformer squeek.applecore.asm.TransformerModuleHandler
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for AppleCore {squeek.applecore.AppleCore}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin AppleCore
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class AppleCore run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod Mine and Blade: Battlegear2 {mods.battlegear2.coremod.BattlegearLoadingPlugin} class transformers
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.EntityPlayerTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.ModelBipedTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.NetClientHandlerTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.NetServerHandlerTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.PlayerControllerMPTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.ItemRendererTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.RenderItemTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.MinecraftTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.ItemStackTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.ItemInWorldTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.EntityAIControlledByPlayerTransformer
+[11:39:40] [main/TRACE] [FML/]: Registering transformer mods.battlegear2.coremod.transformers.EntityOtherPlayerMPTransformer
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for Mine and Blade: Battlegear2 {mods.battlegear2.coremod.BattlegearLoadingPlugin}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin Mine and Blade: Battlegear2
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class BattlegearLoadingPlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[11:39:40] [main/DEBUG] [FML/]: Injecting coremod EnderCorePlugin {com.enderio.core.common.transform.EnderCorePlugin} class transformers
+[11:39:40] [main/TRACE] [FML/]: Registering transformer com.enderio.core.common.transform.EnderCoreTransformer
+[11:39:40] [main/DEBUG] [FML/]: Injection complete
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin for EnderCorePlugin {com.enderio.core.common.transform.EnderCorePlugin}
+[11:39:40] [main/DEBUG] [FML/]: Running coremod plugin EnderCorePlugin
+[11:39:40] [main/DEBUG] [FML/]: Coremod plugin class EnderCorePlugin run successfully
+[11:39:40] [main/INFO] [LaunchWrapper/]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[11:39:40] [main/INFO] [LaunchWrapper/]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[11:39:40] [main/INFO] [STDOUT/]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: getLaunchArguments
+[11:39:40] [main/INFO] [LaunchWrapper/]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[11:39:40] [main/INFO] [me.guichaguri.betterfps.transformers.EventTransformer/]: Patching Game Start...
+[11:39:40] [main/INFO] [battlegear2/]: M&B - Patching Class Minecraft (ave)
+[11:39:40] [main/INFO] [battlegear2/]: 	Patching method Right Click Mouse in Minecraft
+[11:39:40] [main/INFO] [battlegear2/]: M&B - Patching Class Minecraft done
+[11:39:41] [main/INFO] [battlegear2/]: M&B - Patching Class EntityPlayer (wn)
+[11:39:41] [main/INFO] [battlegear2/]: 	Adding new fields to EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: 	Patching constructor in EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: 	Patching method onUpdate in EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: 	Patching method onItemUseFinish in EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: 	Patching method interactWith in EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: 	Patching method setCurrentItemOrArmor in EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: 	Creating new methods in EntityPlayer
+[11:39:41] [main/INFO] [battlegear2/]: M&B - Patching Class EntityPlayer done
+[11:39:42] [Client thread/INFO] [EnderCore/]: Transforming Class [net.minecraft.entity.projectile.EntityArrow], Method [func_70071_h_]
+[11:39:42] [Client thread/INFO] [EnderCore/]: Transforming net.minecraft.entity.projectile.EntityArrow Finished.
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class ItemStack (zx)
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class ItemStack done
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming Class [net.minecraft.item.ItemStack], Method [func_77953_t]
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming net.minecraft.item.ItemStack Finished.
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming Class [net.minecraft.inventory.ContainerFurnace], Method [func_82846_b]
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming net.minecraft.inventory.ContainerFurnace Finished.
+[11:39:43] [Client thread/INFO] [me.guichaguri.betterfps.transformers.EventTransformer/]: Patching Key Event...
+[11:39:43] [Client thread/INFO] [Config/]: [OptiFine] *** Reflector Forge ***
+[11:39:43] [Client thread/INFO] [Config/]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class NetHandlerPlayClient (bcy)
+[11:39:43] [Client thread/INFO] [battlegear2/]: 	Patching method handleSpawnPlayer in NetHandlerPlayClient
+[11:39:43] [Client thread/INFO] [battlegear2/]: 	Patching method handleHeldItemChange in NetHandlerPlayClient
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class NetHandlerPlayClient done
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming Class [net.minecraft.world.WorldType], Method [func_76564_j]
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming net.minecraft.world.WorldType Finished.
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class NetHandlerPlayServer (lm)
+[11:39:43] [Client thread/INFO] [battlegear2/]: 	Patching method processPlayerBlockPlacement in NetHandlerPlayServer
+[11:39:43] [Client thread/INFO] [battlegear2/]: 	Patching method processHeldItemChange in NetHandlerPlayServer
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class NetHandlerPlayServer done
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming Class [net.minecraft.inventory.ContainerRepair], Method [func_82848_d]
+[11:39:43] [Client thread/INFO] [EnderCore/]: Transforming net.minecraft.inventory.ContainerRepair Finished.
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class ModelBiped (bbj)
+[11:39:43] [Client thread/INFO] [battlegear2/]: 	Patching method setRotationAngles in ModelBiped
+[11:39:43] [Client thread/INFO] [battlegear2/]: M&B - Patching Class ModelBiped done
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] *** Reflector Vanilla ***
+[11:39:44] [Client thread/INFO] [battlegear2/]: M&B - Patching Class PlayerControllerMP (bda)
+[11:39:44] [Client thread/INFO] [battlegear2/]: 	Patching method sendUseItem in PlayerControllerMP
+[11:39:44] [Client thread/INFO] [battlegear2/]: M&B - Patching Class PlayerControllerMP done
+[11:39:44] [Client thread/DEBUG] [CCL ASM/]: Injecting before method [bjh.a(Lzx;Lboq;)V] @ 41 - 47
+[11:39:44] [Client thread/INFO] [battlegear2/]: M&B - Patching Class RenderItem (bjh)
+[11:39:44] [Client thread/INFO] [battlegear2/]: 	Patching method renderItemModelForEntity in RenderItem
+[11:39:44] [Client thread/INFO] [battlegear2/]: M&B - Patching Class RenderItem done
+[11:39:44] [Client thread/INFO] [EnderCore/]: Transforming Class [net.minecraft.client.renderer.entity.RenderItem], Method [func_180453_a]
+[11:39:44] [Client thread/INFO] [EnderCore/]: Transforming net.minecraft.client.renderer.entity.RenderItem Finished.
+[11:39:44] [Client thread/INFO] [battlegear2/]: M&B - Patching Class ItemRenderer (bfn)
+[11:39:44] [Client thread/INFO] [battlegear2/]: 	Adding new fields to ItemRenderer
+[11:39:44] [Client thread/INFO] [battlegear2/]: 	Patching method renderItemInFirstPerson in ItemRenderer
+[11:39:44] [Client thread/INFO] [battlegear2/]: 	Patching method updateEquippedItem in ItemRenderer
+[11:39:44] [Client thread/INFO] [battlegear2/]: M&B - Patching Class ItemRenderer done
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] 
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] OptiFine_1.8.9_HD_U_L5
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] Build: 20191204-143016
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] Java: 1.8.0_261, Oracle Corporation
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] LWJGL: 2.9.4
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] OpenGL: GeForce GTX 1080/PCIe/SSE2, version 4.6.0 NVIDIA 445.87, NVIDIA Corporation
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] OpenGL Version: 4.6.0
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] Maximum texture size: 32768x32768
+[11:39:44] [VersionCheck/INFO] [Config/]: [OptiFine] Checking for new version
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 445.87
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Vendor:  NVIDIA Corporation
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Renderer: GeForce GTX 1080/PCIe/SSE2
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Load shaders configuration.
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] Save shaders configuration.
+[11:39:44] [Client thread/INFO] [net.optifine.shaders.SMCLog/]: [Shaders] No shaderpack loaded.
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] [Shaders] Delayed loading of block mappings after resources are loaded
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] [Shaders] Delayed loading of item mappings after resources are loaded
+[11:39:44] [Client thread/INFO] [Config/]: [OptiFine] [Shaders] Delayed loading of entity mappings after resources are loaded
+[11:39:45] [Client thread/WARN] [FML/]: =============================================================
+[11:39:45] [Client thread/WARN] [FML/]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[11:39:45] [Client thread/WARN] [FML/]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
+[11:39:45] [Client thread/WARN] [FML/]: Use FMLCommonHandler.exitJava instead
+[11:39:45] [Client thread/WARN] [FML/]: =============================================================
+[11:39:45] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - LanguageManager took 0.004s
+[11:39:45] [Client thread/INFO] [FML/]: Forge Mod Loader has detected optifine OptiFine_1.8.9_HD_U_L5, enabling compatibility features
+[11:39:45] [Client thread/INFO] [STDOUT/]: [net.minecraftforge.fml.client.SplashProgress:start:246]: ---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  Mine and Blade: Battlegear2 ([挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar)
+  EnderCorePlugin ([末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar)
+  CCLCorePlugin (CodeChickenLib-1.8-1.1.2.133-universal.jar)
+  InputFix ([输入修复]InputFix-1.8.x-v2.jar)
+  MicdoodlePlugin ([前置]MicdoodleCore-1.8.9-4.0.2.190.jar)
+  AppleCore ([苹果核]AppleCore-mc1.8.9-3.1.1.jar)
+  FMLPlugin ([R键整理]InventoryTweaks-1.60-40-1.8.9.jar)
+  IC2core ([IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar)
+Contact their authors BEFORE contacting forge
+
+// I bet Cylons wouldn't have this problem.
+
+Time: 20-7-26 上午11:39
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_261, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 411190624 bytes (392 MB) / 671088640 bytes (640 MB) up to 10737418240 bytes (10240 MB)
+	JVM Flags: 11 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx10240m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+Mine and Blade: Battlegear2 ([挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar)
+  mods.battlegear2.coremod.transformers.EntityPlayerTransformer
+  mods.battlegear2.coremod.transformers.ModelBipedTransformer
+  mods.battlegear2.coremod.transformers.NetClientHandlerTransformer
+  mods.battlegear2.coremod.transformers.NetServerHandlerTransformer
+  mods.battlegear2.coremod.transformers.PlayerControllerMPTransformer
+  mods.battlegear2.coremod.transformers.ItemRendererTransformer
+  mods.battlegear2.coremod.transformers.RenderItemTransformer
+  mods.battlegear2.coremod.transformers.MinecraftTransformer
+  mods.battlegear2.coremod.transformers.ItemStackTransformer
+  mods.battlegear2.coremod.transformers.ItemInWorldTransformer
+  mods.battlegear2.coremod.transformers.EntityAIControlledByPlayerTransformer
+  mods.battlegear2.coremod.transformers.EntityOtherPlayerMPTransformer
+EnderCorePlugin ([末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar)
+  com.enderio.core.common.transform.EnderCoreTransformer
+CCLCorePlugin (CodeChickenLib-1.8-1.1.2.133-universal.jar)
+  codechicken.lib.asm.ClassHeirachyManager
+  codechicken.lib.asm.RenderHookTransformer
+InputFix ([输入修复]InputFix-1.8.x-v2.jar)
+  lain.mods.inputfix.InputFixTransformer
+MicdoodlePlugin ([前置]MicdoodleCore-1.8.9-4.0.2.190.jar)
+  micdoodle8.mods.miccore.MicdoodleTransformer
+AppleCore ([苹果核]AppleCore-mc1.8.9-3.1.1.jar)
+  squeek.applecore.asm.TransformerModuleHandler
+FMLPlugin ([R键整理]InventoryTweaks-1.60-40-1.8.9.jar)
+  invtweaks.forge.asm.ContainerTransformer
+IC2core ([IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 445.87' Renderer: 'GeForce GTX 1080/PCIe/SSE2'
+[11:39:45] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - Animation took 0.000s
+[11:39:45] [Client thread/INFO] [FML/]: MinecraftForge v11.15.1.2318 Initialized
+[11:39:45] [Client thread/INFO] [FML/]: Replaced 229 ore recipies
+[11:39:45] [Client thread/DEBUG] [FML/]: File E:\1.8.9\.minecraft\config\injectedDependencies.json not found. No dependencies injected
+[11:39:45] [Client thread/DEBUG] [FML/]: Building injected Mod Containers [net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer, micdoodle8.mods.miccore.MicdoodleModContainer, lain.mods.inputfix.InputFixDummyContainer]
+[11:39:45] [Client thread/DEBUG] [FML/]: Attempting to load mods contained in the minecraft jar file and associated classes
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\net\minecraftforge\forge\1.8.9-11.15.1.2318-1.8.9\forge-1.8.9-11.15.1.2318-1.8.9.jar, examining for mod candidates
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\ow2\asm\asm-all\5.0.3\asm-all-5.0.3.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\jline\jline\2.13\jline-2.13.jar, examining for mod candidates
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\typesafe\config\1.2.1\config-1.2.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\java3d\vecmath\1.5.2\vecmath-1.5.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\com\mojang\netty\1.6\netty-1.6.jar, examining for mod candidates
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\oshi-project\oshi-core\1.1\oshi-core-1.1.jar, examining for mod candidates
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar, examining for mod candidates
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar, examining for mod candidates
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar, examining for mod candidates
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\io\netty\netty-all\4.0.23.Final\netty-all-4.0.23.Final.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\google\guava\guava\17.0\guava-17.0.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\commons-codec\commons-codec\1.9\commons-codec-1.9.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\mojang\authlib\1.5.21\authlib-1.5.21.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\com\mojang\realms\1.7.59\realms-1.7.59.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\apache\httpcomponents\httpclient\4.3.3\httpclient-4.3.3.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.4-nightly-20150209\lwjgl_util-2.9.4-nightly-20150209.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\libraries\tv\twitch\twitch\6.5\twitch-6.5.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\versions\1.8.9\1.8.9.jar, examining for mod candidates
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[R键整理]InventoryTweaks-1.60-40-1.8.9.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[优化]BetterFps-1.2.0-1.8.9.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[前置]MicdoodleCore-1.8.9-4.0.2.190.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[苹果核]AppleCore-mc1.8.9-3.1.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[输入修复]InputFix-1.8.x-v2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\[高清修复]OptiFine-1.8.9_HD_U_L5.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping known library file E:\1.8.9\.minecraft\mods\1.8.9\CodeChickenLib-1.8-1.1.2.133-universal.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a minecraft related file at E:\1.8.9\.minecraft\mods\ic2\EJML-core-0.26.jar, examining for mod candidates
+[11:39:45] [Client thread/DEBUG] [FML/]: Minecraft jar mods loaded successfully
+[11:39:45] [Client thread/INFO] [FML/]: Found 0 mods from the command line. Injecting into mod discoverer
+[11:39:45] [Client thread/INFO] [FML/]: Searching E:\1.8.9\.minecraft\mods for mods
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate mod directory 1.8.9
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [BC]buildcraft-7.2.8.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [BC扩展]buildcraft-compat-7.2.1.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [R键整理]InventoryTweaks-1.60-40-1.8.9.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping already parsed coremod or tweaker [优化]BetterFps-1.2.0-1.8.9.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [伤害显示]torohealth-1.8.9-7.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [凿子]Chisel-MC1.8.9-0.0.2.6.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [前置][1.8]bspkrsCore-universal-7.01.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [前置]GalacticraftCore-1.8.9-4.0.2.190.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping already parsed coremod or tweaker [前置]MicdoodleCore-1.8.9-4.0.2.190.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [拔刀剑]SlashBlade-mc1.8.9-r11.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [更多箱子]ironchest-1.8.9-6.0.125.770.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [材质修复]TexFix+V-1.8.9-4.0.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [泡沫修复]foamfix-0.6.3-law-1.8.x.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [苹果核]AppleCore-mc1.8.9-3.1.1.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping already parsed coremod or tweaker [输入修复]InputFix-1.8.x-v2.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [遗迹]Ruins-1.8.8.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [高亮显示]Waila-1.6.0-B3_1.8.8.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate zip or jar file [高亮显示]Wawla-1.8.9-1.1.4.171.jar
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping already parsed coremod or tweaker [高清修复]OptiFine-1.8.9_HD_U_L5.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate mod directory ic2
+[11:39:45] [Client thread/DEBUG] [FML/]: Found a candidate mod directory resources
+[11:39:45] [Client thread/INFO] [FML/]: Also searching E:\1.8.9\.minecraft\mods\1.8.9 for mods
+[11:39:45] [Client thread/TRACE] [FML/]: Skipping already parsed coremod or tweaker CodeChickenLib-1.8-1.1.2.133-universal.jar
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file forge-1.8.9-11.15.1.2318-1.8.9.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container forge-1.8.9-11.15.1.2318-1.8.9.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file jline-2.13.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container jline-2.13.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file netty-1.6.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container netty-1.6.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file oshi-core-1.1.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container oshi-core-1.1.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file jna-3.4.0.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container jna-3.4.0.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file platform-3.4.0.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container platform-3.4.0.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file libraryjavasound-20101123.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container libraryjavasound-20101123.jar appears to be missing an mcmod.info file
+[11:39:45] [Client thread/DEBUG] [FML/]: Examining file 1.8.9.jar for potential mods
+[11:39:45] [Client thread/DEBUG] [FML/]: The mod container 1.8.9.jar appears to be missing an mcmod.info file
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file EJML-core-0.26.jar for potential mods
+[11:39:46] [Client thread/DEBUG] [FML/]: The mod container EJML-core-0.26.jar appears to be missing an mcmod.info file
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining directory 1.8.9 for potential mods
+[11:39:46] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory 1.8.9
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [BC]buildcraft-7.2.8.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [BC]buildcraft-7.2.8.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftCore) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Core/]: Parsed dependency info : [Forge@[11.15.1.1764,11.16)] [Forge@[11.15.1.1764,11.16)] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftTransport) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Transport/]: Parsed dependency info : [BuildCraft|Core@7.2.8] [BuildCraft|Core@7.2.8] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftFactory) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Factory/]: Parsed dependency info : [BuildCraft|Core@7.2.8] [BuildCraft|Core@7.2.8, BuildCraft|Energy] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftSilicon) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Silicon/]: Parsed dependency info : [BuildCraft|Core@7.2.8] [BuildCraft|Core@7.2.8] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftRobotics) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Robotics/]: Parsed dependency info : [BuildCraft|Transport@7.2.8] [BuildCraft|Transport@7.2.8] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftEnergy) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Energy/]: Parsed dependency info : [BuildCraft|Core@7.2.8] [BuildCraft|Core@7.2.8] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftBuilders) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Builders/]: Parsed dependency info : [BuildCraft|Core@7.2.8] [BuildCraft|Core@7.2.8] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [BC扩展]buildcraft-compat-7.2.1.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [BC扩展]buildcraft-compat-7.2.1.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (buildcraft.BuildCraftCompat) - loading
+[11:39:46] [Client thread/TRACE] [BuildCraft|Compat/]: Parsed dependency info : [BuildCraft|Core, Forge@[11.15.1.1764,)] [Forge@[11.15.1.1764,), BuildCraft|Core, BuildCraft|Transport, BuildCraft|Builders, IronChest] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.blay09.mods.cookingforblockheads.CookingForBlockheads) - loading
+[11:39:46] [Client thread/TRACE] [cookingforblockheads/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [cookingforblockheads/]: Attempting to load the file version.properties from [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar to locate a version number for cookingforblockheads
+[11:39:46] [Client thread/WARN] [cookingforblockheads/]: Mod cookingforblockheads is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 2.0.2
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar for potential mods
+[11:39:46] [Client thread/DEBUG] [FML/]: The mod container [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar appears to be missing an mcmod.info file
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (micdoodle8.mods.galacticraft.planets.GalacticraftPlanets) - loading
+[11:39:46] [Client thread/TRACE] [GalacticraftPlanets/]: Parsed dependency info : [GalacticraftCore] [GalacticraftCore] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (uristqwerty.CraftGuide.CraftGuide_FML) - loading
+[11:39:46] [Client thread/TRACE] [craftguide/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (ic2.core.IC2) - loading
+[11:39:46] [Client thread/TRACE] [IC2/]: Parsed dependency info : [Forge@[11.15.1.1757,)] [Forge@[11.15.1.1757,)] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mezz.jei.JustEnoughItems) - loading
+[11:39:46] [Client thread/TRACE] [JEI/]: Parsed dependency info : [Forge@[11.15.1.1808,)] [Forge@[11.15.1.1808,)] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [R键整理]InventoryTweaks-1.60-40-1.8.9.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [R键整理]InventoryTweaks-1.60-40-1.8.9.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (invtweaks.forge.InvTweaksMod) - loading
+[11:39:46] [Client thread/TRACE] [inventorytweaks/]: Parsed dependency info : [Forge@[11.14.4,)] [Forge@[11.14.4,)] []
+[11:39:46] [Client thread/DEBUG] [inventorytweaks/]: Attempting to load the file version.properties from [R键整理]InventoryTweaks-1.60-40-1.8.9.jar to locate a version number for inventorytweaks
+[11:39:46] [Client thread/DEBUG] [inventorytweaks/]: Found version 1.60-40-e06e29a for mod inventorytweaks in version.properties, using
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (bspkrs.treecapitator.TreecapitatorMod) - loading
+[11:39:46] [Client thread/TRACE] [treecapitator/]: Using mcmod dependency info : [bspkrscore@[1.8.9.2,)] [bspkrscore@[1.8.9.2,)] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [伤害显示]torohealth-1.8.9-7.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [伤害显示]torohealth-1.8.9-7.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.torocraft.torohealthmod.ToroHealthMod) - loading
+[11:39:46] [Client thread/TRACE] [torohealthmod/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [凿子]Chisel-MC1.8.9-0.0.2.6.jar for potential mods
+[11:39:46] [Client thread/DEBUG] [FML/]: The mod container [凿子]Chisel-MC1.8.9-0.0.2.6.jar appears to be missing an mcmod.info file
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (team.chisel.Chisel) - loading
+[11:39:46] [Client thread/TRACE] [chisel/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [前置][1.8]bspkrsCore-universal-7.01.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [前置][1.8]bspkrsCore-universal-7.01.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (bspkrs.bspkrscore.fml.bspkrsCoreMod) - loading
+[11:39:46] [Client thread/TRACE] [bspkrsCore/]: Using mcmod dependency info : [Forge@[11.14.1.1334,)] [Forge@[11.14.1.1334,)] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [前置]GalacticraftCore-1.8.9-4.0.2.190.jar for potential mods
+[11:39:46] [Client thread/DEBUG] [FML/]: The mod container [前置]GalacticraftCore-1.8.9-4.0.2.190.jar appears to be missing an mcmod.info file
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (micdoodle8.mods.galacticraft.core.GalacticraftCore) - loading
+[11:39:46] [Client thread/TRACE] [GalacticraftCore/]: Parsed dependency info : [FML@[8.0.99.99,), Forge@[11.15.1.1764,), Micdoodlecore] [Forge@[11.15.1.1764,), FML@[8.0.99.99,), Micdoodlecore, IC2, TConstruct, Mantle, MekanismAPI|gas] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (assets.recipehandler.RecipeMod) - loading
+[11:39:46] [Client thread/TRACE] [recipehandler/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar for potential mods
+[11:39:46] [Client thread/DEBUG] [FML/]: The mod container [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar appears to be missing an mcmod.info file
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.blay09.mods.netherportalfix.NetherPortalFix) - loading
+[11:39:46] [Client thread/TRACE] [netherportalfix/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [netherportalfix/]: Attempting to load the file version.properties from [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar to locate a version number for netherportalfix
+[11:39:46] [Client thread/WARN] [netherportalfix/]: Mod netherportalfix is missing the required element 'version' and no fallback can be found. Substituting '1.0'.
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.mrcrayfish.furniture.MrCrayfishFurnitureMod) - loading
+[11:39:46] [Client thread/TRACE] [cfm/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [拔刀剑]SlashBlade-mc1.8.9-r11.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [拔刀剑]SlashBlade-mc1.8.9-r11.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mods.flammpfeil.slashblade.SlashBlade) - loading
+[11:39:46] [Client thread/TRACE] [flammpfeil.slashblade/]: Parsed dependency info : [] [] []
+[11:39:46] [Client thread/DEBUG] [FML/]: Examining file [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar for potential mods
+[11:39:46] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar
+[11:39:46] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mods.battlegear2.Battlegear) - loading
+[11:39:46] [Client thread/TRACE] [battlegear2/]: Parsed dependency info : [] [] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (jds.bibliocraft.BiblioCraft) - loading
+[11:39:47] [Client thread/TRACE] [BiblioCraft/]: Parsed dependency info : [] [] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (journeymap.common.Journeymap) - loading
+[11:39:47] [Client thread/TRACE] [journeymap/]: Using mcmod dependency info : [Forge@[11.15.1.1722,)] [Forge@[11.15.1.1722,)] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [更多箱子]ironchest-1.8.9-6.0.125.770.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [更多箱子]ironchest-1.8.9-6.0.125.770.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (cpw.mods.ironchest.IronChest) - loading
+[11:39:47] [Client thread/TRACE] [IronChest/]: Parsed dependency info : [Forge@[11.15.0,12.0]] [Forge@[11.15.0,12.0]] []
+[11:39:47] [Client thread/DEBUG] [IronChest/]: Attempting to load the file version.properties from [更多箱子]ironchest-1.8.9-6.0.125.770.jar to locate a version number for IronChest
+[11:39:47] [Client thread/DEBUG] [IronChest/]: Found version 6.0.125.770 for mod IronChest in version.properties, using
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (crazypants.enderio.EnderIO) - loading
+[11:39:47] [Client thread/TRACE] [EnderIO/]: Parsed dependency info : [Forge@[11.15.1.1722,), endercore@[1.8.9-0.3.0.14-beta,)] [Forge@[11.15.1.1722,), endercore@[1.8.9-0.3.0.14-beta,), MineFactoryReloaded, Waila@[1.6.0-B3_1.8.8,), Thaumcraft, appliedenergistics2@[rv2-beta-8,), ComputerCraft|API@[1.79,)] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.enderio.core.EnderCore) - loading
+[11:39:47] [Client thread/TRACE] [endercore/]: Parsed dependency info : [] [ttCore] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [材质修复]TexFix+V-1.8.9-4.0.jar for potential mods
+[11:39:47] [Client thread/DEBUG] [FML/]: The mod container [材质修复]TexFix+V-1.8.9-4.0.jar appears to be missing an mcmod.info file
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (texFix.TextureFix) - loading
+[11:39:47] [Client thread/TRACE] [texfix/]: Parsed dependency info : [] [] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [泡沫修复]foamfix-0.6.3-law-1.8.x.jar for potential mods
+[11:39:47] [Client thread/DEBUG] [FML/]: The mod container [泡沫修复]foamfix-0.6.3-law-1.8.x.jar appears to be missing an mcmod.info file
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (pl.asie.foamfix.FoamFix) - loading
+[11:39:47] [Client thread/TRACE] [foamfix/]: Parsed dependency info : [] [] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.pam.harvestcraft.harvestcraft) - loading
+[11:39:47] [Client thread/TRACE] [harvestcraft/]: Parsed dependency info : [] [] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [苹果核]AppleCore-mc1.8.9-3.1.1.jar for potential mods
+[11:39:47] [Client thread/DEBUG] [FML/]: The mod container [苹果核]AppleCore-mc1.8.9-3.1.1.jar appears to be missing an mcmod.info file
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (squeek.applecore.AppleCore) - loading
+[11:39:47] [Client thread/TRACE] [AppleCore/]: Parsed dependency info : [Forge@[11.15.1.1802,)] [JEI@[2.26,), Forge@[11.15.1.1802,)] []
+[11:39:47] [Client thread/INFO] [AppleCore/]: Mod AppleCore is missing the required element 'name'. Substituting AppleCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [遗迹]Ruins-1.8.8.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [遗迹]Ruins-1.8.8.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (atomicstryker.ruins.common.RuinsMod) - loading
+[11:39:47] [Client thread/TRACE] [AS_Ruins/]: Parsed dependency info : [] [ExtraBiomes] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (com.mmyzd.nmsot.NoMobSpawningOnTrees) - loading
+[11:39:47] [Client thread/TRACE] [nmsot/]: Parsed dependency info : [] [] []
+[11:39:47] [Client thread/DEBUG] [nmsot/]: Attempting to load the file version.properties from [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar to locate a version number for nmsot
+[11:39:47] [Client thread/WARN] [nmsot/]: Mod nmsot is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.2.0-mc1.8.9
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [高亮显示]Waila-1.6.0-B3_1.8.8.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [高亮显示]Waila-1.6.0-B3_1.8.8.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mcp.mobius.waila.Waila) - loading
+[11:39:47] [Client thread/TRACE] [Waila/]: Parsed dependency info : [Forge@[11.15.0,)] [Forge@[11.15.0,)] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (squeek.wailaharvestability.ModWailaHarvestability) - loading
+[11:39:47] [Client thread/TRACE] [WailaHarvestability/]: Parsed dependency info : [] [TConstruct, ExtraTiC, TSteelworks, Mariculture] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining file [高亮显示]Wawla-1.8.9-1.1.4.171.jar for potential mods
+[11:39:47] [Client thread/TRACE] [FML/]: Located mcmod.info file in file [高亮显示]Wawla-1.8.9-1.1.4.171.jar
+[11:39:47] [Client thread/DEBUG] [FML/]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.darkhax.wawla.Wawla) - loading
+[11:39:47] [Client thread/TRACE] [wawla/]: Parsed dependency info : [Waila] [Waila] []
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining directory ic2 for potential mods
+[11:39:47] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory ic2
+[11:39:47] [Client thread/DEBUG] [FML/]: Examining directory resources for potential mods
+[11:39:47] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory resources
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.generic
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.jungle
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.badlands
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.beach
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.desert
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.forest
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.frozenocean
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.generic
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.jungle
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.ocean
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.plains
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.river
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.sky
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.obsolete.snow forest
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.ocean
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.optional
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.optional.generic
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.optional.nether
+[11:39:47] [Client thread/TRACE] [FML/]: Recursing into package ruins.templateparser
+[11:39:47] [Client thread/INFO] [FML/]: Forge Mod Loader has identified 43 mods to load
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.core (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.transmission.tile (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mods.battlegear2.api.core (owned by battlegear2 providing BattlePlayer) embedded in battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.network (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.fuels (owned by BuildCraftAPI|core providing BuildCraftAPI|fuels) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.world (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.crops (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.event (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API team.chisel.api.carving (owned by Chisel providing ChiselAPI|Carving) embedded in chisel
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.lists (owned by BuildCraftAPI|core providing BuildCraftAPI|lists) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.transmission.grid (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.energy.tile (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.util (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.energy (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.event.oxygen (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.robots (owned by BuildCraftAPI|core providing BuildCraftAPI|robotics) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.event.client (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API journeymap.client.api.util (owned by journeymap providing journeymap|client-api-util) embedded in journeymap
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.recipe (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.events (owned by BuildCraftAPI|core providing BuildCraftAPI|events) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API crazypants.enderio.api.teleport (owned by EnderIO providing EnderIOAPI|Teleport) embedded in EnderIO
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.transmission (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mcp.mobius.waila.api (owned by Waila providing WailaAPI) embedded in Waila
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API crazypants.enderio.api (owned by EnderIO providing EnderIOAPI) embedded in EnderIO
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.crops (owned by BuildCraftAPI|Core providing BuildCraftAPI|crops) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.filler (owned by BuildCraftAPI|core providing BuildCraftAPI|filler) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API journeymap.client.api.display (owned by journeymap providing journeymap|client-api-display) embedded in journeymap
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mezz.jei.api (owned by JEI providing JustEnoughItemsAPI) embedded in JEI
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.item (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.power (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API journeymap.client.api (owned by journeymap providing journeymap|client-api) embedded in journeymap
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.info (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.entity (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API journeymap.client.api.event (owned by journeymap providing journeymap|client-api-event) embedded in journeymap
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.power (owned by BuildCraftAPI|core providing BuildCraftAPI|power) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.tile (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mods.battlegear2.api (owned by battlegear2 providing DualWield) embedded in battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.facades (owned by BuildCraftAPI|core providing BuildCraftAPI|facades) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API crazypants.enderio.api.redstone (owned by EnderIO providing EnderIOAPI|Redstone) embedded in EnderIO
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.prefab.world.gen (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.recipe (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.library (owned by BuildCraftAPI|core providing BuildCraftAPI|library) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API crazypants.enderio.api.tool (owned by EnderIO providing EnderIOAPI|Tools) embedded in EnderIO
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.energy.prefab (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in EnderIO
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.item (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api (owned by BuildCraft|Core providing BuildCraftAPI|core) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api.energy (owned by CoFHAPI providing CoFHAPI|energy) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.prefab.core (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.transport (owned by BuildCraftAPI|core providing BuildCraftAPI|transport) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mods.battlegear2.api.shield (owned by battlegear2 providing Shield) embedded in battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.gates (owned by BuildCraftAPI|core providing BuildCraftAPI|gates) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.block (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.recipes (owned by BuildCraftAPI|core providing BuildCraftAPI|recipes) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.event.wgen (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API cofh.api (owned by CoFHLib providing CoFHAPI) embedded in EnderIO
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.tile (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.prefab (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.vector (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tiles (owned by BuildCraftAPI|core providing BuildCraftAPI|tiles) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mods.battlegear2.api.heraldry (owned by battlegear2 providing Heraldry) embedded in battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API journeymap.client.api.model (owned by journeymap providing journeymap|client-api-model) embedded in journeymap
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.statements (owned by BuildCraftAPI|core providing BuildCraftAPI|statements) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.reactor (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mods.battlegear2.api.quiver (owned by battlegear2 providing Quiver) embedded in battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tools (owned by BuildCraftAPI|core providing BuildCraftAPI|tools) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.prefab.entity (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API team.chisel.api (owned by chisel providing ChiselAPI) embedded in chisel
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.enums (owned by BuildCraftAPI|core providing BuildCraftAPI|enums) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API squeek.applecore.api (owned by AppleCore providing AppleCoreAPI) embedded in AppleCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API micdoodle8.mods.galacticraft.api.galaxies (owned by GalacticraftCore providing Galacticraft API) embedded in GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blocks (owned by BuildCraftAPI|core providing BuildCraftAPI|blocks) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API mods.battlegear2.api.weapons (owned by battlegear2 providing Weapons) embedded in battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.boards (owned by BuildCraftAPI|core providing BuildCraftAPI|boards) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.tablet (owned by BuildCraftAPI|core providing BuildCraftAPI|tablet) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/WARN] [FML/]: * The API IC2API from source E:\1.8.9\.minecraft\mods\[IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar is loaded from an incompatible classloader. THIS WILL NOT WORK!
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager$APIContainer.validate(ModAPIManager.java:94)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.registerDataTableAndParseAPI(ModAPIManager.java:154)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.ModAPIManager.manageAPI(ModAPIManager.java:212)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:489)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+[11:39:47] [Client thread/WARN] [FML/]: *  at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:417)...
+[11:39:47] [Client thread/WARN] [FML/]: ****************************************
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API ic2.api.energy.event (owned by IC2 providing IC2API) embedded in IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.items (owned by BuildCraftAPI|core providing BuildCraftAPI|items) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Transport
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found API buildcraft.api.blueprints (owned by BuildCraftAPI|core providing BuildCraftAPI|blueprints) embedded in BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API AppleCoreAPI: owner: AppleCore, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent CoFHLib from APIContainer{CoFHAPI|energy:1.8.9R1.2.0B1}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API CoFHAPI|energy: owner: CoFHAPI, dependents: [EnderIO, BuildCraft|Core, BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Shield: owner: battlegear2, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Quiver: owner: battlegear2, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API WailaAPI: owner: Waila, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API CoFHAPI: owner: CoFHLib, dependents: [BuildCraft|Core, BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders, EnderIO]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API EnderIOAPI|Teleport: owner: EnderIO, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|blocks:1.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|blocks: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API EnderIOAPI|Redstone: owner: EnderIO, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API EnderIOAPI|Tools: owner: EnderIO, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|tablet:1.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|tablet: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API ChiselAPI|Carving: owner: Chisel, dependents: [chisel]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|tools:1.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|tools: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Weapons: owner: battlegear2, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API DualWield: owner: battlegear2, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|events:2.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|events: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|library:2.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|library: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|items:1.1}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|items: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|blueprints:1.5}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|blueprints: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|boards:2.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|boards: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API EnderIOAPI: owner: EnderIO, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|recipes:3.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|recipes: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|core: owner: BuildCraft|Core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|robotics:3.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|robotics: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|tiles:1.2}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|tiles: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|lists:1.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|lists: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|gates:4.1}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|gates: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API JustEnoughItemsAPI: owner: JEI, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|transport:5.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|transport: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API journeymap|client-api-display: owner: journeymap, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|statements:1.1}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|statements: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|crops: owner: BuildCraftAPI|Core, dependents: [BuildCraft|Core, BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Galacticraft API: owner: GalacticraftCore, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BattlePlayer: owner: battlegear2, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|power:1.3}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|power: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|facades:1.1}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|facades: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API Heraldry: owner: battlegear2, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API journeymap|client-api-model: owner: journeymap, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API ChiselAPI: owner: chisel, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API journeymap|client-api: owner: journeymap, dependents: []
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API journeymap|client-api-event: owner: journeymap, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|fuels:2.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|fuels: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API journeymap|client-api-util: owner: journeymap, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|filler:4.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|filler: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API IC2API: owner: IC2, dependents: []
+[11:39:47] [Client thread/TRACE] [FML/]: Removing upstream parent BuildCraft|Core from APIContainer{BuildCraftAPI|enums:1.0}
+[11:39:47] [Client thread/DEBUG] [FML/]: Creating API container dummy for API BuildCraftAPI|enums: owner: BuildCraftAPI|core, dependents: [BuildCraft|Transport, BuildCraft|Factory, BuildCraft|Silicon, BuildCraft|Robotics, BuildCraft|Energy, BuildCraft|Builders]
+[11:39:47] [Client thread/TRACE] [FML/]: Received a system property request ''
+[11:39:47] [Client thread/TRACE] [FML/]: System property request managing the state of 0 mods
+[11:39:47] [Client thread/DEBUG] [FML/]: After merging, found state information for 0 mods
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in forge-1.8.9-11.15.1.2318-1.8.9.jar [af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_US, es_ES, fa_IR, fi_FI, fr_FR, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in forge-1.8.9-11.15.1.2318-1.8.9.jar [af_ZA, ar_SA, br_FR, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_US, es_ES, fa_IR, fi_FI, fr_FR, he_IL, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nb_NO, nl_NL, nn_NO, no_NO, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sl_SI, sr_SP, sv_SE, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Core/]: Enabling mod BuildCraft|Core
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Transport/]: Enabling mod BuildCraft|Transport
+[11:39:47] [VersionCheck/INFO] [Config/]: [OptiFine] Version found: I7
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Factory/]: Enabling mod BuildCraft|Factory
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Silicon/]: Enabling mod BuildCraft|Silicon
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Robotics/]: Enabling mod BuildCraft|Robotics
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Energy/]: Enabling mod BuildCraft|Energy
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Builders/]: Enabling mod BuildCraft|Builders
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC]buildcraft-7.2.8.jar [es_AR, ru_RU, es_MX, lt_LT, sk_SK, fr_FR, sr_SP, es_ES, pt_PT, pl_PL, cs_CZ, tr_TR, et_EE, hr_HR, fr_CA, en_US, zh_TW, no_NO, ko_KR, ja_JP, da_DK, pt_BR, nl_NL, hu_HU, es_VE, zh_CN, de_DE, fi_FI, it_IT, sv_SE, es_UY]
+[11:39:47] [Client thread/DEBUG] [BuildCraft|Compat/]: Enabling mod BuildCraft|Compat
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [BC扩展]buildcraft-compat-7.2.1.jar [de_DE, en_US, zh_CN, fr_FR, pt_BR, ko_KR, uk_UA, ru_RU]
+[11:39:47] [Client thread/DEBUG] [cookingforblockheads/]: Enabling mod cookingforblockheads
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar [en_US, pt_BR, zh_CN]
+[11:39:47] [Client thread/DEBUG] [GalacticraftPlanets/]: Enabling mod GalacticraftPlanets
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar [cs_CZ, cy_GB, de_DE, en_GB, en_US, es_ES, fi_FI, fr_CA, fr_FR, hr_HR, hu_HU, it_IT, ja_JP, ko_KR, nl_NL, pl_PL, pt_BR, pt_PT, ru_RU, sv_SE, th_TH, tr_TR, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [craftguide/]: Enabling mod craftguide
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar [en_US, fr_CA, fr_FR, pt_BR, ru_RU, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [IC2/]: Enabling mod IC2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar [en_IC]
+[11:39:47] [Client thread/DEBUG] [JEI/]: Enabling mod JEI
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar [de_DE, en_US, fi_FI, ko_KR, ru_RU, zh_CN]
+[11:39:47] [Client thread/DEBUG] [inventorytweaks/]: Enabling mod inventorytweaks
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [R键整理]InventoryTweaks-1.60-40-1.8.9.jar [cs_CZ, da_DK, de_DE, en_US, es_ES, et_EE, fr_CA, fr_FR, hu_HU, it_IT, ja_JP, ko_KR, lt_LT, nl_NL, no_NO, pl_PL, pt_BR, pt_PT, ru_RU, sl_SI, sv_SE, tr_TR, uk_UA, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [treecapitator/]: Enabling mod treecapitator
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar [en_US, pl_PL]
+[11:39:47] [Client thread/DEBUG] [torohealthmod/]: Enabling mod torohealthmod
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [伤害显示]torohealth-1.8.9-7.jar [en_US]
+[11:39:47] [Client thread/DEBUG] [chisel/]: Enabling mod chisel
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [凿子]Chisel-MC1.8.9-0.0.2.6.jar [en_US]
+[11:39:47] [Client thread/DEBUG] [bspkrsCore/]: Enabling mod bspkrsCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [前置][1.8]bspkrsCore-universal-7.01.jar [en_US, cs_CZ, fr_CA, pl_PL, de_DE, ru_RU]
+[11:39:47] [Client thread/DEBUG] [GalacticraftCore/]: Enabling mod GalacticraftCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [前置]GalacticraftCore-1.8.9-4.0.2.190.jar [cs_CZ, cy_GB, de_DE, en_GB, en_US, es_ES, fi_FI, fr_CA, fr_FR, hr_HR, hu_HU, it_IT, ja_JP, ko_KR, nl_NL, pl_PL, pt_BR, pt_PT, ru_RU, sv_SE, th_TH, tr_TR, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [recipehandler/]: Enabling mod recipehandler
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar [en_US, ru_RU]
+[11:39:47] [Client thread/DEBUG] [netherportalfix/]: Enabling mod netherportalfix
+[11:39:47] [Client thread/DEBUG] [cfm/]: Enabling mod cfm
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar [de_DE, en_US, es_AR, es_ES, nl_NL, pt_BR, ro_RO, ru_RU, zh_CN]
+[11:39:47] [Client thread/DEBUG] [flammpfeil.slashblade/]: Enabling mod flammpfeil.slashblade
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [拔刀剑]SlashBlade-mc1.8.9-r11.jar [en_US, ja_JP, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [battlegear2/]: Enabling mod battlegear2
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar [cs_CZ, de_DE, en_GB, en_PT, en_US, es_ES, fr_FR, ko_KR, pl_PL, pt_BR, ru_RU, zh_CN, zh_TW, cs_CZ, de_DE, en_US, fr_FR, zh_CN]
+[11:39:47] [Client thread/DEBUG] [BiblioCraft/]: Enabling mod BiblioCraft
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar [ar_SA, bg_BG, cs_CZ, da_DK, de_DE, en_US, es_AR, es_ES, es_MX, es_UY, fi_FI, fr_CA, fr_FR, gr_EL, it_IT, ko_KR, lt_LT, lv_LV, nl_NL, no_NO, pl_PL, pt_BR, pt_PT, ru_RU, sv_SE, tr_TR, zh_CN, zh_HK, zh_TW]
+[11:39:47] [Client thread/DEBUG] [journeymap/]: Enabling mod journeymap
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar [ar_SA, ca_ES, de_DE, en_US, es_ES, fi_FI, fr_CA, fr_FR, hu_HU, ja_JP, ko_KR, nl_NL, no_NO, pt_BR, ru_RU, sv_SE, zh_CN]
+[11:39:47] [Client thread/DEBUG] [IronChest/]: Enabling mod IronChest
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [更多箱子]ironchest-1.8.9-6.0.125.770.jar [sv_SE, pl_PL, da_DK, en_US, et_EE, cs_CZ, pt_BR, en_PT, tr_TR, es_ES, fr_FR, ru_RU, nb_NO, el_GR, de_DE, zh_TW, it_IT, ko_KR, pt_PT, zh_CN, nl_NL]
+[11:39:47] [Client thread/DEBUG] [EnderIO/]: Enabling mod EnderIO
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar [zh_TW, es_ES, ru_RU, es_MX, pt_PT, ko_KR, es_UY, es_VE, de_DE, pt_BR, fr_FR, en_US, zh_CN, cs_CZ, pl_PL, es_AR]
+[11:39:47] [Client thread/DEBUG] [endercore/]: Enabling mod endercore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar [zh_TW, ru_RU, pt_PT, ko_KR, de_DE, pt_BR, fr_FR, en_US, zh_CN, cs_CZ]
+[11:39:47] [Client thread/DEBUG] [texfix/]: Enabling mod texfix
+[11:39:47] [Client thread/DEBUG] [foamfix/]: Enabling mod foamfix
+[11:39:47] [Client thread/DEBUG] [harvestcraft/]: Enabling mod harvestcraft
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar [en_US]
+[11:39:47] [Client thread/DEBUG] [AppleCore/]: Enabling mod AppleCore
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [苹果核]AppleCore-mc1.8.9-3.1.1.jar [de_DE, en_US, pl_PL, ru_RU, zh_CN, zh_TW]
+[11:39:47] [Client thread/DEBUG] [AS_Ruins/]: Enabling mod AS_Ruins
+[11:39:47] [Client thread/DEBUG] [nmsot/]: Enabling mod nmsot
+[11:39:47] [Client thread/DEBUG] [Waila/]: Enabling mod Waila
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [高亮显示]Waila-1.6.0-B3_1.8.8.jar [fr_FR, de_DE, et_EE, cs_CZ, zh_CN, ru_RU, nl_NL, it_IT, en_US]
+[11:39:47] [Client thread/DEBUG] [WailaHarvestability/]: Enabling mod WailaHarvestability
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar [cs_CZ, de_DE, en_US, es_ES, fr_FR, it_IT, ko_KR, pt_PT, ru_RU, zh_CN]
+[11:39:47] [Client thread/DEBUG] [wawla/]: Enabling mod wawla
+[11:39:47] [Client thread/DEBUG] [FML/]: Found translations in [高亮显示]Wawla-1.8.9-1.1.4.171.jar [en_US, zh_CN, ru_RU, es_MX]
+[11:39:47] [Client thread/TRACE] [FML/]: Verifying mod requirements are satisfied
+[11:39:47] [Client thread/ERROR] [FML/]: The mod treecapitator (TreeCapitator) requires mods [bspkrscore] to be available
+[11:39:47] [Client thread/ERROR] [FML/]: Mod treecapitator (TreeCapitator) requires [bspkrscore@[1.8.9.2,)]
+[11:39:47] [Client thread/DEBUG] [FML/]: Mod sorting data
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Core(BuildCraft:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:Forge@[11.15.1.1764,11.16))
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Transport(BC Transport:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:BuildCraft|Core@7.2.8)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Factory(BC Factory:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:BuildCraft|Core@7.2.8;after:BuildCraft|Energy)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Silicon(BC Silicon:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:BuildCraft|Core@7.2.8)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Robotics(BC Robotics:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:BuildCraft|Transport@7.2.8)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Energy(BC Energy:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:BuildCraft|Core@7.2.8)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Builders(BC Builders:7.2.8): [BC]buildcraft-7.2.8.jar (required-after:BuildCraft|Core@7.2.8)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BuildCraft|Compat(BuildCraft Compat:7.2.1): [BC扩展]buildcraft-compat-7.2.1.jar (required-after:Forge@[11.15.1.1764,);required-after:BuildCraft|Core;after:BuildCraft|Transport;after:BuildCraft|Builders;after:IronChest)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	cookingforblockheads(Cooking for Blockheads:2.0.2): [CB]懒人厨房CookingForBlockheads-mc1.8.9-2.0.2.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	GalacticraftPlanets(Galacticraft Planets:4.0.2.190): [GC]星系Galacticraft-Planets-1.8.9-4.0.2.190.jar (required-after:GalacticraftCore;)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	craftguide(CraftGuide:1.7.1.0): [G键合成]CraftGuide-1.7.1.0-1.8.9-forge.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	IC2(IndustrialCraft 2:2.3.262-ex18): [IC2]工业时代2industrialcraft-2-2.3.262-ex18.jar (required-after:Forge@[11.15.1.1757,))
+[11:39:47] [Client thread/DEBUG] [FML/]: 	JEI(Just Enough Items:2.28.18.187): [JEI]JEI物品管理器jei_1.8.9-2.28.18.187.jar (required-after:Forge@[11.15.1.1808,);)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	inventorytweaks(Inventory Tweaks:1.60-40-e06e29a): [R键整理]InventoryTweaks-1.60-40-1.8.9.jar (required-after:Forge@[11.14.4,))
+[11:39:47] [Client thread/DEBUG] [FML/]: 	treecapitator(TreeCapitator:1.8.9.2): [一键砍树][1.8.9]TreeCapitator-client-1.8.9.2.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	torohealthmod(ToroHealth Damage Indicators:1.8.9-7): [伤害显示]torohealth-1.8.9-7.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	chisel(Chisel:@VERSION@): [凿子]Chisel-MC1.8.9-0.0.2.6.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	bspkrsCore(bspkrsCore:7.01): [前置][1.8]bspkrsCore-universal-7.01.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	GalacticraftCore(Galacticraft Core:4.0.2.190): [前置]GalacticraftCore-1.8.9-4.0.2.190.jar (required-after:Forge@[11.15.1.1764,); required-after:FML@[8.0.99.99,); required-after:Micdoodlecore; after:IC2; after:TConstruct; after:Mantle; after:MekanismAPI|gas)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	recipehandler(NoMoreRecipeConflict:0.3): [合成冲突消除]NoMoreRecipeConflict-0.3(1.8.X).jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	netherportalfix(Nether Portal Fix:1.0): [地狱传送修复]netherportalfix-mc1.8.9-2.1.6.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	cfm(MrCrayfish's Furniture Mod:3.6): [家具]MrCrayfishFurntiureModv3.6.1(1.8.9).jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	flammpfeil.slashblade(SlashBlade:mc1.8.9-r11): [拔刀剑]SlashBlade-mc1.8.9-r11.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	battlegear2(Mine & Blade Battlegear 2 - Bullseye:1.8.9): [挖矿与砍杀双持与战备2]1.8.9-MB_Battlegear2-Bullseye-1.0.10.2.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	BiblioCraft(BiblioCraft:2.0.1): [收藏馆]BiblioCraft[v2.0.1][MC1.8.9].jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	journeymap(JourneyMap:1.8.9-5.2.4): [旅行地图]journeymap-1.8.9-5.2.4-unlimited.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	IronChest(Iron Chest:6.0.125.770): [更多箱子]ironchest-1.8.9-6.0.125.770.jar (required-after:Forge@[11.15.0,12.0])
+[11:39:47] [Client thread/DEBUG] [FML/]: 	EnderIO(Ender IO:1.8.9-3.0.0.26_alpha): [末影接口]EnderIO-1.8.9-3.0.0.26_alpha-1.8.9.jar (required-after:Forge@[11.15.1.1722,);required-after:endercore@[1.8.9-0.3.0.14-beta,);after:MineFactoryReloaded;after:Waila@[1.6.0-B3_1.8.8,);after:Thaumcraft;after:appliedenergistics2@[rv2-beta-8,);after:ComputerCraft|API@[1.79,))
+[11:39:47] [Client thread/DEBUG] [FML/]: 	endercore(EnderCore:1.8.9-0.3.0.14-beta): [末影核心]EnderCore-1.8.9-0.3.0.14-beta-1.8.9.jar (after:ttCore)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	texfix(TextureFix:4.0): [材质修复]TexFix+V-1.8.9-4.0.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	foamfix(FoamFix:@VERSION@): [泡沫修复]foamfix-0.6.3-law-1.8.x.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	harvestcraft(Pam's HarvestCraft:1.8.9d): [潘马斯农场]Pam's+HarvestCraft+1.8.9e.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	AppleCore(AppleCore:3.1.1): [苹果核]AppleCore-mc1.8.9-3.1.1.jar (after:JEI@[2.26,); required-after:Forge@[11.15.1.1802,))
+[11:39:47] [Client thread/DEBUG] [FML/]: 	AS_Ruins(Ruins Spawning System:15.6): [遗迹]Ruins-1.8.8.jar (after:ExtraBiomes)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	nmsot(No Mob Spawning on Trees:1.2.0-mc1.8.9): [防止怪物树上生成]NoMobSpawningOnTrees-1.2.0-mc1.8.9.jar ()
+[11:39:47] [Client thread/DEBUG] [FML/]: 	Waila(Waila:1.6.0): [高亮显示]Waila-1.6.0-B3_1.8.8.jar (required-after:Forge@[11.15.0,))
+[11:39:47] [Client thread/DEBUG] [FML/]: 	WailaHarvestability(Waila Harvestability:1.1.7): [高亮显示]WailaHarvestability-mc1.8.x-1.1.7.jar (after:TConstruct;after:ExtraTiC;after:TSteelworks;after:Mariculture)
+[11:39:47] [Client thread/DEBUG] [FML/]: 	wawla(What Are We Looking At:1.1.4.168): [高亮显示]Wawla-1.8.9-1.1.4.171.jar (required-after:Waila)
+[11:39:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Default took 0.004s
+[11:39:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Forge Mod Loader took 0.002s
+[11:39:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Minecraft Forge took 0.001s
+[11:39:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BuildCraft took 0.004s
+[11:39:47] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BC Transport took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BC Factory took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BC Silicon took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BC Robotics took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BC Energy took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BC Builders took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BuildCraft Compat took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Cooking for Blockheads took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Galacticraft Planets took 0.002s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:CraftGuide took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:IndustrialCraft 2 took 0.005s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Just Enough Items took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Inventory Tweaks took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:TreeCapitator took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:ToroHealth Damage Indicators took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Chisel took 0.005s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:bspkrsCore took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Galacticraft Core took 0.003s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:NoMoreRecipeConflict took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Nether Portal Fix took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:MrCrayfish's Furniture Mod took 0.002s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:SlashBlade took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Mine & Blade Battlegear 2 - Bullseye took 0.002s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:BiblioCraft took 0.002s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:JourneyMap took 0.002s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Iron Chest took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Ender IO took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:EnderCore took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:TextureFix took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:FoamFix took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Pam's HarvestCraft took 0.007s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:AppleCore took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Ruins Spawning System took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:No Mob Spawning on Trees took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Waila took 0.001s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:Waila Harvestability took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - FMLFileResourcePack:What Are We Looking At took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Reloading took 0.042s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Loading Resources - Reloading listeners took 0.042s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resources took 0.120s
+[11:39:48] [Client thread/DEBUG] [Forge Mod Loader/]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Minecraft Forge/]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BuildCraft/]: Mod BuildCraft is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BC Transport/]: Mod BC Transport is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BC Factory/]: Mod BC Factory is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BC Silicon/]: Mod BC Silicon is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BC Robotics/]: Mod BC Robotics is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BC Energy/]: Mod BC Energy is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BC Builders/]: Mod BC Builders is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [BuildCraft Compat/]: Mod BuildCraft Compat is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Cooking for Blockheads/]: Mod Cooking for Blockheads is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Galacticraft Planets/]: Mod Galacticraft Planets is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Just Enough Items/]: Mod Just Enough Items is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [TreeCapitator/]: Mod TreeCapitator is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [ToroHealth Damage Indicators/]: Mod ToroHealth Damage Indicators is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Chisel/]: Mod Chisel is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [bspkrsCore/]: Mod bspkrsCore is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Galacticraft Core/]: Mod Galacticraft Core is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Nether Portal Fix/]: Mod Nether Portal Fix is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [MrCrayfish's Furniture Mod/]: Mod MrCrayfish's Furniture Mod is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [SlashBlade/]: Mod SlashBlade is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [JourneyMap/]: Mod JourneyMap is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Iron Chest/]: Mod Iron Chest is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [TextureFix/]: Mod TextureFix is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [FoamFix/]: Mod FoamFix is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Pam's HarvestCraft/]: Mod Pam's HarvestCraft is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [AppleCore/]: Mod AppleCore is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Ruins Spawning System/]: Mod Ruins Spawning System is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [No Mob Spawning on Trees/]: Mod No Mob Spawning on Trees is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Waila/]: Mod Waila is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/DEBUG] [Waila Harvestability/]: Mod Waila Harvestability is missing a pack.mcmeta file, substituting a dummy one
+[11:39:48] [Client thread/WARN] [FML/]: There were errors previously. Not beginning mod initialization phase
+[11:39:48] [Client thread/INFO] [Config/]: [OptiFine] *** Reloading textures ***
+[11:39:48] [Client thread/INFO] [Config/]: [OptiFine] Resource packs: Default
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureManager took 0.002s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - SoundHandler took 0.319s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.005s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FontRenderer took 0.004s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - GrassColorReloadListener took 0.005s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - FoliageColorReloadListener took 0.006s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - GL Setup took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Texture Map took 0.005s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - B3DLoader took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - OBJLoader took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelFluid$FluidLoader took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ItemLayerModel$Loader took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - MultiLayerModel$Loader took 0.000s
+[11:39:48] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelDynBucket$LoaderDynBucket took 0.000s
+[11:39:48] [Client thread/INFO] [BetterFps/]: Patching Minecraft using Riven's "Half" Algorithm
+[11:39:49] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: blocks took 0.934s
+[11:39:49] [Client thread/DEBUG] [FML/]: Bar Finished: ModelLoader: items took 0.218s
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] Mipmap levels: 4
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] Multitexture: false
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_gray.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_pane_gray.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glass.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glasspane.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] Multipass connected textures: false
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[11:39:50] [Client thread/INFO] [Config/]: [OptiFine] Animated sprites: 0
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - ModelManager took 1.815s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Model Manager took 1.822s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderItem took 0.002s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Item Renderer took 0.112s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - EntityRenderer took 0.000s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - BlockRendererDispatcher took 0.000s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - RenderGlobal took 0.000s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Step: Rendering Setup - Loading Entity Renderer took 0.338s
+[11:39:50] [Client thread/DEBUG] [FML/]: Bar Finished: Rendering Setup took 2.277s
+[11:39:51] [Client thread/INFO] [Config/]: [OptiFine] *** Reloading custom textures ***
+[11:39:51] [Client thread/INFO] [Config/]: [OptiFine] Enable face culling: acacia_leaves, birch_leaves, dark_oak_leaves, jungle_leaves, oak_leaves, spruce_leaves
+[11:39:51] [Client thread/DEBUG] [FML/]: Bar Finished: Loading Resource - TextureUtils$1 took 0.110s
