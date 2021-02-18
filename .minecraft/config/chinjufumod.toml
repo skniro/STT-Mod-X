@@ -1,0 +1,66 @@
+
+["Anti Shadow"]
+
+	["Anti Shadow".config]
+		#Erase the shadow of the sliding door by light value 1.
+		antiShadow = true
+
+["About explosion"]
+
+	["About explosion".config]
+
+		["About explosion".config.blastblockbreak]
+			#Break blocks with ammunition blast is true.
+			enabled = true
+
+["About biome"]
+
+	["About biome".config]
+
+		["About biome".config.cherrybiome]
+			#Common=10, Rare=1, Default=2
+			#Range: 1 ~ 10
+			chance = 2
+			#Register CherryBiome when this setting is true.
+			register = true
+
+		["About biome".config.ginkgobiome]
+			#Common=10, Rare=1, Default=2
+			#Range: 1 ~ 10
+			chance = 2
+			#Register GinkgoBiome when this setting is true.
+			register = true
+
+		["About biome".config.acerbiome]
+			#Common=10, Rare=1, Default=2
+			#Range: 1 ~ 10
+			chance = 2
+			#Register AcerBiome when this setting is true.
+			register = true
+
+		["About biome".config.ginkgotree]
+			#Common=0.9, Rare=0.1, Default=0.2
+			#Range: 0.1 ~ 0.9
+			chance = 0.2
+
+		["About biome".config.acertree]
+			#Common=0.9, Rare=0., Default=0.3
+			#Range: 0.1 ~ 0.9
+			chance = 0.3
+
+		["About biome".config.cherrytree]
+			#Common=0.9, Rare=0.1, Default=0.2
+			#Range: 0.1 ~ 0.9
+			chance = 0.2
+
+["About ore Generation"]
+
+	["About ore Generation".config]
+
+		["About ore Generation".config.bauxiteore]
+			#RedStone Ore=8, Gold Ore=2, Diamond Ore=1
+			#Range: 1 ~ 100
+			chance = 8
+			#BauxiteOre will be generated when this setting is true.
+			enabledGenerator = true
+
