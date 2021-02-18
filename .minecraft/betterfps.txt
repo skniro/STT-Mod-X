@@ -1,3 +1,0 @@
-#BetterFps Config
-#Sun Jul 26 14:42:10 CST 2020
-algorithm=rivens-half

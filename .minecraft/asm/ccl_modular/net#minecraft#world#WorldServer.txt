@@ -1,0 +1,5338 @@
+// class version 50.0 (50)
+// access flags 0x21
+public class net/minecraft/world/WorldServer extends net/minecraft/world/World  implements net/minecraft/util/IThreadListener  {
+
+  // compiled from: WorldServer.java
+  // access flags 0x8
+  static INNERCLASS net/minecraft/world/WorldServer$ServerBlockEventList net/minecraft/world/WorldServer a
+  // access flags 0x0
+  INNERCLASS net/minecraft/world/WorldServer$1 null null
+  // access flags 0x9
+  public static INNERCLASS net/minecraft/world/biome/Biome$SpawnListEntry net/minecraft/world/biome/Biome c
+  // access flags 0x9
+  public static INNERCLASS net/minecraft/util/math/BlockPos$MutableBlockPos net/minecraft/util/math/BlockPos a
+  // access flags 0x19
+  public final static INNERCLASS net/minecraft/util/math/BlockPos$PooledMutableBlockPos net/minecraft/util/math/BlockPos b
+  // access flags 0x9
+  public static INNERCLASS net/minecraftforge/event/world/WorldEvent$Save net/minecraftforge/event/world/WorldEvent Save
+  // access flags 0x9
+  public static INNERCLASS net/minecraft/util/WeightedRandom$Item net/minecraft/util/WeightedRandom a
+
+  // access flags 0x1A
+  private final static Lorg/apache/logging/log4j/Logger; field_147491_a
+
+  // access flags 0x12
+  private final Lnet/minecraft/server/MinecraftServer; field_73061_a
+
+  // access flags 0x12
+  private final Lnet/minecraft/entity/EntityTracker; field_73062_L
+
+  // access flags 0x12
+  private final Lnet/minecraft/server/management/PlayerChunkMap; field_73063_M
+
+  // access flags 0x12
+  // signature Ljava/util/Set<Lnet/minecraft/world/NextTickListEntry;>;
+  // declaration: java.util.Set<net.minecraft.world.NextTickListEntry>
+  private final Ljava/util/Set; field_73064_N
+
+  // access flags 0x12
+  // signature Ljava/util/TreeSet<Lnet/minecraft/world/NextTickListEntry;>;
+  // declaration: java.util.TreeSet<net.minecraft.world.NextTickListEntry>
+  private final Ljava/util/TreeSet; field_73065_O
+
+  // access flags 0x12
+  // signature Ljava/util/Map<Ljava/util/UUID;Lnet/minecraft/entity/Entity;>;
+  // declaration: java.util.Map<java.util.UUID, net.minecraft.entity.Entity>
+  private final Ljava/util/Map; field_175741_N
+
+  // access flags 0x1
+  public Z field_73058_d
+
+  // access flags 0x1
+  public Z field_73068_P
+
+  // access flags 0x2
+  private I field_80004_Q
+
+  // access flags 0x1
+  public Lnet/minecraft/world/Teleporter; field_85177_Q
+
+  // access flags 0x12
+  private final Lnet/minecraft/world/WorldEntitySpawner; field_175742_R
+
+  // access flags 0x14
+  protected final Lnet/minecraft/village/VillageSiege; field_175740_d
+
+  // access flags 0x12
+  private final [Lnet/minecraft/world/WorldServer$ServerBlockEventList; field_147490_S
+
+  // access flags 0x2
+  private I field_147489_T
+
+  // access flags 0x12
+  // signature Ljava/util/List<Lnet/minecraft/world/NextTickListEntry;>;
+  // declaration: java.util.List<net.minecraft.world.NextTickListEntry>
+  private final Ljava/util/List; field_94579_S
+
+  // access flags 0x4
+  // signature Ljava/util/Set<Lnet/minecraft/util/math/ChunkPos;>;
+  // declaration: java.util.Set<net.minecraft.util.math.ChunkPos>
+  protected Ljava/util/Set; doneChunks
+
+  // access flags 0x1
+  // signature Ljava/util/List<Lnet/minecraft/world/Teleporter;>;
+  // declaration: java.util.List<net.minecraft.world.Teleporter>
+  public Ljava/util/List; customTeleporters
+
+  // access flags 0x1
+  public <init>(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/storage/ISaveHandler;Lnet/minecraft/world/storage/WorldInfo;ILnet/minecraft/profiler/Profiler;)V
+   L0
+    LINENUMBER 107 L0
+    ALOAD 0
+    ALOAD 2
+    ALOAD 3
+    ILOAD 4
+    INVOKESTATIC net/minecraftforge/common/DimensionManager.createProviderFor (I)Lnet/minecraft/world/WorldProvider;
+    ALOAD 5
+    ICONST_0
+    INVOKESPECIAL net/minecraft/world/World.<init> (Lnet/minecraft/world/storage/ISaveHandler;Lnet/minecraft/world/storage/WorldInfo;Lnet/minecraft/world/WorldProvider;Lnet/minecraft/profiler/Profiler;Z)V
+   L1
+    LINENUMBER 88 L1
+    ALOAD 0
+    INVOKESTATIC com/google/common/collect/Sets.newHashSet ()Ljava/util/HashSet;
+    PUTFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+   L2
+    LINENUMBER 89 L2
+    ALOAD 0
+    NEW java/util/TreeSet
+    DUP
+    INVOKESPECIAL java/util/TreeSet.<init> ()V
+    PUTFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+   L3
+    LINENUMBER 90 L3
+    ALOAD 0
+    INVOKESTATIC com/google/common/collect/Maps.newHashMap ()Ljava/util/HashMap;
+    PUTFIELD net/minecraft/world/WorldServer.field_175741_N : Ljava/util/Map;
+   L4
+    LINENUMBER 95 L4
+    ALOAD 0
+    NEW net/minecraft/world/WorldEntitySpawner
+    DUP
+    INVOKESPECIAL net/minecraft/world/WorldEntitySpawner.<init> ()V
+    PUTFIELD net/minecraft/world/WorldServer.field_175742_R : Lnet/minecraft/world/WorldEntitySpawner;
+   L5
+    LINENUMBER 96 L5
+    ALOAD 0
+    NEW net/minecraft/village/VillageSiege
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/village/VillageSiege.<init> (Lnet/minecraft/world/World;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_175740_d : Lnet/minecraft/village/VillageSiege;
+   L6
+    LINENUMBER 97 L6
+    ALOAD 0
+    ICONST_2
+    ANEWARRAY net/minecraft/world/WorldServer$ServerBlockEventList
+    DUP
+    ICONST_0
+    NEW net/minecraft/world/WorldServer$ServerBlockEventList
+    DUP
+    ACONST_NULL
+    INVOKESPECIAL net/minecraft/world/WorldServer$ServerBlockEventList.<init> (Lnet/minecraft/world/WorldServer$1;)V
+    AASTORE
+    DUP
+    ICONST_1
+    NEW net/minecraft/world/WorldServer$ServerBlockEventList
+    DUP
+    ACONST_NULL
+    INVOKESPECIAL net/minecraft/world/WorldServer$ServerBlockEventList.<init> (Lnet/minecraft/world/WorldServer$1;)V
+    AASTORE
+    PUTFIELD net/minecraft/world/WorldServer.field_147490_S : [Lnet/minecraft/world/WorldServer$ServerBlockEventList;
+   L7
+    LINENUMBER 99 L7
+    ALOAD 0
+    INVOKESTATIC com/google/common/collect/Lists.newArrayList ()Ljava/util/ArrayList;
+    PUTFIELD net/minecraft/world/WorldServer.field_94579_S : Ljava/util/List;
+   L8
+    LINENUMBER 102 L8
+    ALOAD 0
+    NEW java/util/HashSet
+    DUP
+    INVOKESPECIAL java/util/HashSet.<init> ()V
+    PUTFIELD net/minecraft/world/WorldServer.doneChunks : Ljava/util/Set;
+   L9
+    LINENUMBER 103 L9
+    ALOAD 0
+    NEW java/util/ArrayList
+    DUP
+    INVOKESPECIAL java/util/ArrayList.<init> ()V
+    PUTFIELD net/minecraft/world/WorldServer.customTeleporters : Ljava/util/List;
+   L10
+    LINENUMBER 108 L10
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+   L11
+    LINENUMBER 109 L11
+    ALOAD 0
+    NEW net/minecraft/entity/EntityTracker
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/entity/EntityTracker.<init> (Lnet/minecraft/world/WorldServer;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_73062_L : Lnet/minecraft/entity/EntityTracker;
+   L12
+    LINENUMBER 110 L12
+    ALOAD 0
+    NEW net/minecraft/server/management/PlayerChunkMap
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/server/management/PlayerChunkMap.<init> (Lnet/minecraft/world/WorldServer;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+   L13
+    LINENUMBER 112 L13
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    ISTORE 6
+   L14
+    LINENUMBER 113 L14
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_76558_a (Lnet/minecraft/world/World;)V
+   L15
+    LINENUMBER 114 L15
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    ILOAD 6
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.setDimension (I)V
+   L16
+    LINENUMBER 115 L16
+    ALOAD 0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72970_h ()Lnet/minecraft/world/chunk/IChunkProvider;
+    PUTFIELD net/minecraft/world/WorldServer.field_73020_y : Lnet/minecraft/world/chunk/IChunkProvider;
+   L17
+    LINENUMBER 116 L17
+    ALOAD 0
+    NEW net/minecraft/world/storage/MapStorage
+    DUP
+    NEW net/minecraftforge/common/WorldSpecificSaveHandler
+    DUP
+    ALOAD 0
+    ALOAD 2
+    INVOKESPECIAL net/minecraftforge/common/WorldSpecificSaveHandler.<init> (Lnet/minecraft/world/WorldServer;Lnet/minecraft/world/storage/ISaveHandler;)V
+    INVOKESPECIAL net/minecraft/world/storage/MapStorage.<init> (Lnet/minecraft/world/storage/ISaveHandler;)V
+    PUTFIELD net/minecraft/world/WorldServer.perWorldStorage : Lnet/minecraft/world/storage/MapStorage;
+   L18
+    LINENUMBER 117 L18
+    ALOAD 0
+    NEW net/minecraft/world/Teleporter
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/Teleporter.<init> (Lnet/minecraft/world/WorldServer;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_85177_Q : Lnet/minecraft/world/Teleporter;
+   L19
+    LINENUMBER 118 L19
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72966_v ()V
+   L20
+    LINENUMBER 119 L20
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72947_a ()V
+   L21
+    LINENUMBER 120 L21
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_175580_aG ()I
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177725_a (I)V
+   L22
+    LINENUMBER 121 L22
+    ILOAD 4
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKESTATIC net/minecraftforge/common/DimensionManager.setWorld (ILnet/minecraft/world/WorldServer;Lnet/minecraft/server/MinecraftServer;)V
+   L23
+    LINENUMBER 122 L23
+    RETURN
+   L24
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L24 0
+    LOCALVARIABLE server Lnet/minecraft/server/MinecraftServer; L0 L24 1
+    LOCALVARIABLE saveHandlerIn Lnet/minecraft/world/storage/ISaveHandler; L0 L24 2
+    LOCALVARIABLE info Lnet/minecraft/world/storage/WorldInfo; L0 L24 3
+    LOCALVARIABLE dimensionId I L0 L24 4
+    LOCALVARIABLE profilerIn Lnet/minecraft/profiler/Profiler; L0 L24 5
+    LOCALVARIABLE providerDim I L14 L24 6
+    MAXSTACK = 7
+    MAXLOCALS = 7
+
+  // access flags 0x1
+  public func_175643_b()Lnet/minecraft/world/World;
+   L0
+    LINENUMBER 126 L0
+    ALOAD 0
+    NEW net/minecraft/world/storage/MapStorage
+    DUP
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73019_z : Lnet/minecraft/world/storage/ISaveHandler;
+    INVOKESPECIAL net/minecraft/world/storage/MapStorage.<init> (Lnet/minecraft/world/storage/ISaveHandler;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_72988_C : Lnet/minecraft/world/storage/MapStorage;
+   L1
+    LINENUMBER 127 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKESTATIC net/minecraft/village/VillageCollection.func_176062_a (Lnet/minecraft/world/WorldProvider;)Ljava/lang/String;
+    ASTORE 1
+   L2
+    LINENUMBER 128 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.perWorldStorage : Lnet/minecraft/world/storage/MapStorage;
+    LDC Lnet/minecraft/village/VillageCollection;.class
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/storage/MapStorage.func_75742_a (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/world/WorldSavedData;
+    CHECKCAST net/minecraft/village/VillageCollection
+    ASTORE 2
+   L3
+    LINENUMBER 130 L3
+    ALOAD 2
+    IFNONNULL L4
+   L5
+    LINENUMBER 132 L5
+    ALOAD 0
+    NEW net/minecraft/village/VillageCollection
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/village/VillageCollection.<init> (Lnet/minecraft/world/World;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_72982_D : Lnet/minecraft/village/VillageCollection;
+   L6
+    LINENUMBER 133 L6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.perWorldStorage : Lnet/minecraft/world/storage/MapStorage;
+    ALOAD 1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72982_D : Lnet/minecraft/village/VillageCollection;
+    INVOKEVIRTUAL net/minecraft/world/storage/MapStorage.func_75745_a (Ljava/lang/String;Lnet/minecraft/world/WorldSavedData;)V
+    GOTO L7
+   L4
+    LINENUMBER 137 L4
+   FRAME FULL [net/minecraft/world/WorldServer java/lang/String net/minecraft/village/VillageCollection] []
+    ALOAD 0
+    ALOAD 2
+    PUTFIELD net/minecraft/world/WorldServer.field_72982_D : Lnet/minecraft/village/VillageCollection;
+   L8
+    LINENUMBER 138 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72982_D : Lnet/minecraft/village/VillageCollection;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/village/VillageCollection.func_82566_a (Lnet/minecraft/world/World;)V
+   L7
+    LINENUMBER 141 L7
+   FRAME FULL [net/minecraft/world/WorldServer java/lang/String net/minecraft/village/VillageCollection] []
+    ALOAD 0
+    NEW net/minecraft/scoreboard/ServerScoreboard
+    DUP
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKESPECIAL net/minecraft/scoreboard/ServerScoreboard.<init> (Lnet/minecraft/server/MinecraftServer;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_96442_D : Lnet/minecraft/scoreboard/Scoreboard;
+   L9
+    LINENUMBER 142 L9
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72988_C : Lnet/minecraft/world/storage/MapStorage;
+    LDC Lnet/minecraft/scoreboard/ScoreboardSaveData;.class
+    LDC "scoreboard"
+    INVOKEVIRTUAL net/minecraft/world/storage/MapStorage.func_75742_a (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/world/WorldSavedData;
+    CHECKCAST net/minecraft/scoreboard/ScoreboardSaveData
+    ASTORE 3
+   L10
+    LINENUMBER 144 L10
+    ALOAD 3
+    IFNONNULL L11
+   L12
+    LINENUMBER 146 L12
+    NEW net/minecraft/scoreboard/ScoreboardSaveData
+    DUP
+    INVOKESPECIAL net/minecraft/scoreboard/ScoreboardSaveData.<init> ()V
+    ASTORE 3
+   L13
+    LINENUMBER 147 L13
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72988_C : Lnet/minecraft/world/storage/MapStorage;
+    LDC "scoreboard"
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/storage/MapStorage.func_75745_a (Ljava/lang/String;Lnet/minecraft/world/WorldSavedData;)V
+   L11
+    LINENUMBER 150 L11
+   FRAME FULL [net/minecraft/world/WorldServer java/lang/String net/minecraft/village/VillageCollection net/minecraft/scoreboard/ScoreboardSaveData] []
+    ALOAD 3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_96442_D : Lnet/minecraft/scoreboard/Scoreboard;
+    INVOKEVIRTUAL net/minecraft/scoreboard/ScoreboardSaveData.func_96499_a (Lnet/minecraft/scoreboard/Scoreboard;)V
+   L14
+    LINENUMBER 151 L14
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_96442_D : Lnet/minecraft/scoreboard/Scoreboard;
+    CHECKCAST net/minecraft/scoreboard/ServerScoreboard
+    NEW net/minecraft/world/WorldSavedDataCallableSave
+    DUP
+    ALOAD 3
+    INVOKESPECIAL net/minecraft/world/WorldSavedDataCallableSave.<init> (Lnet/minecraft/world/WorldSavedData;)V
+    INVOKEVIRTUAL net/minecraft/scoreboard/ServerScoreboard.func_186684_a (Ljava/lang/Runnable;)V
+   L15
+    LINENUMBER 152 L15
+    ALOAD 0
+    NEW net/minecraft/world/storage/loot/LootTableManager
+    DUP
+    NEW java/io/File
+    DUP
+    NEW java/io/File
+    DUP
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73019_z : Lnet/minecraft/world/storage/ISaveHandler;
+    INVOKEINTERFACE net/minecraft/world/storage/ISaveHandler.func_75765_b ()Ljava/io/File;
+    LDC "data"
+    INVOKESPECIAL java/io/File.<init> (Ljava/io/File;Ljava/lang/String;)V
+    LDC "loot_tables"
+    INVOKESPECIAL java/io/File.<init> (Ljava/io/File;Ljava/lang/String;)V
+    INVOKESPECIAL net/minecraft/world/storage/loot/LootTableManager.<init> (Ljava/io/File;)V
+    PUTFIELD net/minecraft/world/WorldServer.field_184151_B : Lnet/minecraft/world/storage/loot/LootTableManager;
+   L16
+    LINENUMBER 153 L16
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176120_C ()D
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176126_D ()D
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177739_c (DD)V
+   L17
+    LINENUMBER 154 L17
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176140_I ()D
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177744_c (D)V
+   L18
+    LINENUMBER 155 L18
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176138_H ()D
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177724_b (D)V
+   L19
+    LINENUMBER 156 L19
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176131_J ()I
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177747_c (I)V
+   L20
+    LINENUMBER 157 L20
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176139_K ()I
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177723_b (I)V
+   L21
+    LINENUMBER 159 L21
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176134_F ()J
+    LCONST_0
+    LCMP
+    IFLE L22
+   L23
+    LINENUMBER 161 L23
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176137_E ()D
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176132_G ()D
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176134_F ()J
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177738_a (DDJ)V
+    GOTO L24
+   L22
+    LINENUMBER 165 L22
+   FRAME FULL [net/minecraft/world/WorldServer java/lang/String net/minecraft/village/VillageCollection net/minecraft/scoreboard/ScoreboardSaveData] []
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176137_E ()D
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177750_a (D)V
+   L24
+    LINENUMBER 168 L24
+   FRAME FULL [net/minecraft/world/WorldServer java/lang/String net/minecraft/village/VillageCollection net/minecraft/scoreboard/ScoreboardSaveData] []
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.initCapabilities ()V
+   L25
+    LINENUMBER 169 L25
+    ALOAD 0
+    ARETURN
+   L26
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L26 0
+    LOCALVARIABLE s Ljava/lang/String; L2 L26 1
+    LOCALVARIABLE villagecollection Lnet/minecraft/village/VillageCollection; L3 L26 2
+    LOCALVARIABLE scoreboardsavedata Lnet/minecraft/scoreboard/ScoreboardSaveData; L10 L26 3
+    MAXSTACK = 9
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_72835_b()V
+   L0
+    LINENUMBER 174 L0
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/World.func_72835_b ()V
+   L1
+    LINENUMBER 176 L1
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72912_H ()Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76093_s ()Z
+    IFEQ L2
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175659_aa ()Lnet/minecraft/world/EnumDifficulty;
+    GETSTATIC net/minecraft/world/EnumDifficulty.HARD : Lnet/minecraft/world/EnumDifficulty;
+    IF_ACMPEQ L2
+   L3
+    LINENUMBER 178 L3
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72912_H ()Lnet/minecraft/world/storage/WorldInfo;
+    GETSTATIC net/minecraft/world/EnumDifficulty.HARD : Lnet/minecraft/world/EnumDifficulty;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176144_a (Lnet/minecraft/world/EnumDifficulty;)V
+   L2
+    LINENUMBER 181 L2
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_177499_m ()Lnet/minecraft/world/biome/BiomeProvider;
+    INVOKEVIRTUAL net/minecraft/world/biome/BiomeProvider.func_76938_b ()V
+   L4
+    LINENUMBER 183 L4
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_73056_e ()Z
+    IFEQ L5
+   L6
+    LINENUMBER 185 L6
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82736_K ()Lnet/minecraft/world/GameRules;
+    LDC "doDaylightCycle"
+    INVOKEVIRTUAL net/minecraft/world/GameRules.func_82766_b (Ljava/lang/String;)Z
+    IFEQ L7
+   L8
+    LINENUMBER 187 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76073_f ()J
+    LDC 24000
+    LADD
+    LSTORE 1
+   L9
+    LINENUMBER 188 L9
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    LLOAD 1
+    LLOAD 1
+    LDC 24000
+    LREM
+    LSUB
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76068_b (J)V
+   L7
+    LINENUMBER 191 L7
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_73053_d ()V
+   L5
+    LINENUMBER 194 L5
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "mobSpawner"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L10
+    LINENUMBER 196 L10
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82736_K ()Lnet/minecraft/world/GameRules;
+    LDC "doMobSpawning"
+    INVOKEVIRTUAL net/minecraft/world/GameRules.func_82766_b (Ljava/lang/String;)Z
+    IFEQ L11
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76067_t ()Lnet/minecraft/world/WorldType;
+    GETSTATIC net/minecraft/world/WorldType.field_180272_g : Lnet/minecraft/world/WorldType;
+    IF_ACMPEQ L11
+   L12
+    LINENUMBER 198 L12
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175742_R : Lnet/minecraft/world/WorldEntitySpawner;
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72985_G : Z
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72992_H : Z
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_82573_f ()J
+    LDC 400
+    LREM
+    LCONST_0
+    LCMP
+    IFNE L13
+    ICONST_1
+    GOTO L14
+   L13
+   FRAME FULL [net/minecraft/world/WorldServer] [net/minecraft/world/WorldEntitySpawner net/minecraft/world/WorldServer I I]
+    ICONST_0
+   L14
+   FRAME FULL [net/minecraft/world/WorldServer] [net/minecraft/world/WorldEntitySpawner net/minecraft/world/WorldServer I I I]
+    INVOKEVIRTUAL net/minecraft/world/WorldEntitySpawner.func_77192_a (Lnet/minecraft/world/WorldServer;ZZZ)I
+    POP
+   L11
+    LINENUMBER 201 L11
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "chunkSource"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L15
+    LINENUMBER 202 L15
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73020_y : Lnet/minecraft/world/chunk/IChunkProvider;
+    INVOKEINTERFACE net/minecraft/world/chunk/IChunkProvider.func_73156_b ()Z
+    POP
+   L16
+    LINENUMBER 203 L16
+    ALOAD 0
+    FCONST_1
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72967_a (F)I
+    ISTORE 3
+   L17
+    LINENUMBER 205 L17
+    ILOAD 3
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175657_ab ()I
+    IF_ICMPEQ L18
+   L19
+    LINENUMBER 207 L19
+    ALOAD 0
+    ILOAD 3
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175692_b (I)V
+   L18
+    LINENUMBER 210 L18
+   FRAME FULL [net/minecraft/world/WorldServer T T I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_82573_f ()J
+    LCONST_1
+    LADD
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_82572_b (J)V
+   L20
+    LINENUMBER 212 L20
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82736_K ()Lnet/minecraft/world/GameRules;
+    LDC "doDaylightCycle"
+    INVOKEVIRTUAL net/minecraft/world/GameRules.func_82766_b (Ljava/lang/String;)Z
+    IFEQ L21
+   L22
+    LINENUMBER 214 L22
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76073_f ()J
+    LCONST_1
+    LADD
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76068_b (J)V
+   L21
+    LINENUMBER 217 L21
+   FRAME FULL [net/minecraft/world/WorldServer T T I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "tickPending"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L23
+    LINENUMBER 218 L23
+    ALOAD 0
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72955_a (Z)Z
+    POP
+   L24
+    LINENUMBER 219 L24
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "tickBlocks"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L25
+    LINENUMBER 220 L25
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_147456_g ()V
+   L26
+    LINENUMBER 221 L26
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "chunkMap"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L27
+    LINENUMBER 222 L27
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerChunkMap.func_72693_b ()V
+   L28
+    LINENUMBER 223 L28
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "village"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L29
+    LINENUMBER 224 L29
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72982_D : Lnet/minecraft/village/VillageCollection;
+    INVOKEVIRTUAL net/minecraft/village/VillageCollection.func_75544_a ()V
+   L30
+    LINENUMBER 225 L30
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175740_d : Lnet/minecraft/village/VillageSiege;
+    INVOKEVIRTUAL net/minecraft/village/VillageSiege.func_75528_a ()V
+   L31
+    LINENUMBER 226 L31
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "portalForcer"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L32
+    LINENUMBER 227 L32
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_85177_Q : Lnet/minecraft/world/Teleporter;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82737_E ()J
+    INVOKEVIRTUAL net/minecraft/world/Teleporter.func_85189_a (J)V
+   L33
+    LINENUMBER 228 L33
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.customTeleporters : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 4
+   L34
+   FRAME FULL [net/minecraft/world/WorldServer T T I java/util/Iterator] []
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L35
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/Teleporter
+    ASTORE 5
+   L36
+    LINENUMBER 230 L36
+    ALOAD 5
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82737_E ()J
+    INVOKEVIRTUAL net/minecraft/world/Teleporter.func_85189_a (J)V
+   L37
+    LINENUMBER 231 L37
+    GOTO L34
+   L35
+    LINENUMBER 232 L35
+   FRAME FULL [net/minecraft/world/WorldServer T T I java/util/Iterator] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L38
+    LINENUMBER 233 L38
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_147488_Z ()V
+   L39
+    LINENUMBER 234 L39
+    RETURN
+   L40
+    LOCALVARIABLE i J L9 L7 1
+    LOCALVARIABLE tele Lnet/minecraft/world/Teleporter; L36 L37 5
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L40 0
+    LOCALVARIABLE j I L17 L40 3
+    MAXSTACK = 8
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public func_175734_a(Lnet/minecraft/entity/EnumCreatureType;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/world/biome/Biome$SpawnListEntry;
+  @Ljavax/annotation/Nullable;()
+   L0
+    LINENUMBER 239 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    ALOAD 1
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_177458_a (Lnet/minecraft/entity/EnumCreatureType;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;
+    ASTORE 3
+   L1
+    LINENUMBER 240 L1
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ALOAD 3
+    INVOKESTATIC net/minecraftforge/event/ForgeEventFactory.getPotentialSpawns (Lnet/minecraft/world/WorldServer;Lnet/minecraft/entity/EnumCreatureType;Lnet/minecraft/util/math/BlockPos;Ljava/util/List;)Ljava/util/List;
+    ASTORE 3
+   L2
+    LINENUMBER 241 L2
+    ALOAD 3
+    IFNULL L3
+    ALOAD 3
+    INVOKEINTERFACE java/util/List.isEmpty ()Z
+    IFNE L3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    ALOAD 3
+    INVOKESTATIC net/minecraft/util/WeightedRandom.func_76271_a (Ljava/util/Random;Ljava/util/List;)Lnet/minecraft/util/WeightedRandom$Item;
+    CHECKCAST net/minecraft/world/biome/Biome$SpawnListEntry
+    GOTO L4
+   L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/EnumCreatureType net/minecraft/util/math/BlockPos java/util/List] []
+    ACONST_NULL
+   L4
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/EnumCreatureType net/minecraft/util/math/BlockPos java/util/List] [net/minecraft/world/biome/Biome$SpawnListEntry]
+    ARETURN
+   L5
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L5 0
+    LOCALVARIABLE creatureType Lnet/minecraft/entity/EnumCreatureType; L0 L5 1
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L5 2
+    LOCALVARIABLE list Ljava/util/List; L1 L5 3
+    // signature Ljava/util/List<Lnet/minecraft/world/biome/Biome$SpawnListEntry;>;
+    // declaration: java.util.List<net.minecraft.world.biome.Biome$SpawnListEntry>
+    MAXSTACK = 4
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_175732_a(Lnet/minecraft/entity/EnumCreatureType;Lnet/minecraft/world/biome/Biome$SpawnListEntry;Lnet/minecraft/util/math/BlockPos;)Z
+   L0
+    LINENUMBER 246 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    ALOAD 1
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_177458_a (Lnet/minecraft/entity/EnumCreatureType;Lnet/minecraft/util/math/BlockPos;)Ljava/util/List;
+    ASTORE 4
+   L1
+    LINENUMBER 247 L1
+    ALOAD 0
+    ALOAD 1
+    ALOAD 3
+    ALOAD 4
+    INVOKESTATIC net/minecraftforge/event/ForgeEventFactory.getPotentialSpawns (Lnet/minecraft/world/WorldServer;Lnet/minecraft/entity/EnumCreatureType;Lnet/minecraft/util/math/BlockPos;Ljava/util/List;)Ljava/util/List;
+    ASTORE 4
+   L2
+    LINENUMBER 248 L2
+    ALOAD 4
+    IFNULL L3
+    ALOAD 4
+    INVOKEINTERFACE java/util/List.isEmpty ()Z
+    IFNE L3
+    ALOAD 4
+    ALOAD 2
+    INVOKEINTERFACE java/util/List.contains (Ljava/lang/Object;)Z
+    GOTO L4
+   L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/EnumCreatureType net/minecraft/world/biome/Biome$SpawnListEntry net/minecraft/util/math/BlockPos java/util/List] []
+    ICONST_0
+   L4
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/EnumCreatureType net/minecraft/world/biome/Biome$SpawnListEntry net/minecraft/util/math/BlockPos java/util/List] [I]
+    IRETURN
+   L5
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L5 0
+    LOCALVARIABLE creatureType Lnet/minecraft/entity/EnumCreatureType; L0 L5 1
+    LOCALVARIABLE spawnListEntry Lnet/minecraft/world/biome/Biome$SpawnListEntry; L0 L5 2
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L5 3
+    LOCALVARIABLE list Ljava/util/List; L1 L5 4
+    // signature Ljava/util/List<Lnet/minecraft/world/biome/Biome$SpawnListEntry;>;
+    // declaration: java.util.List<net.minecraft.world.biome.Biome$SpawnListEntry>
+    MAXSTACK = 4
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public func_72854_c()V
+   L0
+    LINENUMBER 253 L0
+    ALOAD 0
+    ICONST_0
+    PUTFIELD net/minecraft/world/WorldServer.field_73068_P : Z
+   L1
+    LINENUMBER 255 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.isEmpty ()Z
+    IFNE L2
+   L3
+    LINENUMBER 257 L3
+    ICONST_0
+    ISTORE 1
+   L4
+    LINENUMBER 258 L4
+    ICONST_0
+    ISTORE 2
+   L5
+    LINENUMBER 260 L5
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 3
+   L6
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] []
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L7
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ASTORE 4
+   L8
+    LINENUMBER 262 L8
+    ALOAD 4
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_175149_v ()Z
+    IFEQ L9
+   L10
+    LINENUMBER 264 L10
+    IINC 1 1
+    GOTO L11
+   L9
+    LINENUMBER 266 L9
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator net/minecraft/entity/player/EntityPlayer] []
+    ALOAD 4
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_70608_bn ()Z
+    IFEQ L11
+   L12
+    LINENUMBER 268 L12
+    IINC 2 1
+   L11
+    LINENUMBER 270 L11
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator net/minecraft/entity/player/EntityPlayer] []
+    GOTO L6
+   L7
+    LINENUMBER 272 L7
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] []
+    ALOAD 0
+    ILOAD 2
+    IFLE L13
+    ILOAD 2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    ILOAD 1
+    ISUB
+    IF_ICMPLT L13
+    ICONST_1
+    GOTO L14
+   L13
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] [net/minecraft/world/WorldServer]
+    ICONST_0
+   L14
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] [net/minecraft/world/WorldServer I]
+    PUTFIELD net/minecraft/world/WorldServer.field_73068_P : Z
+   L2
+    LINENUMBER 274 L2
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    RETURN
+   L15
+    LOCALVARIABLE entityplayer Lnet/minecraft/entity/player/EntityPlayer; L8 L11 4
+    LOCALVARIABLE i I L4 L2 1
+    LOCALVARIABLE j I L5 L2 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L15 0
+    MAXSTACK = 4
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public func_73053_d()V
+   L0
+    LINENUMBER 278 L0
+    ALOAD 0
+    ICONST_0
+    PUTFIELD net/minecraft/world/WorldServer.field_73068_P : Z
+   L1
+    LINENUMBER 280 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 1
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator] []
+    ALOAD 1
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L3
+    ALOAD 1
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ASTORE 2
+   L4
+    LINENUMBER 282 L4
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_70608_bn ()Z
+    IFEQ L5
+   L6
+    LINENUMBER 284 L6
+    ALOAD 2
+    ICONST_0
+    ICONST_0
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_70999_a (ZZZ)V
+   L5
+    LINENUMBER 286 L5
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator net/minecraft/entity/player/EntityPlayer] []
+    GOTO L2
+   L3
+    LINENUMBER 288 L3
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator] []
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_73051_P ()V
+   L7
+    LINENUMBER 289 L7
+    RETURN
+   L8
+    LOCALVARIABLE entityplayer Lnet/minecraft/entity/player/EntityPlayer; L4 L5 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L8 0
+    MAXSTACK = 4
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public func_73051_P()V
+   L0
+    LINENUMBER 293 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.resetRainAndThunder ()V
+   L1
+    LINENUMBER 294 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_73056_e()Z
+   L0
+    LINENUMBER 298 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73068_P : Z
+    IFEQ L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72995_K : Z
+    IFNE L1
+   L2
+    LINENUMBER 300 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 1
+   L3
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator] []
+    ALOAD 1
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L4
+    ALOAD 1
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ASTORE 2
+   L5
+    LINENUMBER 302 L5
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_175149_v ()Z
+    IFNE L6
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_71026_bH ()Z
+    IFNE L6
+   L7
+    LINENUMBER 304 L7
+    ICONST_0
+    IRETURN
+   L6
+    LINENUMBER 306 L6
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator net/minecraft/entity/player/EntityPlayer] []
+    GOTO L3
+   L4
+    LINENUMBER 308 L4
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator] []
+    ICONST_1
+    IRETURN
+   L1
+    LINENUMBER 312 L1
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ICONST_0
+    IRETURN
+   L8
+    LOCALVARIABLE entityplayer Lnet/minecraft/entity/player/EntityPlayer; L5 L6 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L8 0
+    MAXSTACK = 1
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public func_72974_f()V
+  @Lnet/minecraftforge/fml/relauncher/SideOnly;(value=Lnet/minecraftforge/fml/relauncher/Side;.CLIENT)
+   L0
+    LINENUMBER 319 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76075_d ()I
+    IFGT L1
+   L2
+    LINENUMBER 321 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_181545_F ()I
+    ICONST_1
+    IADD
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76056_b (I)V
+   L1
+    LINENUMBER 324 L1
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76079_c ()I
+    ISTORE 1
+   L3
+    LINENUMBER 325 L3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76074_e ()I
+    ISTORE 2
+   L4
+    LINENUMBER 326 L4
+    ICONST_0
+    ISTORE 3
+   L5
+    LINENUMBER 328 L5
+   FRAME FULL [net/minecraft/world/WorldServer I I I] []
+    ALOAD 0
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 1
+    ICONST_0
+    ILOAD 2
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_184141_c (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_185904_a ()Lnet/minecraft/block/material/Material;
+    GETSTATIC net/minecraft/block/material/Material.field_151579_a : Lnet/minecraft/block/material/Material;
+    IF_ACMPNE L6
+   L7
+    LINENUMBER 330 L7
+    ILOAD 1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 8
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 8
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISUB
+    IADD
+    ISTORE 1
+   L8
+    LINENUMBER 331 L8
+    ILOAD 2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 8
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 8
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISUB
+    IADD
+    ISTORE 2
+   L9
+    LINENUMBER 332 L9
+    IINC 3 1
+   L10
+    LINENUMBER 334 L10
+    ILOAD 3
+    SIPUSH 10000
+    IF_ICMPNE L5
+   L11
+    LINENUMBER 336 L11
+    GOTO L6
+   L6
+    LINENUMBER 340 L6
+   FRAME FULL [net/minecraft/world/WorldServer I I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ILOAD 1
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76058_a (I)V
+   L12
+    LINENUMBER 341 L12
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ILOAD 2
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76087_c (I)V
+   L13
+    LINENUMBER 342 L13
+    RETURN
+   L14
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L14 0
+    LOCALVARIABLE i I L3 L14 1
+    LOCALVARIABLE j I L4 L14 2
+    LOCALVARIABLE k I L5 L14 3
+    MAXSTACK = 6
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_175680_a(IIZ)Z
+   L0
+    LINENUMBER 346 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_73149_a (II)Z
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    LOCALVARIABLE x I L0 L1 1
+    LOCALVARIABLE z I L0 L1 2
+    LOCALVARIABLE allowEmpty Z L0 L1 3
+    MAXSTACK = 3
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_184162_i()V
+   L0
+    LINENUMBER 351 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "playerCheckLight"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L1
+    LINENUMBER 353 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.isEmpty ()Z
+    IFNE L2
+   L3
+    LINENUMBER 355 L3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISTORE 1
+   L4
+    LINENUMBER 356 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    ILOAD 1
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ASTORE 2
+   L5
+    LINENUMBER 357 L5
+    ALOAD 2
+    GETFIELD net/minecraft/entity/player/EntityPlayer.field_70165_t : D
+    INVOKESTATIC net/minecraft/util/math/MathHelper.func_76128_c (D)I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 11
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    ICONST_5
+    ISUB
+    ISTORE 3
+   L6
+    LINENUMBER 358 L6
+    ALOAD 2
+    GETFIELD net/minecraft/entity/player/EntityPlayer.field_70163_u : D
+    INVOKESTATIC net/minecraft/util/math/MathHelper.func_76128_c (D)I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 11
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    ICONST_5
+    ISUB
+    ISTORE 4
+   L7
+    LINENUMBER 359 L7
+    ALOAD 2
+    GETFIELD net/minecraft/entity/player/EntityPlayer.field_70161_v : D
+    INVOKESTATIC net/minecraft/util/math/MathHelper.func_76128_c (D)I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 11
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    ICONST_5
+    ISUB
+    ISTORE 5
+   L8
+    LINENUMBER 360 L8
+    ALOAD 0
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 3
+    ILOAD 4
+    ILOAD 5
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175664_x (Lnet/minecraft/util/math/BlockPos;)Z
+    POP
+   L2
+    LINENUMBER 363 L2
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L9
+    LINENUMBER 364 L9
+    RETURN
+   L10
+    LOCALVARIABLE i I L4 L2 1
+    LOCALVARIABLE entityplayer Lnet/minecraft/entity/player/EntityPlayer; L5 L2 2
+    LOCALVARIABLE j I L6 L2 3
+    LOCALVARIABLE k I L7 L2 4
+    LOCALVARIABLE l I L8 L2 5
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L10 0
+    MAXSTACK = 6
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public func_147456_g()V
+   L0
+    LINENUMBER 368 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_184162_i ()V
+   L1
+    LINENUMBER 370 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76067_t ()Lnet/minecraft/world/WorldType;
+    GETSTATIC net/minecraft/world/WorldType.field_180272_g : Lnet/minecraft/world/WorldType;
+    IF_ACMPNE L2
+   L3
+    LINENUMBER 372 L3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerChunkMap.func_187300_b ()Ljava/util/Iterator;
+    ASTORE 1
+   L4
+    LINENUMBER 374 L4
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator] []
+    ALOAD 1
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L5
+   L6
+    LINENUMBER 376 L6
+    ALOAD 1
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/chunk/Chunk
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/chunk/Chunk.func_150804_b (Z)V
+    GOTO L4
+   L5
+    LINENUMBER 378 L5
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Iterator] []
+    GOTO L7
+   L2
+    LINENUMBER 381 L2
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82736_K ()Lnet/minecraft/world/GameRules;
+    LDC "randomTickSpeed"
+    INVOKEVIRTUAL net/minecraft/world/GameRules.func_180263_c (Ljava/lang/String;)I
+    ISTORE 1
+   L8
+    LINENUMBER 382 L8
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72896_J ()Z
+    ISTORE 2
+   L9
+    LINENUMBER 383 L9
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72911_I ()Z
+    ISTORE 3
+   L10
+    LINENUMBER 384 L10
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "pollingChunks"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L11
+    LINENUMBER 386 L11
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerChunkMap.func_187300_b ()Ljava/util/Iterator;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.getPersistentChunkIterable (Ljava/util/Iterator;)Ljava/util/Iterator;
+    ASTORE 4
+   L12
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator] []
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L13
+   L14
+    LINENUMBER 388 L14
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "getChunk"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L15
+    LINENUMBER 389 L15
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/chunk/Chunk
+    ASTORE 5
+   L16
+    LINENUMBER 390 L16
+    ALOAD 5
+    GETFIELD net/minecraft/world/chunk/Chunk.field_76635_g : I
+    BIPUSH 16
+    IMUL
+    ISTORE 6
+   L17
+    LINENUMBER 391 L17
+    ALOAD 5
+    GETFIELD net/minecraft/world/chunk/Chunk.field_76647_h : I
+    BIPUSH 16
+    IMUL
+    ISTORE 7
+   L18
+    LINENUMBER 392 L18
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "checkNextLight"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L19
+    LINENUMBER 393 L19
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/chunk/Chunk.func_76594_o ()V
+   L20
+    LINENUMBER 394 L20
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "tickChunk"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L21
+    LINENUMBER 395 L21
+    ALOAD 5
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/chunk/Chunk.func_150804_b (Z)V
+   L22
+    LINENUMBER 396 L22
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "thunder"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L23
+    LINENUMBER 398 L23
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.canDoLightning (Lnet/minecraft/world/chunk/Chunk;)Z
+    IFEQ L24
+    ILOAD 2
+    IFEQ L24
+    ILOAD 3
+    IFEQ L24
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    LDC 100000
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IFNE L24
+   L25
+    LINENUMBER 400 L25
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73005_l : I
+    ICONST_3
+    IMUL
+    LDC 1013904223
+    IADD
+    PUTFIELD net/minecraft/world/WorldServer.field_73005_l : I
+   L26
+    LINENUMBER 401 L26
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73005_l : I
+    ICONST_2
+    ISHR
+    ISTORE 8
+   L27
+    LINENUMBER 402 L27
+    ALOAD 0
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 6
+    ILOAD 8
+    BIPUSH 15
+    IAND
+    IADD
+    ICONST_0
+    ILOAD 7
+    ILOAD 8
+    BIPUSH 8
+    ISHR
+    BIPUSH 15
+    IAND
+    IADD
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175736_a (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/BlockPos;
+    ASTORE 9
+   L28
+    LINENUMBER 404 L28
+    ALOAD 0
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175727_C (Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L24
+   L29
+    LINENUMBER 406 L29
+    ALOAD 0
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175649_E (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
+    ASTORE 10
+   L30
+    LINENUMBER 408 L30
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    INVOKEVIRTUAL java/util/Random.nextDouble ()D
+    ALOAD 10
+    INVOKEVIRTUAL net/minecraft/world/DifficultyInstance.func_180168_b ()F
+    F2D
+    LDC 0.05
+    DMUL
+    DCMPG
+    IFGE L31
+   L32
+    LINENUMBER 410 L32
+    NEW net/minecraft/entity/passive/EntityHorse
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/entity/passive/EntityHorse.<init> (Lnet/minecraft/world/World;)V
+    ASTORE 11
+   L33
+    LINENUMBER 411 L33
+    ALOAD 11
+    GETSTATIC net/minecraft/entity/passive/HorseType.SKELETON : Lnet/minecraft/entity/passive/HorseType;
+    INVOKEVIRTUAL net/minecraft/entity/passive/EntityHorse.func_184778_a (Lnet/minecraft/entity/passive/HorseType;)V
+   L34
+    LINENUMBER 412 L34
+    ALOAD 11
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/entity/passive/EntityHorse.func_184784_x (Z)V
+   L35
+    LINENUMBER 413 L35
+    ALOAD 11
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/entity/passive/EntityHorse.func_70873_a (I)V
+   L36
+    LINENUMBER 414 L36
+    ALOAD 11
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    I2D
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177956_o ()I
+    I2D
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    I2D
+    INVOKEVIRTUAL net/minecraft/entity/passive/EntityHorse.func_70107_b (DDD)V
+   L37
+    LINENUMBER 415 L37
+    ALOAD 0
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72838_d (Lnet/minecraft/entity/Entity;)Z
+    POP
+   L38
+    LINENUMBER 416 L38
+    ALOAD 0
+    NEW net/minecraft/entity/effect/EntityLightningBolt
+    DUP
+    ALOAD 0
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    I2D
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177956_o ()I
+    I2D
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    I2D
+    ICONST_1
+    INVOKESPECIAL net/minecraft/entity/effect/EntityLightningBolt.<init> (Lnet/minecraft/world/World;DDDZ)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72942_c (Lnet/minecraft/entity/Entity;)Z
+    POP
+   L39
+    LINENUMBER 417 L39
+    GOTO L24
+   L31
+    LINENUMBER 420 L31
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I I net/minecraft/util/math/BlockPos net/minecraft/world/DifficultyInstance] []
+    ALOAD 0
+    NEW net/minecraft/entity/effect/EntityLightningBolt
+    DUP
+    ALOAD 0
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    I2D
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177956_o ()I
+    I2D
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    I2D
+    ICONST_0
+    INVOKESPECIAL net/minecraft/entity/effect/EntityLightningBolt.<init> (Lnet/minecraft/world/World;DDDZ)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72942_c (Lnet/minecraft/entity/Entity;)Z
+    POP
+   L24
+    LINENUMBER 425 L24
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "iceandsnow"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L40
+    LINENUMBER 427 L40
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.canDoRainSnowIce (Lnet/minecraft/world/chunk/Chunk;)Z
+    IFEQ L41
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 16
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IFNE L41
+   L42
+    LINENUMBER 429 L42
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73005_l : I
+    ICONST_3
+    IMUL
+    LDC 1013904223
+    IADD
+    PUTFIELD net/minecraft/world/WorldServer.field_73005_l : I
+   L43
+    LINENUMBER 430 L43
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73005_l : I
+    ICONST_2
+    ISHR
+    ISTORE 8
+   L44
+    LINENUMBER 431 L44
+    ALOAD 0
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 6
+    ILOAD 8
+    BIPUSH 15
+    IAND
+    IADD
+    ICONST_0
+    ILOAD 7
+    ILOAD 8
+    BIPUSH 8
+    ISHR
+    BIPUSH 15
+    IAND
+    IADD
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175725_q (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/BlockPos;
+    ASTORE 9
+   L45
+    LINENUMBER 432 L45
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177977_b ()Lnet/minecraft/util/math/BlockPos;
+    ASTORE 10
+   L46
+    LINENUMBER 434 L46
+    ALOAD 0
+    ALOAD 10
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175662_w (Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L47
+   L48
+    LINENUMBER 436 L48
+    ALOAD 0
+    ALOAD 10
+    GETSTATIC net/minecraft/init/Blocks.field_150432_aD : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/Block.func_176223_P ()Lnet/minecraft/block/state/IBlockState;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175656_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z
+    POP
+   L47
+    LINENUMBER 439 L47
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I I net/minecraft/util/math/BlockPos net/minecraft/util/math/BlockPos] []
+    ILOAD 2
+    IFEQ L49
+    ALOAD 0
+    ALOAD 9
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175708_f (Lnet/minecraft/util/math/BlockPos;Z)Z
+    IFEQ L49
+   L50
+    LINENUMBER 441 L50
+    ALOAD 0
+    ALOAD 9
+    GETSTATIC net/minecraft/init/Blocks.field_150431_aC : Lnet/minecraft/block/Block;
+    INVOKEVIRTUAL net/minecraft/block/Block.func_176223_P ()Lnet/minecraft/block/state/IBlockState;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175656_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z
+    POP
+   L49
+    LINENUMBER 444 L49
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I I net/minecraft/util/math/BlockPos net/minecraft/util/math/BlockPos] []
+    ILOAD 2
+    IFEQ L41
+    ALOAD 0
+    ALOAD 10
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_180494_b (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/world/biome/Biome;
+    INVOKEVIRTUAL net/minecraft/world/biome/Biome.func_76738_d ()Z
+    IFEQ L41
+   L51
+    LINENUMBER 446 L51
+    ALOAD 0
+    ALOAD 10
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_180495_p (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ALOAD 0
+    ALOAD 10
+    INVOKEVIRTUAL net/minecraft/block/Block.func_176224_k (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)V
+   L41
+    LINENUMBER 450 L41
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "tickBlocks"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L52
+    LINENUMBER 452 L52
+    ILOAD 1
+    IFLE L53
+   L54
+    LINENUMBER 454 L54
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/chunk/Chunk.func_76587_i ()[Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage;
+    ASTORE 8
+    ALOAD 8
+    ARRAYLENGTH
+    ISTORE 9
+    ICONST_0
+    ISTORE 10
+   L55
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I [Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage; I I] []
+    ILOAD 10
+    ILOAD 9
+    IF_ICMPGE L53
+    ALOAD 8
+    ILOAD 10
+    AALOAD
+    ASTORE 11
+   L56
+    LINENUMBER 456 L56
+    ALOAD 11
+    GETSTATIC net/minecraft/world/chunk/Chunk.field_186036_a : Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage;
+    IF_ACMPEQ L57
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/chunk/storage/ExtendedBlockStorage.func_76675_b ()Z
+    IFEQ L57
+   L58
+    LINENUMBER 458 L58
+    ICONST_0
+    ISTORE 12
+   L59
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I [Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage; I I net/minecraft/world/chunk/storage/ExtendedBlockStorage I] []
+    ILOAD 12
+    ILOAD 1
+    IF_ICMPGE L57
+   L60
+    LINENUMBER 460 L60
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73005_l : I
+    ICONST_3
+    IMUL
+    LDC 1013904223
+    IADD
+    PUTFIELD net/minecraft/world/WorldServer.field_73005_l : I
+   L61
+    LINENUMBER 461 L61
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73005_l : I
+    ICONST_2
+    ISHR
+    ISTORE 13
+   L62
+    LINENUMBER 462 L62
+    ILOAD 13
+    BIPUSH 15
+    IAND
+    ISTORE 14
+   L63
+    LINENUMBER 463 L63
+    ILOAD 13
+    BIPUSH 8
+    ISHR
+    BIPUSH 15
+    IAND
+    ISTORE 15
+   L64
+    LINENUMBER 464 L64
+    ILOAD 13
+    BIPUSH 16
+    ISHR
+    BIPUSH 15
+    IAND
+    ISTORE 16
+   L65
+    LINENUMBER 465 L65
+    ALOAD 11
+    ILOAD 14
+    ILOAD 16
+    ILOAD 15
+    INVOKEVIRTUAL net/minecraft/world/chunk/storage/ExtendedBlockStorage.func_177485_a (III)Lnet/minecraft/block/state/IBlockState;
+    ASTORE 17
+   L66
+    LINENUMBER 466 L66
+    ALOAD 17
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ASTORE 18
+   L67
+    LINENUMBER 467 L67
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "randomTick"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L68
+    LINENUMBER 469 L68
+    ALOAD 18
+    INVOKEVIRTUAL net/minecraft/block/Block.func_149653_t ()Z
+    IFEQ L69
+   L70
+    LINENUMBER 471 L70
+    ALOAD 18
+    ALOAD 0
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 14
+    ILOAD 6
+    IADD
+    ILOAD 16
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/chunk/storage/ExtendedBlockStorage.func_76662_d ()I
+    IADD
+    ILOAD 15
+    ILOAD 7
+    IADD
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    ALOAD 17
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    INVOKEVIRTUAL net/minecraft/block/Block.func_180645_a (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V
+   L69
+    LINENUMBER 474 L69
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I [Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage; I I net/minecraft/world/chunk/storage/ExtendedBlockStorage I I I I I net/minecraft/block/state/IBlockState net/minecraft/block/Block] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L71
+    LINENUMBER 458 L71
+    IINC 12 1
+    GOTO L59
+   L57
+    LINENUMBER 454 L57
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I [Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage; I I net/minecraft/world/chunk/storage/ExtendedBlockStorage] []
+    IINC 10 1
+    GOTO L55
+   L53
+    LINENUMBER 386 L53
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator net/minecraft/world/chunk/Chunk I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+    GOTO L12
+   L13
+    LINENUMBER 481 L13
+   FRAME FULL [net/minecraft/world/WorldServer I I I java/util/Iterator] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L7
+    LINENUMBER 483 L7
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    RETURN
+   L72
+    LOCALVARIABLE iterator1 Ljava/util/Iterator; L4 L5 1
+    // signature Ljava/util/Iterator<Lnet/minecraft/world/chunk/Chunk;>;
+    // declaration: java.util.Iterator<net.minecraft.world.chunk.Chunk>
+    LOCALVARIABLE entityhorse Lnet/minecraft/entity/passive/EntityHorse; L33 L39 11
+    LOCALVARIABLE difficultyinstance Lnet/minecraft/world/DifficultyInstance; L30 L24 10
+    LOCALVARIABLE l I L27 L24 8
+    LOCALVARIABLE blockpos Lnet/minecraft/util/math/BlockPos; L28 L24 9
+    LOCALVARIABLE j2 I L44 L41 8
+    LOCALVARIABLE blockpos1 Lnet/minecraft/util/math/BlockPos; L45 L41 9
+    LOCALVARIABLE blockpos2 Lnet/minecraft/util/math/BlockPos; L46 L41 10
+    LOCALVARIABLE j1 I L62 L71 13
+    LOCALVARIABLE k1 I L63 L71 14
+    LOCALVARIABLE l1 I L64 L71 15
+    LOCALVARIABLE i2 I L65 L71 16
+    LOCALVARIABLE iblockstate Lnet/minecraft/block/state/IBlockState; L66 L71 17
+    LOCALVARIABLE block Lnet/minecraft/block/Block; L67 L71 18
+    LOCALVARIABLE i1 I L59 L57 12
+    LOCALVARIABLE extendedblockstorage Lnet/minecraft/world/chunk/storage/ExtendedBlockStorage; L56 L57 11
+    LOCALVARIABLE chunk Lnet/minecraft/world/chunk/Chunk; L16 L53 5
+    LOCALVARIABLE j I L17 L53 6
+    LOCALVARIABLE k I L18 L53 7
+    LOCALVARIABLE iterator Ljava/util/Iterator; L12 L13 4
+    // signature Ljava/util/Iterator<Lnet/minecraft/world/chunk/Chunk;>;
+    // declaration: java.util.Iterator<net.minecraft.world.chunk.Chunk>
+    LOCALVARIABLE i I L8 L7 1
+    LOCALVARIABLE flag Z L9 L7 2
+    LOCALVARIABLE flag1 Z L10 L7 3
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L72 0
+    MAXSTACK = 11
+    MAXLOCALS = 19
+
+  // access flags 0x1
+  public func_175736_a(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/BlockPos;
+   L0
+    LINENUMBER 487 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175725_q (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/BlockPos;
+    ASTORE 2
+   L1
+    LINENUMBER 488 L1
+    NEW net/minecraft/util/math/AxisAlignedBB
+    DUP
+    ALOAD 2
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72800_K ()I
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKESPECIAL net/minecraft/util/math/AxisAlignedBB.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)V
+    LDC 3.0
+    INVOKEVIRTUAL net/minecraft/util/math/AxisAlignedBB.func_186662_g (D)Lnet/minecraft/util/math/AxisAlignedBB;
+    ASTORE 3
+   L2
+    LINENUMBER 489 L2
+    ALOAD 0
+    LDC Lnet/minecraft/entity/EntityLivingBase;.class
+    ALOAD 3
+    NEW net/minecraft/world/WorldServer$1
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/WorldServer$1.<init> (Lnet/minecraft/world/WorldServer;)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175647_a (Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;
+    ASTORE 4
+   L3
+    LINENUMBER 497 L3
+    ALOAD 4
+    INVOKEINTERFACE java/util/List.isEmpty ()Z
+    IFNE L4
+   L5
+    LINENUMBER 499 L5
+    ALOAD 4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    ALOAD 4
+    INVOKEINTERFACE java/util/List.size ()I
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/EntityLivingBase
+    INVOKEVIRTUAL net/minecraft/entity/EntityLivingBase.func_180425_c ()Lnet/minecraft/util/math/BlockPos;
+    ARETURN
+   L4
+    LINENUMBER 503 L4
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/util/math/BlockPos net/minecraft/util/math/AxisAlignedBB java/util/List] []
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177956_o ()I
+    ICONST_M1
+    IF_ICMPNE L6
+   L7
+    LINENUMBER 505 L7
+    ALOAD 2
+    ICONST_2
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177981_b (I)Lnet/minecraft/util/math/BlockPos;
+    ASTORE 2
+   L6
+    LINENUMBER 508 L6
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/util/math/BlockPos net/minecraft/util/math/AxisAlignedBB java/util/List] []
+    ALOAD 2
+    ARETURN
+   L8
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L8 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L8 1
+    LOCALVARIABLE blockpos Lnet/minecraft/util/math/BlockPos; L1 L8 2
+    LOCALVARIABLE axisalignedbb Lnet/minecraft/util/math/AxisAlignedBB; L2 L8 3
+    LOCALVARIABLE list Ljava/util/List; L3 L8 4
+    // signature Ljava/util/List<Lnet/minecraft/entity/EntityLivingBase;>;
+    // declaration: java.util.List<net.minecraft.entity.EntityLivingBase>
+    MAXSTACK = 8
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public func_175691_a(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)Z
+   L0
+    LINENUMBER 514 L0
+    NEW net/minecraft/world/NextTickListEntry
+    DUP
+    ALOAD 1
+    ALOAD 2
+    INVOKESPECIAL net/minecraft/world/NextTickListEntry.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)V
+    ASTORE 3
+   L1
+    LINENUMBER 515 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_94579_S : Ljava/util/List;
+    ALOAD 3
+    INVOKEINTERFACE java/util/List.contains (Ljava/lang/Object;)Z
+    IRETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L2 1
+    LOCALVARIABLE blockType Lnet/minecraft/block/Block; L0 L2 2
+    LOCALVARIABLE nextticklistentry Lnet/minecraft/world/NextTickListEntry; L1 L2 3
+    MAXSTACK = 4
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_184145_b(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)Z
+   L0
+    LINENUMBER 520 L0
+    NEW net/minecraft/world/NextTickListEntry
+    DUP
+    ALOAD 1
+    ALOAD 2
+    INVOKESPECIAL net/minecraft/world/NextTickListEntry.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)V
+    ASTORE 3
+   L1
+    LINENUMBER 521 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 3
+    INVOKEINTERFACE java/util/Set.contains (Ljava/lang/Object;)Z
+    IRETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L2 1
+    LOCALVARIABLE blk Lnet/minecraft/block/Block; L0 L2 2
+    LOCALVARIABLE nextticklistentry Lnet/minecraft/world/NextTickListEntry; L1 L2 3
+    MAXSTACK = 4
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_175684_a(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;I)V
+   L0
+    LINENUMBER 526 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    ILOAD 3
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175654_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;II)V
+   L1
+    LINENUMBER 527 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L2 1
+    LOCALVARIABLE blockIn Lnet/minecraft/block/Block; L0 L2 2
+    LOCALVARIABLE delay I L0 L2 3
+    MAXSTACK = 5
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_175654_a(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;II)V
+   L0
+    LINENUMBER 531 L0
+    ALOAD 1
+    INSTANCEOF net/minecraft/util/math/BlockPos$MutableBlockPos
+    IFNE L1
+    ALOAD 1
+    INSTANCEOF net/minecraft/util/math/BlockPos$PooledMutableBlockPos
+    IFEQ L2
+   L1
+    LINENUMBER 533 L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I] []
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (Lnet/minecraft/util/math/Vec3i;)V
+    ASTORE 1
+   L3
+    LINENUMBER 534 L3
+    INVOKESTATIC org/apache/logging/log4j/LogManager.getLogger ()Lorg/apache/logging/log4j/Logger;
+    LDC "Tried to assign a mutable BlockPos to tick data..."
+    NEW java/lang/Error
+    DUP
+    ALOAD 1
+    INVOKEVIRTUAL java/lang/Object.getClass ()Ljava/lang/Class;
+    INVOKEVIRTUAL java/lang/Class.toString ()Ljava/lang/String;
+    INVOKESPECIAL java/lang/Error.<init> (Ljava/lang/String;)V
+    INVOKEINTERFACE org/apache/logging/log4j/Logger.warn (Ljava/lang/String;Ljava/lang/Throwable;)V
+   L2
+    LINENUMBER 537 L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I] []
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/block/Block.func_176223_P ()Lnet/minecraft/block/state/IBlockState;
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_185904_a ()Lnet/minecraft/block/material/Material;
+    ASTORE 5
+   L4
+    LINENUMBER 539 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72999_e : Z
+    IFEQ L5
+    ALOAD 5
+    GETSTATIC net/minecraft/block/material/Material.field_151579_a : Lnet/minecraft/block/material/Material;
+    IF_ACMPEQ L5
+   L6
+    LINENUMBER 541 L6
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/block/Block.func_149698_L ()Z
+    IFEQ L7
+   L8
+    LINENUMBER 544 L8
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.getPersistentChunks ()Lcom/google/common/collect/ImmutableSetMultimap;
+    NEW net/minecraft/util/math/ChunkPos
+    DUP
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/util/math/ChunkPos.<init> (Lnet/minecraft/util/math/BlockPos;)V
+    INVOKEVIRTUAL com/google/common/collect/ImmutableSetMultimap.containsKey (Ljava/lang/Object;)Z
+    ISTORE 6
+   L9
+    LINENUMBER 545 L9
+    ILOAD 6
+    IFEQ L10
+    ICONST_0
+    GOTO L11
+   L10
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material I] []
+    BIPUSH 8
+   L11
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material I] [I]
+    ISTORE 7
+   L12
+    LINENUMBER 546 L12
+    ALOAD 0
+    ALOAD 1
+    ILOAD 7
+    INEG
+    ILOAD 7
+    INEG
+    ILOAD 7
+    INEG
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177982_a (III)Lnet/minecraft/util/math/BlockPos;
+    ALOAD 1
+    ILOAD 7
+    ILOAD 7
+    ILOAD 7
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177982_a (III)Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175707_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L13
+   L14
+    LINENUMBER 548 L14
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_180495_p (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+    ASTORE 8
+   L15
+    LINENUMBER 550 L15
+    ALOAD 8
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_185904_a ()Lnet/minecraft/block/material/Material;
+    GETSTATIC net/minecraft/block/material/Material.field_151579_a : Lnet/minecraft/block/material/Material;
+    IF_ACMPEQ L13
+    ALOAD 8
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ALOAD 2
+    IF_ACMPNE L13
+   L16
+    LINENUMBER 552 L16
+    ALOAD 8
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ALOAD 0
+    ALOAD 1
+    ALOAD 8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    INVOKEVIRTUAL net/minecraft/block/Block.func_180650_b (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V
+   L13
+    LINENUMBER 556 L13
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material I I] []
+    RETURN
+   L7
+    LINENUMBER 559 L7
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material] []
+    ICONST_1
+    ISTORE 3
+   L5
+    LINENUMBER 562 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material] []
+    NEW net/minecraft/world/NextTickListEntry
+    DUP
+    ALOAD 1
+    ALOAD 2
+    INVOKESPECIAL net/minecraft/world/NextTickListEntry.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)V
+    ASTORE 6
+   L17
+    LINENUMBER 564 L17
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175667_e (Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L18
+   L19
+    LINENUMBER 566 L19
+    ALOAD 5
+    GETSTATIC net/minecraft/block/material/Material.field_151579_a : Lnet/minecraft/block/material/Material;
+    IF_ACMPEQ L20
+   L21
+    LINENUMBER 568 L21
+    ALOAD 6
+    ILOAD 3
+    I2L
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_82573_f ()J
+    LADD
+    INVOKEVIRTUAL net/minecraft/world/NextTickListEntry.func_77176_a (J)Lnet/minecraft/world/NextTickListEntry;
+    POP
+   L22
+    LINENUMBER 569 L22
+    ALOAD 6
+    ILOAD 4
+    INVOKEVIRTUAL net/minecraft/world/NextTickListEntry.func_82753_a (I)V
+   L20
+    LINENUMBER 572 L20
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material net/minecraft/world/NextTickListEntry] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 6
+    INVOKEINTERFACE java/util/Set.contains (Ljava/lang/Object;)Z
+    IFNE L18
+   L23
+    LINENUMBER 574 L23
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 6
+    INVOKEINTERFACE java/util/Set.add (Ljava/lang/Object;)Z
+    POP
+   L24
+    LINENUMBER 575 L24
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    ALOAD 6
+    INVOKEVIRTUAL java/util/TreeSet.add (Ljava/lang/Object;)Z
+    POP
+   L18
+    LINENUMBER 578 L18
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/material/Material net/minecraft/world/NextTickListEntry] []
+    RETURN
+   L25
+    LOCALVARIABLE iblockstate Lnet/minecraft/block/state/IBlockState; L15 L13 8
+    LOCALVARIABLE isForced Z L9 L7 6
+    LOCALVARIABLE range I L12 L7 7
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L25 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L25 1
+    LOCALVARIABLE blockIn Lnet/minecraft/block/Block; L0 L25 2
+    LOCALVARIABLE delay I L0 L25 3
+    LOCALVARIABLE priority I L0 L25 4
+    LOCALVARIABLE material Lnet/minecraft/block/material/Material; L4 L25 5
+    LOCALVARIABLE nextticklistentry Lnet/minecraft/world/NextTickListEntry; L17 L25 6
+    MAXSTACK = 6
+    MAXLOCALS = 9
+
+  // access flags 0x1
+  public func_180497_b(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;II)V
+   L0
+    LINENUMBER 582 L0
+    ALOAD 2
+    IFNONNULL L1
+    RETURN
+   L1
+    LINENUMBER 583 L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/util/math/BlockPos$MutableBlockPos
+    IFNE L2
+    ALOAD 1
+    INSTANCEOF net/minecraft/util/math/BlockPos$PooledMutableBlockPos
+    IFEQ L3
+   L2
+    LINENUMBER 585 L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I] []
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (Lnet/minecraft/util/math/Vec3i;)V
+    ASTORE 1
+   L4
+    LINENUMBER 586 L4
+    INVOKESTATIC org/apache/logging/log4j/LogManager.getLogger ()Lorg/apache/logging/log4j/Logger;
+    LDC "Tried to assign a mutable BlockPos to tick data..."
+    NEW java/lang/Error
+    DUP
+    ALOAD 1
+    INVOKEVIRTUAL java/lang/Object.getClass ()Ljava/lang/Class;
+    INVOKEVIRTUAL java/lang/Class.toString ()Ljava/lang/String;
+    INVOKESPECIAL java/lang/Error.<init> (Ljava/lang/String;)V
+    INVOKEINTERFACE org/apache/logging/log4j/Logger.warn (Ljava/lang/String;Ljava/lang/Throwable;)V
+   L3
+    LINENUMBER 589 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I] []
+    NEW net/minecraft/world/NextTickListEntry
+    DUP
+    ALOAD 1
+    ALOAD 2
+    INVOKESPECIAL net/minecraft/world/NextTickListEntry.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)V
+    ASTORE 5
+   L5
+    LINENUMBER 590 L5
+    ALOAD 5
+    ILOAD 4
+    INVOKEVIRTUAL net/minecraft/world/NextTickListEntry.func_82753_a (I)V
+   L6
+    LINENUMBER 591 L6
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/block/Block.func_176223_P ()Lnet/minecraft/block/state/IBlockState;
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_185904_a ()Lnet/minecraft/block/material/Material;
+    ASTORE 6
+   L7
+    LINENUMBER 593 L7
+    ALOAD 6
+    GETSTATIC net/minecraft/block/material/Material.field_151579_a : Lnet/minecraft/block/material/Material;
+    IF_ACMPEQ L8
+   L9
+    LINENUMBER 595 L9
+    ALOAD 5
+    ILOAD 3
+    I2L
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_82573_f ()J
+    LADD
+    INVOKEVIRTUAL net/minecraft/world/NextTickListEntry.func_77176_a (J)Lnet/minecraft/world/NextTickListEntry;
+    POP
+   L8
+    LINENUMBER 598 L8
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/world/NextTickListEntry net/minecraft/block/material/Material] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 5
+    INVOKEINTERFACE java/util/Set.contains (Ljava/lang/Object;)Z
+    IFNE L10
+   L11
+    LINENUMBER 600 L11
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 5
+    INVOKEINTERFACE java/util/Set.add (Ljava/lang/Object;)Z
+    POP
+   L12
+    LINENUMBER 601 L12
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    ALOAD 5
+    INVOKEVIRTUAL java/util/TreeSet.add (Ljava/lang/Object;)Z
+    POP
+   L10
+    LINENUMBER 603 L10
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/world/NextTickListEntry net/minecraft/block/material/Material] []
+    RETURN
+   L13
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L13 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L13 1
+    LOCALVARIABLE blockIn Lnet/minecraft/block/Block; L0 L13 2
+    LOCALVARIABLE delay I L0 L13 3
+    LOCALVARIABLE priority I L0 L13 4
+    LOCALVARIABLE nextticklistentry Lnet/minecraft/world/NextTickListEntry; L5 L13 5
+    LOCALVARIABLE material Lnet/minecraft/block/material/Material; L7 L13 6
+    MAXSTACK = 5
+    MAXLOCALS = 7
+
+  // access flags 0x1
+  public func_72939_s()V
+   L0
+    LINENUMBER 607 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.isEmpty ()Z
+    IFEQ L1
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.getPersistentChunks ()Lcom/google/common/collect/ImmutableSetMultimap;
+    INVOKEVIRTUAL com/google/common/collect/ImmutableSetMultimap.isEmpty ()Z
+    IFEQ L1
+   L2
+    LINENUMBER 609 L2
+    ALOAD 0
+    DUP
+    GETFIELD net/minecraft/world/WorldServer.field_80004_Q : I
+    DUP_X1
+    ICONST_1
+    IADD
+    PUTFIELD net/minecraft/world/WorldServer.field_80004_Q : I
+    SIPUSH 300
+    IF_ICMPLT L3
+   L4
+    LINENUMBER 611 L4
+    RETURN
+   L1
+    LINENUMBER 616 L1
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82742_i ()V
+   L3
+    LINENUMBER 619 L3
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_186059_r ()V
+   L5
+    LINENUMBER 620 L5
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/World.func_72939_s ()V
+   L6
+    LINENUMBER 621 L6
+    RETURN
+   L7
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L7 0
+    MAXSTACK = 4
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_184147_l()V
+    TRYCATCHBLOCK L0 L1 L2 java/lang/Throwable
+   L3
+    LINENUMBER 625 L3
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/World.func_184147_l ()V
+   L4
+    LINENUMBER 626 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "players"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76318_c (Ljava/lang/String;)V
+   L5
+    LINENUMBER 628 L5
+    ICONST_0
+    ISTORE 1
+   L6
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    ILOAD 1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L7
+   L8
+    LINENUMBER 630 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    ILOAD 1
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/Entity
+    ASTORE 2
+   L9
+    LINENUMBER 631 L9
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_184187_bx ()Lnet/minecraft/entity/Entity;
+    ASTORE 3
+   L10
+    LINENUMBER 633 L10
+    ALOAD 3
+    IFNULL L11
+   L12
+    LINENUMBER 635 L12
+    ALOAD 3
+    GETFIELD net/minecraft/entity/Entity.field_70128_L : Z
+    IFNE L13
+    ALOAD 3
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_184196_w (Lnet/minecraft/entity/Entity;)Z
+    IFEQ L13
+   L14
+    LINENUMBER 637 L14
+    GOTO L15
+   L13
+    LINENUMBER 640 L13
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity] []
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_184210_p ()V
+   L11
+    LINENUMBER 643 L11
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "tick"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L16
+    LINENUMBER 645 L16
+    ALOAD 2
+    GETFIELD net/minecraft/entity/Entity.field_70128_L : Z
+    IFNE L17
+   L0
+    LINENUMBER 649 L0
+    ALOAD 0
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72870_g (Lnet/minecraft/entity/Entity;)V
+   L1
+    LINENUMBER 657 L1
+    GOTO L17
+   L2
+    LINENUMBER 651 L2
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity] [java/lang/Throwable]
+    ASTORE 4
+   L18
+    LINENUMBER 653 L18
+    ALOAD 4
+    LDC "Ticking player"
+    INVOKESTATIC net/minecraft/crash/CrashReport.func_85055_a (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/crash/CrashReport;
+    ASTORE 5
+   L19
+    LINENUMBER 654 L19
+    ALOAD 5
+    LDC "Player being ticked"
+    INVOKEVIRTUAL net/minecraft/crash/CrashReport.func_85058_a (Ljava/lang/String;)Lnet/minecraft/crash/CrashReportCategory;
+    ASTORE 6
+   L20
+    LINENUMBER 655 L20
+    ALOAD 2
+    ALOAD 6
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_85029_a (Lnet/minecraft/crash/CrashReportCategory;)V
+   L21
+    LINENUMBER 656 L21
+    NEW net/minecraft/util/ReportedException
+    DUP
+    ALOAD 5
+    INVOKESPECIAL net/minecraft/util/ReportedException.<init> (Lnet/minecraft/crash/CrashReport;)V
+    ATHROW
+   L17
+    LINENUMBER 660 L17
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L22
+    LINENUMBER 661 L22
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "remove"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L23
+    LINENUMBER 663 L23
+    ALOAD 2
+    GETFIELD net/minecraft/entity/Entity.field_70128_L : Z
+    IFEQ L24
+   L25
+    LINENUMBER 665 L25
+    ALOAD 2
+    GETFIELD net/minecraft/entity/Entity.field_70176_ah : I
+    ISTORE 4
+   L26
+    LINENUMBER 666 L26
+    ALOAD 2
+    GETFIELD net/minecraft/entity/Entity.field_70164_aj : I
+    ISTORE 5
+   L27
+    LINENUMBER 668 L27
+    ALOAD 2
+    GETFIELD net/minecraft/entity/Entity.field_70175_ag : Z
+    IFEQ L28
+    ALOAD 0
+    ILOAD 4
+    ILOAD 5
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175680_a (IIZ)Z
+    IFEQ L28
+   L29
+    LINENUMBER 670 L29
+    ALOAD 0
+    ILOAD 4
+    ILOAD 5
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72964_e (II)Lnet/minecraft/world/chunk/Chunk;
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/world/chunk/Chunk.func_76622_b (Lnet/minecraft/entity/Entity;)V
+   L28
+    LINENUMBER 673 L28
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72996_f : Ljava/util/List;
+    ALOAD 2
+    INVOKEINTERFACE java/util/List.remove (Ljava/lang/Object;)Z
+    POP
+   L30
+    LINENUMBER 674 L30
+    ALOAD 0
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72847_b (Lnet/minecraft/entity/Entity;)V
+   L24
+    LINENUMBER 677 L24
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L15
+    LINENUMBER 628 L15
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/entity/Entity net/minecraft/entity/Entity] []
+    IINC 1 1
+    GOTO L6
+   L7
+    LINENUMBER 679 L7
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    RETURN
+   L31
+    LOCALVARIABLE crashreport Lnet/minecraft/crash/CrashReport; L19 L17 5
+    LOCALVARIABLE crashreportcategory Lnet/minecraft/crash/CrashReportCategory; L20 L17 6
+    LOCALVARIABLE throwable Ljava/lang/Throwable; L18 L17 4
+    LOCALVARIABLE j I L26 L24 4
+    LOCALVARIABLE k I L27 L24 5
+    LOCALVARIABLE entity Lnet/minecraft/entity/Entity; L9 L15 2
+    LOCALVARIABLE entity1 Lnet/minecraft/entity/Entity; L10 L15 3
+    LOCALVARIABLE i I L6 L7 1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L3 L31 0
+    MAXSTACK = 4
+    MAXLOCALS = 7
+
+  // access flags 0x1
+  public func_82742_i()V
+   L0
+    LINENUMBER 683 L0
+    ALOAD 0
+    ICONST_0
+    PUTFIELD net/minecraft/world/WorldServer.field_80004_Q : I
+   L1
+    LINENUMBER 684 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_72955_a(Z)Z
+    TRYCATCHBLOCK L0 L1 L2 java/lang/Throwable
+   L3
+    LINENUMBER 688 L3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76067_t ()Lnet/minecraft/world/WorldType;
+    GETSTATIC net/minecraft/world/WorldType.field_180272_g : Lnet/minecraft/world/WorldType;
+    IF_ACMPNE L4
+   L5
+    LINENUMBER 690 L5
+    ICONST_0
+    IRETURN
+   L4
+    LINENUMBER 694 L4
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    INVOKEVIRTUAL java/util/TreeSet.size ()I
+    ISTORE 2
+   L6
+    LINENUMBER 696 L6
+    ILOAD 2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.size ()I
+    IF_ICMPEQ L7
+   L8
+    LINENUMBER 698 L8
+    NEW java/lang/IllegalStateException
+    DUP
+    LDC "TickNextTick list out of synch"
+    INVOKESPECIAL java/lang/IllegalStateException.<init> (Ljava/lang/String;)V
+    ATHROW
+   L7
+    LINENUMBER 702 L7
+   FRAME FULL [net/minecraft/world/WorldServer I I] []
+    ILOAD 2
+    LDC 65536
+    IF_ICMPLE L9
+   L10
+    LINENUMBER 704 L10
+    LDC 65536
+    ISTORE 2
+   L9
+    LINENUMBER 707 L9
+   FRAME FULL [net/minecraft/world/WorldServer I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "cleaning"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L11
+    LINENUMBER 709 L11
+    ICONST_0
+    ISTORE 3
+   L12
+   FRAME FULL [net/minecraft/world/WorldServer I I I] []
+    ILOAD 3
+    ILOAD 2
+    IF_ICMPGE L13
+   L14
+    LINENUMBER 711 L14
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    INVOKEVIRTUAL java/util/TreeSet.first ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/NextTickListEntry
+    ASTORE 4
+   L15
+    LINENUMBER 713 L15
+    ILOAD 1
+    IFNE L16
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_77180_e : J
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_82573_f ()J
+    LCMP
+    IFLE L16
+   L17
+    LINENUMBER 715 L17
+    GOTO L13
+   L16
+    LINENUMBER 718 L16
+   FRAME FULL [net/minecraft/world/WorldServer I I I net/minecraft/world/NextTickListEntry] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    ALOAD 4
+    INVOKEVIRTUAL java/util/TreeSet.remove (Ljava/lang/Object;)Z
+    POP
+   L18
+    LINENUMBER 719 L18
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 4
+    INVOKEINTERFACE java/util/Set.remove (Ljava/lang/Object;)Z
+    POP
+   L19
+    LINENUMBER 720 L19
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_94579_S : Ljava/util/List;
+    ALOAD 4
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L20
+    LINENUMBER 709 L20
+    IINC 3 1
+    GOTO L12
+   L13
+    LINENUMBER 723 L13
+   FRAME FULL [net/minecraft/world/WorldServer I I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L21
+    LINENUMBER 724 L21
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    LDC "ticking"
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76320_a (Ljava/lang/String;)V
+   L22
+    LINENUMBER 725 L22
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_94579_S : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 3
+   L23
+    LINENUMBER 727 L23
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] []
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L24
+   L25
+    LINENUMBER 729 L25
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/NextTickListEntry
+    ASTORE 4
+   L26
+    LINENUMBER 730 L26
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.remove ()V
+   L27
+    LINENUMBER 734 L27
+    ICONST_0
+    ISTORE 5
+   L28
+    LINENUMBER 736 L28
+    ALOAD 0
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177982_a (III)Lnet/minecraft/util/math/BlockPos;
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    ICONST_0
+    ICONST_0
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177982_a (III)Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175707_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L29
+   L30
+    LINENUMBER 738 L30
+    ALOAD 0
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_180495_p (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+    ASTORE 6
+   L31
+    LINENUMBER 740 L31
+    ALOAD 6
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_185904_a ()Lnet/minecraft/block/material/Material;
+    GETSTATIC net/minecraft/block/material/Material.field_151579_a : Lnet/minecraft/block/material/Material;
+    IF_ACMPEQ L32
+    ALOAD 6
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ALOAD 4
+    INVOKEVIRTUAL net/minecraft/world/NextTickListEntry.func_151351_a ()Lnet/minecraft/block/Block;
+    INVOKESTATIC net/minecraft/block/Block.func_149680_a (Lnet/minecraft/block/Block;Lnet/minecraft/block/Block;)Z
+    IFEQ L32
+   L0
+    LINENUMBER 744 L0
+    ALOAD 6
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ALOAD 0
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    ALOAD 6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    INVOKEVIRTUAL net/minecraft/block/Block.func_180650_b (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V
+   L1
+    LINENUMBER 752 L1
+    GOTO L32
+   L2
+    LINENUMBER 746 L2
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator net/minecraft/world/NextTickListEntry I net/minecraft/block/state/IBlockState] [java/lang/Throwable]
+    ASTORE 7
+   L33
+    LINENUMBER 748 L33
+    ALOAD 7
+    LDC "Exception while ticking a block"
+    INVOKESTATIC net/minecraft/crash/CrashReport.func_85055_a (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/crash/CrashReport;
+    ASTORE 8
+   L34
+    LINENUMBER 749 L34
+    ALOAD 8
+    LDC "Block being ticked"
+    INVOKEVIRTUAL net/minecraft/crash/CrashReport.func_85058_a (Ljava/lang/String;)Lnet/minecraft/crash/CrashReportCategory;
+    ASTORE 9
+   L35
+    LINENUMBER 750 L35
+    ALOAD 9
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    ALOAD 6
+    INVOKESTATIC net/minecraft/crash/CrashReportCategory.func_175750_a (Lnet/minecraft/crash/CrashReportCategory;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)V
+   L36
+    LINENUMBER 751 L36
+    NEW net/minecraft/util/ReportedException
+    DUP
+    ALOAD 8
+    INVOKESPECIAL net/minecraft/util/ReportedException.<init> (Lnet/minecraft/crash/CrashReport;)V
+    ATHROW
+   L32
+    LINENUMBER 754 L32
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator net/minecraft/world/NextTickListEntry I net/minecraft/block/state/IBlockState] []
+    GOTO L37
+   L29
+    LINENUMBER 757 L29
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator net/minecraft/world/NextTickListEntry I] []
+    ALOAD 0
+    ALOAD 4
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    ALOAD 4
+    INVOKEVIRTUAL net/minecraft/world/NextTickListEntry.func_151351_a ()Lnet/minecraft/block/Block;
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175684_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;I)V
+   L37
+    LINENUMBER 759 L37
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator net/minecraft/world/NextTickListEntry I] []
+    GOTO L23
+   L24
+    LINENUMBER 761 L24
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72984_F : Lnet/minecraft/profiler/Profiler;
+    INVOKEVIRTUAL net/minecraft/profiler/Profiler.func_76319_b ()V
+   L38
+    LINENUMBER 762 L38
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_94579_S : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.clear ()V
+   L39
+    LINENUMBER 763 L39
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    INVOKEVIRTUAL java/util/TreeSet.isEmpty ()Z
+    IFNE L40
+    ICONST_1
+    GOTO L41
+   L40
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] []
+    ICONST_0
+   L41
+   FRAME FULL [net/minecraft/world/WorldServer I I java/util/Iterator] [I]
+    IRETURN
+   L42
+    LOCALVARIABLE nextticklistentry Lnet/minecraft/world/NextTickListEntry; L15 L20 4
+    LOCALVARIABLE j I L12 L13 3
+    LOCALVARIABLE crashreport Lnet/minecraft/crash/CrashReport; L34 L32 8
+    LOCALVARIABLE crashreportcategory Lnet/minecraft/crash/CrashReportCategory; L35 L32 9
+    LOCALVARIABLE throwable Ljava/lang/Throwable; L33 L32 7
+    LOCALVARIABLE iblockstate Lnet/minecraft/block/state/IBlockState; L31 L32 6
+    LOCALVARIABLE nextticklistentry1 Lnet/minecraft/world/NextTickListEntry; L26 L37 4
+    LOCALVARIABLE k I L28 L37 5
+    LOCALVARIABLE iterator Ljava/util/Iterator; L23 L42 3
+    // signature Ljava/util/Iterator<Lnet/minecraft/world/NextTickListEntry;>;
+    // declaration: java.util.Iterator<net.minecraft.world.NextTickListEntry>
+    LOCALVARIABLE i I L6 L42 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L3 L42 0
+    LOCALVARIABLE p_72955_1_ Z L3 L42 1
+    MAXSTACK = 6
+    MAXLOCALS = 10
+
+  // access flags 0x1
+  // signature (Lnet/minecraft/world/chunk/Chunk;Z)Ljava/util/List<Lnet/minecraft/world/NextTickListEntry;>;
+  // declaration: java.util.List<net.minecraft.world.NextTickListEntry> func_72920_a(net.minecraft.world.chunk.Chunk, boolean)
+  public func_72920_a(Lnet/minecraft/world/chunk/Chunk;Z)Ljava/util/List;
+  @Ljavax/annotation/Nullable;()
+   L0
+    LINENUMBER 771 L0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/chunk/Chunk.func_76632_l ()Lnet/minecraft/util/math/ChunkPos;
+    ASTORE 3
+   L1
+    LINENUMBER 772 L1
+    ALOAD 3
+    GETFIELD net/minecraft/util/math/ChunkPos.field_77276_a : I
+    ICONST_4
+    ISHL
+    ICONST_2
+    ISUB
+    ISTORE 4
+   L2
+    LINENUMBER 773 L2
+    ILOAD 4
+    BIPUSH 16
+    IADD
+    ICONST_2
+    IADD
+    ISTORE 5
+   L3
+    LINENUMBER 774 L3
+    ALOAD 3
+    GETFIELD net/minecraft/util/math/ChunkPos.field_77275_b : I
+    ICONST_4
+    ISHL
+    ICONST_2
+    ISUB
+    ISTORE 6
+   L4
+    LINENUMBER 775 L4
+    ILOAD 6
+    BIPUSH 16
+    IADD
+    ICONST_2
+    IADD
+    ISTORE 7
+   L5
+    LINENUMBER 776 L5
+    ALOAD 0
+    NEW net/minecraft/world/gen/structure/StructureBoundingBox
+    DUP
+    ILOAD 4
+    ICONST_0
+    ILOAD 6
+    ILOAD 5
+    SIPUSH 256
+    ILOAD 7
+    INVOKESPECIAL net/minecraft/world/gen/structure/StructureBoundingBox.<init> (IIIIII)V
+    ILOAD 2
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175712_a (Lnet/minecraft/world/gen/structure/StructureBoundingBox;Z)Ljava/util/List;
+    ARETURN
+   L6
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L6 0
+    LOCALVARIABLE chunkIn Lnet/minecraft/world/chunk/Chunk; L0 L6 1
+    LOCALVARIABLE p_72920_2_ Z L0 L6 2
+    LOCALVARIABLE chunkpos Lnet/minecraft/util/math/ChunkPos; L1 L6 3
+    LOCALVARIABLE i I L2 L6 4
+    LOCALVARIABLE j I L3 L6 5
+    LOCALVARIABLE k I L4 L6 6
+    LOCALVARIABLE l I L5 L6 7
+    MAXSTACK = 9
+    MAXLOCALS = 8
+
+  // access flags 0x1
+  // signature (Lnet/minecraft/world/gen/structure/StructureBoundingBox;Z)Ljava/util/List<Lnet/minecraft/world/NextTickListEntry;>;
+  // declaration: java.util.List<net.minecraft.world.NextTickListEntry> func_175712_a(net.minecraft.world.gen.structure.StructureBoundingBox, boolean)
+  public func_175712_a(Lnet/minecraft/world/gen/structure/StructureBoundingBox;Z)Ljava/util/List;
+  @Ljavax/annotation/Nullable;()
+   L0
+    LINENUMBER 782 L0
+    ACONST_NULL
+    ASTORE 3
+   L1
+    LINENUMBER 784 L1
+    ICONST_0
+    ISTORE 4
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I] []
+    ILOAD 4
+    ICONST_2
+    IF_ICMPGE L3
+   L4
+    LINENUMBER 788 L4
+    ILOAD 4
+    IFNE L5
+   L6
+    LINENUMBER 790 L6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73065_O : Ljava/util/TreeSet;
+    INVOKEVIRTUAL java/util/TreeSet.iterator ()Ljava/util/Iterator;
+    ASTORE 5
+   L7
+    GOTO L8
+   L5
+    LINENUMBER 794 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_94579_S : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 5
+   L8
+    LINENUMBER 797 L8
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I java/util/Iterator] []
+    ALOAD 5
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L9
+   L10
+    LINENUMBER 799 L10
+    ALOAD 5
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/NextTickListEntry
+    ASTORE 6
+   L11
+    LINENUMBER 800 L11
+    ALOAD 6
+    GETFIELD net/minecraft/world/NextTickListEntry.field_180282_a : Lnet/minecraft/util/math/BlockPos;
+    ASTORE 7
+   L12
+    LINENUMBER 802 L12
+    ALOAD 7
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    ALOAD 1
+    GETFIELD net/minecraft/world/gen/structure/StructureBoundingBox.field_78897_a : I
+    IF_ICMPLT L13
+    ALOAD 7
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    ALOAD 1
+    GETFIELD net/minecraft/world/gen/structure/StructureBoundingBox.field_78893_d : I
+    IF_ICMPGE L13
+    ALOAD 7
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    ALOAD 1
+    GETFIELD net/minecraft/world/gen/structure/StructureBoundingBox.field_78896_c : I
+    IF_ICMPLT L13
+    ALOAD 7
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    ALOAD 1
+    GETFIELD net/minecraft/world/gen/structure/StructureBoundingBox.field_78892_f : I
+    IF_ICMPGE L13
+   L14
+    LINENUMBER 804 L14
+    ILOAD 2
+    IFEQ L15
+   L16
+    LINENUMBER 806 L16
+    ILOAD 4
+    IFNE L17
+   L18
+    LINENUMBER 808 L18
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73064_N : Ljava/util/Set;
+    ALOAD 6
+    INVOKEINTERFACE java/util/Set.remove (Ljava/lang/Object;)Z
+    POP
+   L17
+    LINENUMBER 811 L17
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I java/util/Iterator net/minecraft/world/NextTickListEntry net/minecraft/util/math/BlockPos] []
+    ALOAD 5
+    INVOKEINTERFACE java/util/Iterator.remove ()V
+   L15
+    LINENUMBER 814 L15
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I java/util/Iterator net/minecraft/world/NextTickListEntry net/minecraft/util/math/BlockPos] []
+    ALOAD 3
+    IFNONNULL L19
+   L20
+    LINENUMBER 816 L20
+    INVOKESTATIC com/google/common/collect/Lists.newArrayList ()Ljava/util/ArrayList;
+    ASTORE 3
+   L19
+    LINENUMBER 819 L19
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I java/util/Iterator net/minecraft/world/NextTickListEntry net/minecraft/util/math/BlockPos] []
+    ALOAD 3
+    ALOAD 6
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L13
+    LINENUMBER 821 L13
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I java/util/Iterator net/minecraft/world/NextTickListEntry net/minecraft/util/math/BlockPos] []
+    GOTO L8
+   L9
+    LINENUMBER 784 L9
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I java/util/Iterator] []
+    IINC 4 1
+    GOTO L2
+   L3
+    LINENUMBER 824 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/structure/StructureBoundingBox I java/util/ArrayList I] []
+    ALOAD 3
+    ARETURN
+   L21
+    LOCALVARIABLE iterator Ljava/util/Iterator; L7 L5 5
+    // signature Ljava/util/Iterator<Lnet/minecraft/world/NextTickListEntry;>;
+    // declaration: java.util.Iterator<net.minecraft.world.NextTickListEntry>
+    LOCALVARIABLE nextticklistentry Lnet/minecraft/world/NextTickListEntry; L11 L13 6
+    LOCALVARIABLE blockpos Lnet/minecraft/util/math/BlockPos; L12 L13 7
+    LOCALVARIABLE iterator Ljava/util/Iterator; L8 L9 5
+    // signature Ljava/util/Iterator<Lnet/minecraft/world/NextTickListEntry;>;
+    // declaration: java.util.Iterator<net.minecraft.world.NextTickListEntry>
+    LOCALVARIABLE i I L2 L3 4
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L21 0
+    LOCALVARIABLE structureBB Lnet/minecraft/world/gen/structure/StructureBoundingBox; L0 L21 1
+    LOCALVARIABLE p_175712_2_ Z L0 L21 2
+    LOCALVARIABLE list Ljava/util/List; L1 L21 3
+    // signature Ljava/util/List<Lnet/minecraft/world/NextTickListEntry;>;
+    // declaration: java.util.List<net.minecraft.world.NextTickListEntry>
+    MAXSTACK = 2
+    MAXLOCALS = 8
+
+  // access flags 0x1
+  public func_72866_a(Lnet/minecraft/entity/Entity;Z)V
+   L0
+    LINENUMBER 829 L0
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_175735_ai ()Z
+    IFNE L1
+    ALOAD 1
+    INSTANCEOF net/minecraft/entity/passive/EntityAnimal
+    IFNE L2
+    ALOAD 1
+    INSTANCEOF net/minecraft/entity/passive/EntityWaterMob
+    IFEQ L1
+   L2
+    LINENUMBER 831 L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity I] []
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_70106_y ()V
+   L1
+    LINENUMBER 834 L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity I] []
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_175738_ah ()Z
+    IFNE L3
+    ALOAD 1
+    INSTANCEOF net/minecraft/entity/INpc
+    IFEQ L3
+   L4
+    LINENUMBER 836 L4
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_70106_y ()V
+   L3
+    LINENUMBER 839 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    INVOKESPECIAL net/minecraft/world/World.func_72866_a (Lnet/minecraft/entity/Entity;Z)V
+   L5
+    LINENUMBER 840 L5
+    RETURN
+   L6
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L6 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L6 1
+    LOCALVARIABLE forceUpdate Z L0 L6 2
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public func_175738_ah()Z
+   L0
+    LINENUMBER 844 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_71220_V ()Z
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_175735_ai()Z
+   L0
+    LINENUMBER 849 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_71268_U ()Z
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_72970_h()Lnet/minecraft/world/chunk/IChunkProvider;
+   L0
+    LINENUMBER 854 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73019_z : Lnet/minecraft/world/storage/ISaveHandler;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEINTERFACE net/minecraft/world/storage/ISaveHandler.func_75763_a (Lnet/minecraft/world/WorldProvider;)Lnet/minecraft/world/chunk/storage/IChunkLoader;
+    ASTORE 1
+   L1
+    LINENUMBER 855 L1
+    NEW net/minecraft/world/gen/ChunkProviderServer
+    DUP
+    ALOAD 0
+    ALOAD 1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_186060_c ()Lnet/minecraft/world/chunk/IChunkGenerator;
+    INVOKESPECIAL net/minecraft/world/gen/ChunkProviderServer.<init> (Lnet/minecraft/world/WorldServer;Lnet/minecraft/world/chunk/storage/IChunkLoader;Lnet/minecraft/world/chunk/IChunkGenerator;)V
+    ARETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    LOCALVARIABLE ichunkloader Lnet/minecraft/world/chunk/storage/IChunkLoader; L1 L2 1
+    MAXSTACK = 5
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public func_175660_a(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;)Z
+   L0
+    LINENUMBER 860 L0
+    ALOAD 0
+    ALOAD 1
+    ALOAD 2
+    INVOKESPECIAL net/minecraft/world/World.func_175660_a (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;)Z
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    LOCALVARIABLE player Lnet/minecraft/entity/player/EntityPlayer; L0 L1 1
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L1 2
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public canMineBlockBody(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;)Z
+   L0
+    LINENUMBER 864 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    ALOAD 0
+    ALOAD 2
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_175579_a (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/EntityPlayer;)Z
+    IFNE L1
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177746_a (Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L1
+    ICONST_1
+    GOTO L2
+   L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/player/EntityPlayer net/minecraft/util/math/BlockPos] []
+    ICONST_0
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/player/EntityPlayer net/minecraft/util/math/BlockPos] [I]
+    IRETURN
+   L3
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L3 0
+    LOCALVARIABLE player Lnet/minecraft/entity/player/EntityPlayer; L0 L3 1
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L3 2
+    MAXSTACK = 4
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public func_72963_a(Lnet/minecraft/world/WorldSettings;)V
+    TRYCATCHBLOCK L0 L1 L2 java/lang/Throwable
+    TRYCATCHBLOCK L3 L4 L5 java/lang/Throwable
+   L6
+    LINENUMBER 869 L6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76070_v ()Z
+    IFNE L7
+   L0
+    LINENUMBER 873 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_73052_b (Lnet/minecraft/world/WorldSettings;)V
+   L8
+    LINENUMBER 875 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76067_t ()Lnet/minecraft/world/WorldType;
+    GETSTATIC net/minecraft/world/WorldType.field_180272_g : Lnet/minecraft/world/WorldType;
+    IF_ACMPNE L9
+   L10
+    LINENUMBER 877 L10
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_175737_aj ()V
+   L9
+    LINENUMBER 880 L9
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/World.func_72963_a (Lnet/minecraft/world/WorldSettings;)V
+   L1
+    LINENUMBER 896 L1
+    GOTO L11
+   L2
+    LINENUMBER 882 L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] [java/lang/Throwable]
+    ASTORE 2
+   L12
+    LINENUMBER 884 L12
+    ALOAD 2
+    LDC "Exception initializing level"
+    INVOKESTATIC net/minecraft/crash/CrashReport.func_85055_a (Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/crash/CrashReport;
+    ASTORE 3
+   L3
+    LINENUMBER 888 L3
+    ALOAD 0
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72914_a (Lnet/minecraft/crash/CrashReport;)Lnet/minecraft/crash/CrashReportCategory;
+    POP
+   L4
+    LINENUMBER 893 L4
+    GOTO L13
+   L5
+    LINENUMBER 890 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings java/lang/Throwable net/minecraft/crash/CrashReport] [java/lang/Throwable]
+    ASTORE 4
+   L13
+    LINENUMBER 895 L13
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings java/lang/Throwable net/minecraft/crash/CrashReport] []
+    NEW net/minecraft/util/ReportedException
+    DUP
+    ALOAD 3
+    INVOKESPECIAL net/minecraft/util/ReportedException.<init> (Lnet/minecraft/crash/CrashReport;)V
+    ATHROW
+   L11
+    LINENUMBER 898 L11
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76091_d (Z)V
+   L7
+    LINENUMBER 900 L7
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    RETURN
+   L14
+    LOCALVARIABLE crashreport Lnet/minecraft/crash/CrashReport; L3 L11 3
+    LOCALVARIABLE throwable Ljava/lang/Throwable; L12 L11 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L6 L14 0
+    LOCALVARIABLE settings Lnet/minecraft/world/WorldSettings; L6 L14 1
+    MAXSTACK = 3
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public func_175737_aj()V
+   L0
+    LINENUMBER 904 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176128_f (Z)V
+   L1
+    LINENUMBER 905 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176121_c (Z)V
+   L2
+    LINENUMBER 906 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76084_b (Z)V
+   L3
+    LINENUMBER 907 L3
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76069_a (Z)V
+   L4
+    LINENUMBER 908 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    LDC 1000000000
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176142_i (I)V
+   L5
+    LINENUMBER 909 L5
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    LDC 6000
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76068_b (J)V
+   L6
+    LINENUMBER 910 L6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    GETSTATIC net/minecraft/world/GameType.SPECTATOR : Lnet/minecraft/world/GameType;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76060_a (Lnet/minecraft/world/GameType;)V
+   L7
+    LINENUMBER 911 L7
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176119_g (Z)V
+   L8
+    LINENUMBER 912 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    GETSTATIC net/minecraft/world/EnumDifficulty.PEACEFUL : Lnet/minecraft/world/EnumDifficulty;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176144_a (Lnet/minecraft/world/EnumDifficulty;)V
+   L9
+    LINENUMBER 913 L9
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ICONST_1
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_180783_e (Z)V
+   L10
+    LINENUMBER 914 L10
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_82736_K ()Lnet/minecraft/world/GameRules;
+    LDC "doDaylightCycle"
+    LDC "false"
+    INVOKEVIRTUAL net/minecraft/world/GameRules.func_82764_b (Ljava/lang/String;Ljava/lang/String;)V
+   L11
+    LINENUMBER 915 L11
+    RETURN
+   L12
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L12 0
+    MAXSTACK = 3
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_73052_b(Lnet/minecraft/world/WorldSettings;)V
+   L0
+    LINENUMBER 919 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_76567_e ()Z
+    IFNE L1
+   L2
+    LINENUMBER 921 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    GETSTATIC net/minecraft/util/math/BlockPos.field_177992_a : Lnet/minecraft/util/math/BlockPos;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_76557_i ()I
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177981_b (I)Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176143_a (Lnet/minecraft/util/math/BlockPos;)V
+    GOTO L3
+   L1
+    LINENUMBER 923 L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76067_t ()Lnet/minecraft/world/WorldType;
+    GETSTATIC net/minecraft/world/WorldType.field_180272_g : Lnet/minecraft/world/WorldType;
+    IF_ACMPNE L4
+   L5
+    LINENUMBER 925 L5
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    GETSTATIC net/minecraft/util/math/BlockPos.field_177992_a : Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177984_a ()Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176143_a (Lnet/minecraft/util/math/BlockPos;)V
+    GOTO L3
+   L4
+    LINENUMBER 929 L4
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    ALOAD 0
+    ALOAD 1
+    INVOKESTATIC net/minecraftforge/event/ForgeEventFactory.onCreateWorldSpawn (Lnet/minecraft/world/World;Lnet/minecraft/world/WorldSettings;)Z
+    IFEQ L6
+    RETURN
+   L6
+    LINENUMBER 930 L6
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    ALOAD 0
+    ICONST_1
+    PUTFIELD net/minecraft/world/WorldServer.field_72987_B : Z
+   L7
+    LINENUMBER 931 L7
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_177499_m ()Lnet/minecraft/world/biome/BiomeProvider;
+    ASTORE 2
+   L8
+    LINENUMBER 932 L8
+    ALOAD 2
+    INVOKEVIRTUAL net/minecraft/world/biome/BiomeProvider.func_76932_a ()Ljava/util/List;
+    ASTORE 3
+   L9
+    LINENUMBER 933 L9
+    NEW java/util/Random
+    DUP
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72905_C ()J
+    INVOKESPECIAL java/util/Random.<init> (J)V
+    ASTORE 4
+   L10
+    LINENUMBER 934 L10
+    ALOAD 2
+    ICONST_0
+    ICONST_0
+    SIPUSH 256
+    ALOAD 3
+    ALOAD 4
+    INVOKEVIRTUAL net/minecraft/world/biome/BiomeProvider.func_180630_a (IIILjava/util/List;Ljava/util/Random;)Lnet/minecraft/util/math/BlockPos;
+    ASTORE 5
+   L11
+    LINENUMBER 935 L11
+    BIPUSH 8
+    ISTORE 6
+   L12
+    LINENUMBER 936 L12
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_76557_i ()I
+    ISTORE 7
+   L13
+    LINENUMBER 937 L13
+    BIPUSH 8
+    ISTORE 8
+   L14
+    LINENUMBER 939 L14
+    ALOAD 5
+    IFNULL L15
+   L16
+    LINENUMBER 941 L16
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    ISTORE 6
+   L17
+    LINENUMBER 942 L17
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    ISTORE 8
+    GOTO L18
+   L15
+    LINENUMBER 946 L15
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings net/minecraft/world/biome/BiomeProvider java/util/List java/util/Random net/minecraft/util/math/BlockPos I I I] []
+    GETSTATIC net/minecraft/world/WorldServer.field_147491_a : Lorg/apache/logging/log4j/Logger;
+    LDC "Unable to find spawn biome"
+    INVOKEINTERFACE org/apache/logging/log4j/Logger.warn (Ljava/lang/String;)V
+   L18
+    LINENUMBER 949 L18
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings net/minecraft/world/biome/BiomeProvider java/util/List java/util/Random net/minecraft/util/math/BlockPos I I I] []
+    ICONST_0
+    ISTORE 9
+   L19
+    LINENUMBER 951 L19
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings net/minecraft/world/biome/BiomeProvider java/util/List java/util/Random net/minecraft/util/math/BlockPos I I I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    ILOAD 6
+    ILOAD 8
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_76566_a (II)Z
+    IFNE L20
+   L21
+    LINENUMBER 953 L21
+    ILOAD 6
+    ALOAD 4
+    BIPUSH 64
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ALOAD 4
+    BIPUSH 64
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISUB
+    IADD
+    ISTORE 6
+   L22
+    LINENUMBER 954 L22
+    ILOAD 8
+    ALOAD 4
+    BIPUSH 64
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ALOAD 4
+    BIPUSH 64
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISUB
+    IADD
+    ISTORE 8
+   L23
+    LINENUMBER 955 L23
+    IINC 9 1
+   L24
+    LINENUMBER 957 L24
+    ILOAD 9
+    SIPUSH 1000
+    IF_ICMPNE L19
+   L25
+    LINENUMBER 959 L25
+    GOTO L20
+   L20
+    LINENUMBER 963 L20
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings net/minecraft/world/biome/BiomeProvider java/util/List java/util/Random net/minecraft/util/math/BlockPos I I I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 6
+    ILOAD 7
+    ILOAD 8
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176143_a (Lnet/minecraft/util/math/BlockPos;)V
+   L26
+    LINENUMBER 964 L26
+    ALOAD 0
+    ICONST_0
+    PUTFIELD net/minecraft/world/WorldServer.field_72987_B : Z
+   L27
+    LINENUMBER 966 L27
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/WorldSettings.func_77167_c ()Z
+    IFEQ L3
+   L28
+    LINENUMBER 968 L28
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_73047_i ()V
+   L3
+    LINENUMBER 971 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/WorldSettings] []
+    RETURN
+   L29
+    LOCALVARIABLE biomeprovider Lnet/minecraft/world/biome/BiomeProvider; L8 L3 2
+    LOCALVARIABLE list Ljava/util/List; L9 L3 3
+    // signature Ljava/util/List<Lnet/minecraft/world/biome/Biome;>;
+    // declaration: java.util.List<net.minecraft.world.biome.Biome>
+    LOCALVARIABLE random Ljava/util/Random; L10 L3 4
+    LOCALVARIABLE blockpos Lnet/minecraft/util/math/BlockPos; L11 L3 5
+    LOCALVARIABLE i I L12 L3 6
+    LOCALVARIABLE j I L13 L3 7
+    LOCALVARIABLE k I L14 L3 8
+    LOCALVARIABLE l I L19 L3 9
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L29 0
+    LOCALVARIABLE settings Lnet/minecraft/world/WorldSettings; L0 L29 1
+    MAXSTACK = 6
+    MAXLOCALS = 10
+
+  // access flags 0x1
+  public func_73047_i()V
+   L0
+    LINENUMBER 975 L0
+    NEW net/minecraft/world/gen/feature/WorldGeneratorBonusChest
+    DUP
+    INVOKESPECIAL net/minecraft/world/gen/feature/WorldGeneratorBonusChest.<init> ()V
+    ASTORE 1
+   L1
+    LINENUMBER 977 L1
+    ICONST_0
+    ISTORE 2
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/feature/WorldGeneratorBonusChest I] []
+    ILOAD 2
+    BIPUSH 10
+    IF_ICMPGE L3
+   L4
+    LINENUMBER 979 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76079_c ()I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 6
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 6
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISUB
+    ISTORE 3
+   L5
+    LINENUMBER 980 L5
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_76074_e ()I
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 6
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IADD
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    BIPUSH 6
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    ISUB
+    ISTORE 4
+   L6
+    LINENUMBER 981 L6
+    ALOAD 0
+    NEW net/minecraft/util/math/BlockPos
+    DUP
+    ILOAD 3
+    ICONST_0
+    ILOAD 4
+    INVOKESPECIAL net/minecraft/util/math/BlockPos.<init> (III)V
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175672_r (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177984_a ()Lnet/minecraft/util/math/BlockPos;
+    ASTORE 5
+   L7
+    LINENUMBER 983 L7
+    ALOAD 1
+    ALOAD 0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73012_v : Ljava/util/Random;
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/gen/feature/WorldGeneratorBonusChest.func_180709_b (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;)Z
+    IFEQ L8
+   L9
+    LINENUMBER 985 L9
+    GOTO L3
+   L8
+    LINENUMBER 977 L8
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/feature/WorldGeneratorBonusChest I I I net/minecraft/util/math/BlockPos] []
+    IINC 2 1
+    GOTO L2
+   L3
+    LINENUMBER 988 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/feature/WorldGeneratorBonusChest I] []
+    RETURN
+   L10
+    LOCALVARIABLE j I L5 L8 3
+    LOCALVARIABLE k I L6 L8 4
+    LOCALVARIABLE blockpos Lnet/minecraft/util/math/BlockPos; L7 L8 5
+    LOCALVARIABLE i I L2 L3 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L10 0
+    LOCALVARIABLE worldgeneratorbonuschest Lnet/minecraft/world/gen/feature/WorldGeneratorBonusChest; L1 L10 1
+    MAXSTACK = 6
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public func_180504_m()Lnet/minecraft/util/math/BlockPos;
+   L0
+    LINENUMBER 992 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.func_177496_h ()Lnet/minecraft/util/math/BlockPos;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_73044_a(ZLnet/minecraft/util/IProgressUpdate;)V throws net/minecraft/world/MinecraftException 
+    @Ljavax/annotation/Nullable;() // parameter 1
+   L0
+    LINENUMBER 997 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    ASTORE 3
+   L1
+    LINENUMBER 999 L1
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_73157_c ()Z
+    IFEQ L2
+   L3
+    LINENUMBER 1001 L3
+    ALOAD 2
+    IFNULL L4
+   L5
+    LINENUMBER 1003 L5
+    ALOAD 2
+    LDC "Saving level"
+    INVOKEINTERFACE net/minecraft/util/IProgressUpdate.func_73720_a (Ljava/lang/String;)V
+   L4
+    LINENUMBER 1006 L4
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/util/IProgressUpdate net/minecraft/world/gen/ChunkProviderServer] []
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_73042_a ()V
+   L6
+    LINENUMBER 1008 L6
+    ALOAD 2
+    IFNULL L7
+   L8
+    LINENUMBER 1010 L8
+    ALOAD 2
+    LDC "Saving chunks"
+    INVOKEINTERFACE net/minecraft/util/IProgressUpdate.func_73719_c (Ljava/lang/String;)V
+   L7
+    LINENUMBER 1013 L7
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/util/IProgressUpdate net/minecraft/world/gen/ChunkProviderServer] []
+    ALOAD 3
+    ILOAD 1
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_186027_a (Z)Z
+    POP
+   L9
+    LINENUMBER 1014 L9
+    GETSTATIC net/minecraftforge/common/MinecraftForge.EVENT_BUS : Lnet/minecraftforge/fml/common/eventhandler/EventBus;
+    NEW net/minecraftforge/event/world/WorldEvent$Save
+    DUP
+    ALOAD 0
+    INVOKESPECIAL net/minecraftforge/event/world/WorldEvent$Save.<init> (Lnet/minecraft/world/World;)V
+    INVOKEVIRTUAL net/minecraftforge/fml/common/eventhandler/EventBus.post (Lnet/minecraftforge/fml/common/eventhandler/Event;)Z
+    POP
+   L10
+    LINENUMBER 1016 L10
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_189548_a ()Ljava/util/Collection;
+    INVOKESTATIC com/google/common/collect/Lists.newArrayList (Ljava/lang/Iterable;)Ljava/util/ArrayList;
+    INVOKEVIRTUAL java/util/ArrayList.iterator ()Ljava/util/Iterator;
+    ASTORE 4
+   L11
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/util/IProgressUpdate net/minecraft/world/gen/ChunkProviderServer java/util/Iterator] []
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L2
+    ALOAD 4
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/world/chunk/Chunk
+    ASTORE 5
+   L12
+    LINENUMBER 1018 L12
+    ALOAD 5
+    IFNULL L13
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+    ALOAD 5
+    GETFIELD net/minecraft/world/chunk/Chunk.field_76635_g : I
+    ALOAD 5
+    GETFIELD net/minecraft/world/chunk/Chunk.field_76647_h : I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerChunkMap.func_152621_a (II)Z
+    IFNE L13
+   L14
+    LINENUMBER 1020 L14
+    ALOAD 3
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_189549_a (Lnet/minecraft/world/chunk/Chunk;)V
+   L13
+    LINENUMBER 1022 L13
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/util/IProgressUpdate net/minecraft/world/gen/ChunkProviderServer java/util/Iterator net/minecraft/world/chunk/Chunk] []
+    GOTO L11
+   L2
+    LINENUMBER 1024 L2
+   FRAME FULL [net/minecraft/world/WorldServer I net/minecraft/util/IProgressUpdate net/minecraft/world/gen/ChunkProviderServer] []
+    RETURN
+   L15
+    LOCALVARIABLE chunk Lnet/minecraft/world/chunk/Chunk; L12 L13 5
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L15 0
+    LOCALVARIABLE p_73044_1_ Z L0 L15 1
+    LOCALVARIABLE progressCallback Lnet/minecraft/util/IProgressUpdate; L0 L15 2
+    LOCALVARIABLE chunkproviderserver Lnet/minecraft/world/gen/ChunkProviderServer; L1 L15 3
+    MAXSTACK = 4
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public func_104140_m()V
+   L0
+    LINENUMBER 1028 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    ASTORE 1
+   L1
+    LINENUMBER 1030 L1
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_73157_c ()Z
+    IFEQ L2
+   L3
+    LINENUMBER 1032 L3
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/world/gen/ChunkProviderServer.func_104112_b ()V
+   L2
+    LINENUMBER 1034 L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/world/gen/ChunkProviderServer] []
+    RETURN
+   L4
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L4 0
+    LOCALVARIABLE chunkproviderserver Lnet/minecraft/world/gen/ChunkProviderServer; L1 L4 1
+    MAXSTACK = 1
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public func_73042_a()V throws net/minecraft/world/MinecraftException 
+   L0
+    LINENUMBER 1038 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72906_B ()V
+   L1
+    LINENUMBER 1040 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    GETFIELD net/minecraft/server/MinecraftServer.field_71305_c : [Lnet/minecraft/world/WorldServer;
+    ASTORE 1
+    ALOAD 1
+    ARRAYLENGTH
+    ISTORE 2
+    ICONST_0
+    ISTORE 3
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer [Lnet/minecraft/world/WorldServer; I I] []
+    ILOAD 3
+    ILOAD 2
+    IF_ICMPGE L3
+    ALOAD 1
+    ILOAD 3
+    AALOAD
+    ASTORE 4
+   L4
+    LINENUMBER 1042 L4
+    ALOAD 4
+    INSTANCEOF net/minecraft/world/WorldServerMulti
+    IFEQ L5
+   L6
+    LINENUMBER 1044 L6
+    ALOAD 4
+    CHECKCAST net/minecraft/world/WorldServerMulti
+    INVOKEVIRTUAL net/minecraft/world/WorldServerMulti.func_184166_c ()V
+   L5
+    LINENUMBER 1040 L5
+   FRAME FULL [net/minecraft/world/WorldServer [Lnet/minecraft/world/WorldServer; I I net/minecraft/world/WorldServer] []
+    IINC 3 1
+    GOTO L2
+   L3
+    LINENUMBER 1048 L3
+   FRAME FULL [net/minecraft/world/WorldServer [Lnet/minecraft/world/WorldServer; I I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177741_h ()D
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176145_a (D)V
+   L7
+    LINENUMBER 1049 L7
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177731_f ()D
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176124_d (D)V
+   L8
+    LINENUMBER 1050 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177721_g ()D
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176141_c (D)V
+   L9
+    LINENUMBER 1051 L9
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177742_m ()D
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176129_e (D)V
+   L10
+    LINENUMBER 1052 L10
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177727_n ()D
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176125_f (D)V
+   L11
+    LINENUMBER 1053 L11
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177748_q ()I
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176122_j (I)V
+   L12
+    LINENUMBER 1054 L12
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177740_p ()I
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176136_k (I)V
+   L13
+    LINENUMBER 1055 L13
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177751_j ()D
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176118_b (D)V
+   L14
+    LINENUMBER 1056 L14
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_175723_af ()Lnet/minecraft/world/border/WorldBorder;
+    INVOKEVIRTUAL net/minecraft/world/border/WorldBorder.func_177732_i ()J
+    INVOKEVIRTUAL net/minecraft/world/storage/WorldInfo.func_176135_e (J)V
+   L15
+    LINENUMBER 1057 L15
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73019_z : Lnet/minecraft/world/storage/ISaveHandler;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72986_A : Lnet/minecraft/world/storage/WorldInfo;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_72378_q ()Lnet/minecraft/nbt/NBTTagCompound;
+    INVOKEINTERFACE net/minecraft/world/storage/ISaveHandler.func_75755_a (Lnet/minecraft/world/storage/WorldInfo;Lnet/minecraft/nbt/NBTTagCompound;)V
+   L16
+    LINENUMBER 1058 L16
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72988_C : Lnet/minecraft/world/storage/MapStorage;
+    INVOKEVIRTUAL net/minecraft/world/storage/MapStorage.func_75744_a ()V
+   L17
+    LINENUMBER 1059 L17
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.perWorldStorage : Lnet/minecraft/world/storage/MapStorage;
+    INVOKEVIRTUAL net/minecraft/world/storage/MapStorage.func_75744_a ()V
+   L18
+    LINENUMBER 1060 L18
+    RETURN
+   L19
+    LOCALVARIABLE worldserver Lnet/minecraft/world/WorldServer; L4 L5 4
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L19 0
+    MAXSTACK = 3
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public func_72838_d(Lnet/minecraft/entity/Entity;)Z
+   L0
+    LINENUMBER 1064 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_184165_i (Lnet/minecraft/entity/Entity;)Z
+    IFEQ L1
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/World.func_72838_d (Lnet/minecraft/entity/Entity;)Z
+    GOTO L2
+   L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity] []
+    ICONST_0
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity] [I]
+    IRETURN
+   L3
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L3 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L3 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  // signature (Ljava/util/Collection<Lnet/minecraft/entity/Entity;>;)V
+  // declaration: void func_175650_b(java.util.Collection<net.minecraft.entity.Entity>)
+  public func_175650_b(Ljava/util/Collection;)V
+   L0
+    LINENUMBER 1069 L0
+    ALOAD 1
+    INVOKESTATIC com/google/common/collect/Lists.newArrayList (Ljava/lang/Iterable;)Ljava/util/ArrayList;
+    INVOKEVIRTUAL java/util/ArrayList.iterator ()Ljava/util/Iterator;
+    ASTORE 2
+   L1
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Collection java/util/Iterator] []
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L2
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/Entity
+    ASTORE 3
+   L3
+    LINENUMBER 1071 L3
+    ALOAD 0
+    ALOAD 3
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_184165_i (Lnet/minecraft/entity/Entity;)Z
+    IFEQ L4
+    GETSTATIC net/minecraftforge/common/MinecraftForge.EVENT_BUS : Lnet/minecraftforge/fml/common/eventhandler/EventBus;
+    NEW net/minecraftforge/event/entity/EntityJoinWorldEvent
+    DUP
+    ALOAD 3
+    ALOAD 0
+    INVOKESPECIAL net/minecraftforge/event/entity/EntityJoinWorldEvent.<init> (Lnet/minecraft/entity/Entity;Lnet/minecraft/world/World;)V
+    INVOKEVIRTUAL net/minecraftforge/fml/common/eventhandler/EventBus.post (Lnet/minecraftforge/fml/common/eventhandler/Event;)Z
+    IFNE L4
+   L5
+    LINENUMBER 1073 L5
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72996_f : Ljava/util/List;
+    ALOAD 3
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L6
+    LINENUMBER 1074 L6
+    ALOAD 0
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72923_a (Lnet/minecraft/entity/Entity;)V
+   L4
+    LINENUMBER 1076 L4
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Collection java/util/Iterator net/minecraft/entity/Entity] []
+    GOTO L1
+   L2
+    LINENUMBER 1077 L2
+   FRAME FULL [net/minecraft/world/WorldServer java/util/Collection java/util/Iterator] []
+    RETURN
+   L7
+    LOCALVARIABLE entity Lnet/minecraft/entity/Entity; L3 L4 3
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L7 0
+    LOCALVARIABLE entityCollection Ljava/util/Collection; L0 L7 1
+    // signature Ljava/util/Collection<Lnet/minecraft/entity/Entity;>;
+    // declaration: java.util.Collection<net.minecraft.entity.Entity>
+    MAXSTACK = 5
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_184165_i(Lnet/minecraft/entity/Entity;)Z
+   L0
+    LINENUMBER 1081 L0
+    ALOAD 1
+    GETFIELD net/minecraft/entity/Entity.field_70128_L : Z
+    IFEQ L1
+   L2
+    LINENUMBER 1083 L2
+    GETSTATIC net/minecraft/world/WorldServer.field_147491_a : Lorg/apache/logging/log4j/Logger;
+    LDC "Tried to add entity {} but it was marked as removed already"
+    ICONST_1
+    ANEWARRAY java/lang/Object
+    DUP
+    ICONST_0
+    ALOAD 1
+    INVOKESTATIC net/minecraft/entity/EntityList.func_75621_b (Lnet/minecraft/entity/Entity;)Ljava/lang/String;
+    AASTORE
+    INVOKEINTERFACE org/apache/logging/log4j/Logger.warn (Ljava/lang/String;[Ljava/lang/Object;)V
+   L3
+    LINENUMBER 1084 L3
+    ICONST_0
+    IRETURN
+   L1
+    LINENUMBER 1088 L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity] []
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_110124_au ()Ljava/util/UUID;
+    ASTORE 2
+   L4
+    LINENUMBER 1090 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175741_N : Ljava/util/Map;
+    ALOAD 2
+    INVOKEINTERFACE java/util/Map.containsKey (Ljava/lang/Object;)Z
+    IFEQ L5
+   L6
+    LINENUMBER 1092 L6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175741_N : Ljava/util/Map;
+    ALOAD 2
+    INVOKEINTERFACE java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/Entity
+    ASTORE 3
+   L7
+    LINENUMBER 1094 L7
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72997_g : Ljava/util/List;
+    ALOAD 3
+    INVOKEINTERFACE java/util/List.contains (Ljava/lang/Object;)Z
+    IFEQ L8
+   L9
+    LINENUMBER 1096 L9
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_72997_g : Ljava/util/List;
+    ALOAD 3
+    INVOKEINTERFACE java/util/List.remove (Ljava/lang/Object;)Z
+    POP
+    GOTO L10
+   L8
+    LINENUMBER 1100 L8
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity java/util/UUID net/minecraft/entity/Entity] []
+    ALOAD 1
+    INSTANCEOF net/minecraft/entity/player/EntityPlayer
+    IFNE L11
+   L12
+    LINENUMBER 1102 L12
+    GETSTATIC net/minecraft/world/WorldServer.field_147491_a : Lorg/apache/logging/log4j/Logger;
+    LDC "Keeping entity {} that already exists with UUID {}"
+    ICONST_2
+    ANEWARRAY java/lang/Object
+    DUP
+    ICONST_0
+    ALOAD 3
+    INVOKESTATIC net/minecraft/entity/EntityList.func_75621_b (Lnet/minecraft/entity/Entity;)Ljava/lang/String;
+    AASTORE
+    DUP
+    ICONST_1
+    ALOAD 2
+    INVOKEVIRTUAL java/util/UUID.toString ()Ljava/lang/String;
+    AASTORE
+    INVOKEINTERFACE org/apache/logging/log4j/Logger.warn (Ljava/lang/String;[Ljava/lang/Object;)V
+   L13
+    LINENUMBER 1103 L13
+    ICONST_0
+    IRETURN
+   L11
+    LINENUMBER 1106 L11
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity java/util/UUID net/minecraft/entity/Entity] []
+    GETSTATIC net/minecraft/world/WorldServer.field_147491_a : Lorg/apache/logging/log4j/Logger;
+    LDC "Force-added player with duplicate UUID {}"
+    ICONST_1
+    ANEWARRAY java/lang/Object
+    DUP
+    ICONST_0
+    ALOAD 2
+    INVOKEVIRTUAL java/util/UUID.toString ()Ljava/lang/String;
+    AASTORE
+    INVOKEINTERFACE org/apache/logging/log4j/Logger.warn (Ljava/lang/String;[Ljava/lang/Object;)V
+   L10
+    LINENUMBER 1109 L10
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity java/util/UUID net/minecraft/entity/Entity] []
+    ALOAD 0
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72973_f (Lnet/minecraft/entity/Entity;)V
+   L5
+    LINENUMBER 1112 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity java/util/UUID] []
+    ICONST_1
+    IRETURN
+   L14
+    LOCALVARIABLE entity Lnet/minecraft/entity/Entity; L7 L5 3
+    LOCALVARIABLE uuid Ljava/util/UUID; L4 L14 2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L14 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L14 1
+    MAXSTACK = 6
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_72923_a(Lnet/minecraft/entity/Entity;)V
+   L0
+    LINENUMBER 1118 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/World.func_72923_a (Lnet/minecraft/entity/Entity;)V
+   L1
+    LINENUMBER 1119 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175729_l : Lnet/minecraft/util/IntHashMap;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_145782_y ()I
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/util/IntHashMap.func_76038_a (ILjava/lang/Object;)V
+   L2
+    LINENUMBER 1120 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175741_N : Ljava/util/Map;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_110124_au ()Ljava/util/UUID;
+    ALOAD 1
+    INVOKEINTERFACE java/util/Map.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    POP
+   L3
+    LINENUMBER 1121 L3
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_70021_al ()[Lnet/minecraft/entity/Entity;
+    ASTORE 2
+   L4
+    LINENUMBER 1123 L4
+    ALOAD 2
+    IFNULL L5
+   L6
+    LINENUMBER 1125 L6
+    ALOAD 2
+    ASTORE 3
+    ALOAD 3
+    ARRAYLENGTH
+    ISTORE 4
+    ICONST_0
+    ISTORE 5
+   L7
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity [Lnet/minecraft/entity/Entity; [Lnet/minecraft/entity/Entity; I I] []
+    ILOAD 5
+    ILOAD 4
+    IF_ICMPGE L5
+    ALOAD 3
+    ILOAD 5
+    AALOAD
+    ASTORE 6
+   L8
+    LINENUMBER 1127 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175729_l : Lnet/minecraft/util/IntHashMap;
+    ALOAD 6
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_145782_y ()I
+    ALOAD 6
+    INVOKEVIRTUAL net/minecraft/util/IntHashMap.func_76038_a (ILjava/lang/Object;)V
+   L9
+    LINENUMBER 1125 L9
+    IINC 5 1
+    GOTO L7
+   L5
+    LINENUMBER 1130 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity [Lnet/minecraft/entity/Entity;] []
+    RETURN
+   L10
+    LOCALVARIABLE entity Lnet/minecraft/entity/Entity; L8 L9 6
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L10 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L10 1
+    LOCALVARIABLE aentity [Lnet/minecraft/entity/Entity; L4 L10 2
+    MAXSTACK = 3
+    MAXLOCALS = 7
+
+  // access flags 0x1
+  public func_72847_b(Lnet/minecraft/entity/Entity;)V
+   L0
+    LINENUMBER 1134 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/World.func_72847_b (Lnet/minecraft/entity/Entity;)V
+   L1
+    LINENUMBER 1135 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175729_l : Lnet/minecraft/util/IntHashMap;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_145782_y ()I
+    INVOKEVIRTUAL net/minecraft/util/IntHashMap.func_76049_d (I)Ljava/lang/Object;
+    POP
+   L2
+    LINENUMBER 1136 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175741_N : Ljava/util/Map;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_110124_au ()Ljava/util/UUID;
+    INVOKEINTERFACE java/util/Map.remove (Ljava/lang/Object;)Ljava/lang/Object;
+    POP
+   L3
+    LINENUMBER 1137 L3
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_70021_al ()[Lnet/minecraft/entity/Entity;
+    ASTORE 2
+   L4
+    LINENUMBER 1139 L4
+    ALOAD 2
+    IFNULL L5
+   L6
+    LINENUMBER 1141 L6
+    ALOAD 2
+    ASTORE 3
+    ALOAD 3
+    ARRAYLENGTH
+    ISTORE 4
+    ICONST_0
+    ISTORE 5
+   L7
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity [Lnet/minecraft/entity/Entity; [Lnet/minecraft/entity/Entity; I I] []
+    ILOAD 5
+    ILOAD 4
+    IF_ICMPGE L5
+    ALOAD 3
+    ILOAD 5
+    AALOAD
+    ASTORE 6
+   L8
+    LINENUMBER 1143 L8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175729_l : Lnet/minecraft/util/IntHashMap;
+    ALOAD 6
+    INVOKEVIRTUAL net/minecraft/entity/Entity.func_145782_y ()I
+    INVOKEVIRTUAL net/minecraft/util/IntHashMap.func_76049_d (I)Ljava/lang/Object;
+    POP
+   L9
+    LINENUMBER 1141 L9
+    IINC 5 1
+    GOTO L7
+   L5
+    LINENUMBER 1146 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity [Lnet/minecraft/entity/Entity;] []
+    RETURN
+   L10
+    LOCALVARIABLE entity Lnet/minecraft/entity/Entity; L8 L9 6
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L10 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L10 1
+    LOCALVARIABLE aentity [Lnet/minecraft/entity/Entity; L4 L10 2
+    MAXSTACK = 2
+    MAXLOCALS = 7
+
+  // access flags 0x1
+  public func_72942_c(Lnet/minecraft/entity/Entity;)Z
+   L0
+    LINENUMBER 1150 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/world/World.func_72942_c (Lnet/minecraft/entity/Entity;)Z
+    IFEQ L1
+   L2
+    LINENUMBER 1152 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    ACONST_NULL
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ALOAD 1
+    GETFIELD net/minecraft/entity/Entity.field_70165_t : D
+    ALOAD 1
+    GETFIELD net/minecraft/entity/Entity.field_70163_u : D
+    ALOAD 1
+    GETFIELD net/minecraft/entity/Entity.field_70161_v : D
+    LDC 512.0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    NEW net/minecraft/network/play/server/SPacketSpawnGlobalEntity
+    DUP
+    ALOAD 1
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketSpawnGlobalEntity.<init> (Lnet/minecraft/entity/Entity;)V
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148543_a (Lnet/minecraft/entity/player/EntityPlayer;DDDDILnet/minecraft/network/Packet;)V
+   L3
+    LINENUMBER 1153 L3
+    ICONST_1
+    IRETURN
+   L1
+    LINENUMBER 1157 L1
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity] []
+    ICONST_0
+    IRETURN
+   L4
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L4 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L4 1
+    MAXSTACK = 14
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public func_72960_a(Lnet/minecraft/entity/Entity;B)V
+   L0
+    LINENUMBER 1163 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_73039_n ()Lnet/minecraft/entity/EntityTracker;
+    ALOAD 1
+    NEW net/minecraft/network/play/server/SPacketEntityStatus
+    DUP
+    ALOAD 1
+    ILOAD 2
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketEntityStatus.<init> (Lnet/minecraft/entity/Entity;B)V
+    INVOKEVIRTUAL net/minecraft/entity/EntityTracker.func_151248_b (Lnet/minecraft/entity/Entity;Lnet/minecraft/network/Packet;)V
+   L1
+    LINENUMBER 1164 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L2 1
+    LOCALVARIABLE state B L0 L2 2
+    MAXSTACK = 6
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public func_72863_F()Lnet/minecraft/world/gen/ChunkProviderServer;
+   L0
+    LINENUMBER 1168 L0
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/World.func_72863_F ()Lnet/minecraft/world/chunk/IChunkProvider;
+    CHECKCAST net/minecraft/world/gen/ChunkProviderServer
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_72885_a(Lnet/minecraft/entity/Entity;DDDFZZ)Lnet/minecraft/world/Explosion;
+    @Ljavax/annotation/Nullable;() // parameter 0
+   L0
+    LINENUMBER 1173 L0
+    NEW net/minecraft/world/Explosion
+    DUP
+    ALOAD 0
+    ALOAD 1
+    DLOAD 2
+    DLOAD 4
+    DLOAD 6
+    FLOAD 8
+    ILOAD 9
+    ILOAD 10
+    INVOKESPECIAL net/minecraft/world/Explosion.<init> (Lnet/minecraft/world/World;Lnet/minecraft/entity/Entity;DDDFZZ)V
+    ASTORE 11
+   L1
+    LINENUMBER 1174 L1
+    ALOAD 0
+    ALOAD 11
+    INVOKESTATIC net/minecraftforge/event/ForgeEventFactory.onExplosionStart (Lnet/minecraft/world/World;Lnet/minecraft/world/Explosion;)Z
+    IFEQ L2
+    ALOAD 11
+    ARETURN
+   L2
+    LINENUMBER 1175 L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity D D D F I I net/minecraft/world/Explosion] []
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/Explosion.func_77278_a ()V
+   L3
+    LINENUMBER 1176 L3
+    ALOAD 11
+    ICONST_0
+    INVOKEVIRTUAL net/minecraft/world/Explosion.func_77279_a (Z)V
+   L4
+    LINENUMBER 1178 L4
+    ILOAD 10
+    IFNE L5
+   L6
+    LINENUMBER 1180 L6
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/Explosion.func_180342_d ()V
+   L5
+    LINENUMBER 1183 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity D D D F I I net/minecraft/world/Explosion] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 12
+   L7
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity D D D F I I net/minecraft/world/Explosion java/util/Iterator] []
+    ALOAD 12
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L8
+    ALOAD 12
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ASTORE 13
+   L9
+    LINENUMBER 1185 L9
+    ALOAD 13
+    DLOAD 2
+    DLOAD 4
+    DLOAD 6
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayer.func_70092_e (DDD)D
+    LDC 4096.0
+    DCMPG
+    IFGE L10
+   L11
+    LINENUMBER 1187 L11
+    ALOAD 13
+    CHECKCAST net/minecraft/entity/player/EntityPlayerMP
+    GETFIELD net/minecraft/entity/player/EntityPlayerMP.field_71135_a : Lnet/minecraft/network/NetHandlerPlayServer;
+    NEW net/minecraft/network/play/server/SPacketExplosion
+    DUP
+    DLOAD 2
+    DLOAD 4
+    DLOAD 6
+    FLOAD 8
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/Explosion.func_180343_e ()Ljava/util/List;
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/world/Explosion.func_77277_b ()Ljava/util/Map;
+    ALOAD 13
+    INVOKEINTERFACE java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    CHECKCAST net/minecraft/util/math/Vec3d
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketExplosion.<init> (DDDFLjava/util/List;Lnet/minecraft/util/math/Vec3d;)V
+    INVOKEVIRTUAL net/minecraft/network/NetHandlerPlayServer.func_147359_a (Lnet/minecraft/network/Packet;)V
+   L10
+    LINENUMBER 1189 L10
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity D D D F I I net/minecraft/world/Explosion java/util/Iterator net/minecraft/entity/player/EntityPlayer] []
+    GOTO L7
+   L8
+    LINENUMBER 1191 L8
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/Entity D D D F I I net/minecraft/world/Explosion java/util/Iterator] []
+    ALOAD 11
+    ARETURN
+   L12
+    LOCALVARIABLE entityplayer Lnet/minecraft/entity/player/EntityPlayer; L9 L10 13
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L12 0
+    LOCALVARIABLE entityIn Lnet/minecraft/entity/Entity; L0 L12 1
+    LOCALVARIABLE x D L0 L12 2
+    LOCALVARIABLE y D L0 L12 4
+    LOCALVARIABLE z D L0 L12 6
+    LOCALVARIABLE strength F L0 L12 8
+    LOCALVARIABLE isFlaming Z L0 L12 9
+    LOCALVARIABLE isSmoking Z L0 L12 10
+    LOCALVARIABLE explosion Lnet/minecraft/world/Explosion; L1 L12 11
+    MAXSTACK = 13
+    MAXLOCALS = 14
+
+  // access flags 0x1
+  public func_175641_c(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;II)V
+   L0
+    LINENUMBER 1196 L0
+    NEW net/minecraft/block/BlockEventData
+    DUP
+    ALOAD 1
+    ALOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL net/minecraft/block/BlockEventData.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;II)V
+    ASTORE 5
+   L1
+    LINENUMBER 1198 L1
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147490_S : [Lnet/minecraft/world/WorldServer$ServerBlockEventList;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147489_T : I
+    AALOAD
+    INVOKEVIRTUAL net/minecraft/world/WorldServer$ServerBlockEventList.iterator ()Ljava/util/Iterator;
+    ASTORE 6
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/BlockEventData java/util/Iterator] []
+    ALOAD 6
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L3
+    ALOAD 6
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/block/BlockEventData
+    ASTORE 7
+   L4
+    LINENUMBER 1200 L4
+    ALOAD 7
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.equals (Ljava/lang/Object;)Z
+    IFEQ L5
+   L6
+    LINENUMBER 1202 L6
+    RETURN
+   L5
+    LINENUMBER 1204 L5
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/BlockEventData java/util/Iterator net/minecraft/block/BlockEventData] []
+    GOTO L2
+   L3
+    LINENUMBER 1206 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/math/BlockPos net/minecraft/block/Block I I net/minecraft/block/BlockEventData java/util/Iterator] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147490_S : [Lnet/minecraft/world/WorldServer$ServerBlockEventList;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147489_T : I
+    AALOAD
+    ALOAD 5
+    INVOKEVIRTUAL net/minecraft/world/WorldServer$ServerBlockEventList.add (Ljava/lang/Object;)Z
+    POP
+   L7
+    LINENUMBER 1207 L7
+    RETURN
+   L8
+    LOCALVARIABLE blockeventdata1 Lnet/minecraft/block/BlockEventData; L4 L5 7
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L8 0
+    LOCALVARIABLE pos Lnet/minecraft/util/math/BlockPos; L0 L8 1
+    LOCALVARIABLE blockIn Lnet/minecraft/block/Block; L0 L8 2
+    LOCALVARIABLE eventID I L0 L8 3
+    LOCALVARIABLE eventParam I L0 L8 4
+    LOCALVARIABLE blockeventdata Lnet/minecraft/block/BlockEventData; L1 L8 5
+    MAXSTACK = 6
+    MAXLOCALS = 8
+
+  // access flags 0x1
+  public func_147488_Z()V
+   L0
+    LINENUMBER 1211 L0
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147490_S : [Lnet/minecraft/world/WorldServer$ServerBlockEventList;
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147489_T : I
+    AALOAD
+    INVOKEVIRTUAL net/minecraft/world/WorldServer$ServerBlockEventList.isEmpty ()Z
+    IFNE L1
+   L2
+    LINENUMBER 1213 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147489_T : I
+    ISTORE 1
+   L3
+    LINENUMBER 1214 L3
+    ALOAD 0
+    DUP
+    GETFIELD net/minecraft/world/WorldServer.field_147489_T : I
+    ICONST_1
+    IXOR
+    PUTFIELD net/minecraft/world/WorldServer.field_147489_T : I
+   L4
+    LINENUMBER 1216 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147490_S : [Lnet/minecraft/world/WorldServer$ServerBlockEventList;
+    ILOAD 1
+    AALOAD
+    INVOKEVIRTUAL net/minecraft/world/WorldServer$ServerBlockEventList.iterator ()Ljava/util/Iterator;
+    ASTORE 2
+   L5
+   FRAME FULL [net/minecraft/world/WorldServer I java/util/Iterator] []
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L6
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST net/minecraft/block/BlockEventData
+    ASTORE 3
+   L7
+    LINENUMBER 1218 L7
+    ALOAD 0
+    ALOAD 3
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_147485_a (Lnet/minecraft/block/BlockEventData;)Z
+    IFEQ L8
+   L9
+    LINENUMBER 1220 L9
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    ACONST_NULL
+    CHECKCAST net/minecraft/entity/player/EntityPlayer
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_180328_a ()Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177958_n ()I
+    I2D
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_180328_a ()Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177956_o ()I
+    I2D
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_180328_a ()Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177952_p ()I
+    I2D
+    LDC 64.0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    NEW net/minecraft/network/play/server/SPacketBlockAction
+    DUP
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_180328_a ()Lnet/minecraft/util/math/BlockPos;
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_151337_f ()Lnet/minecraft/block/Block;
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_151339_d ()I
+    ALOAD 3
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_151338_e ()I
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketBlockAction.<init> (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;II)V
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148543_a (Lnet/minecraft/entity/player/EntityPlayer;DDDDILnet/minecraft/network/Packet;)V
+   L8
+    LINENUMBER 1222 L8
+   FRAME FULL [net/minecraft/world/WorldServer I java/util/Iterator net/minecraft/block/BlockEventData] []
+    GOTO L5
+   L6
+    LINENUMBER 1224 L6
+   FRAME FULL [net/minecraft/world/WorldServer I java/util/Iterator] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_147490_S : [Lnet/minecraft/world/WorldServer$ServerBlockEventList;
+    ILOAD 1
+    AALOAD
+    INVOKEVIRTUAL net/minecraft/world/WorldServer$ServerBlockEventList.clear ()V
+   L10
+    LINENUMBER 1225 L10
+    GOTO L0
+   L1
+    LINENUMBER 1226 L1
+   FRAME FULL [net/minecraft/world/WorldServer] []
+    RETURN
+   L11
+    LOCALVARIABLE blockeventdata Lnet/minecraft/block/BlockEventData; L7 L8 3
+    LOCALVARIABLE i I L3 L10 1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L11 0
+    MAXSTACK = 17
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public func_147485_a(Lnet/minecraft/block/BlockEventData;)Z
+   L0
+    LINENUMBER 1230 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_180328_a ()Lnet/minecraft/util/math/BlockPos;
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_180495_p (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+    ASTORE 2
+   L1
+    LINENUMBER 1231 L1
+    ALOAD 2
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_177230_c ()Lnet/minecraft/block/Block;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_151337_f ()Lnet/minecraft/block/Block;
+    IF_ACMPNE L2
+    ALOAD 2
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_180328_a ()Lnet/minecraft/util/math/BlockPos;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_151339_d ()I
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/block/BlockEventData.func_151338_e ()I
+    INVOKEINTERFACE net/minecraft/block/state/IBlockState.func_189547_a (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;II)Z
+    GOTO L3
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/block/BlockEventData net/minecraft/block/state/IBlockState] []
+    ICONST_0
+   L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/block/BlockEventData net/minecraft/block/state/IBlockState] [I]
+    IRETURN
+   L4
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L4 0
+    LOCALVARIABLE event Lnet/minecraft/block/BlockEventData; L0 L4 1
+    LOCALVARIABLE iblockstate Lnet/minecraft/block/state/IBlockState; L1 L4 2
+    MAXSTACK = 5
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public func_73041_k()V
+   L0
+    LINENUMBER 1236 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73019_z : Lnet/minecraft/world/storage/ISaveHandler;
+    INVOKEINTERFACE net/minecraft/world/storage/ISaveHandler.func_75759_a ()V
+   L1
+    LINENUMBER 1237 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_72979_l()V
+   L0
+    LINENUMBER 1241 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72896_J ()Z
+    ISTORE 1
+   L1
+    LINENUMBER 1242 L1
+    ALOAD 0
+    INVOKESPECIAL net/minecraft/world/World.func_72979_l ()V
+   L2
+    LINENUMBER 1244 L2
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73003_n : F
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73004_o : F
+    FCMPL
+    IFEQ L3
+   L4
+    LINENUMBER 1246 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    NEW net/minecraft/network/play/server/SPacketChangeGameState
+    DUP
+    BIPUSH 7
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73004_o : F
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketChangeGameState.<init> (IF)V
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148537_a (Lnet/minecraft/network/Packet;I)V
+   L3
+    LINENUMBER 1249 L3
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73018_p : F
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73017_q : F
+    FCMPL
+    IFEQ L5
+   L6
+    LINENUMBER 1251 L6
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    NEW net/minecraft/network/play/server/SPacketChangeGameState
+    DUP
+    BIPUSH 8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73017_q : F
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketChangeGameState.<init> (IF)V
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148537_a (Lnet/minecraft/network/Packet;I)V
+   L5
+    LINENUMBER 1258 L5
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    ILOAD 1
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72896_J ()Z
+    IF_ICMPEQ L7
+   L8
+    LINENUMBER 1260 L8
+    ILOAD 1
+    IFEQ L9
+   L10
+    LINENUMBER 1262 L10
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    NEW net/minecraft/network/play/server/SPacketChangeGameState
+    DUP
+    ICONST_2
+    FCONST_0
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketChangeGameState.<init> (IF)V
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148537_a (Lnet/minecraft/network/Packet;I)V
+    GOTO L11
+   L9
+    LINENUMBER 1266 L9
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    NEW net/minecraft/network/play/server/SPacketChangeGameState
+    DUP
+    ICONST_1
+    FCONST_0
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketChangeGameState.<init> (IF)V
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148537_a (Lnet/minecraft/network/Packet;I)V
+   L11
+    LINENUMBER 1269 L11
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    NEW net/minecraft/network/play/server/SPacketChangeGameState
+    DUP
+    BIPUSH 7
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73004_o : F
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketChangeGameState.<init> (IF)V
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148537_a (Lnet/minecraft/network/Packet;I)V
+   L12
+    LINENUMBER 1270 L12
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_184103_al ()Lnet/minecraft/server/management/PlayerList;
+    NEW net/minecraft/network/play/server/SPacketChangeGameState
+    DUP
+    BIPUSH 8
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73017_q : F
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketChangeGameState.<init> (IF)V
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73011_w : Lnet/minecraft/world/WorldProvider;
+    INVOKEVIRTUAL net/minecraft/world/WorldProvider.getDimension ()I
+    INVOKEVIRTUAL net/minecraft/server/management/PlayerList.func_148537_a (Lnet/minecraft/network/Packet;I)V
+   L7
+    LINENUMBER 1272 L7
+   FRAME FULL [net/minecraft/world/WorldServer I] []
+    RETURN
+   L13
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L13 0
+    LOCALVARIABLE flag Z L1 L13 1
+    MAXSTACK = 5
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public func_73046_m()Lnet/minecraft/server/MinecraftServer;
+  @Ljavax/annotation/Nullable;()
+   L0
+    LINENUMBER 1277 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_73039_n()Lnet/minecraft/entity/EntityTracker;
+   L0
+    LINENUMBER 1282 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73062_L : Lnet/minecraft/entity/EntityTracker;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_184164_w()Lnet/minecraft/server/management/PlayerChunkMap;
+   L0
+    LINENUMBER 1287 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_85176_s()Lnet/minecraft/world/Teleporter;
+   L0
+    LINENUMBER 1292 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_85177_Q : Lnet/minecraft/world/Teleporter;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public func_184163_y()Lnet/minecraft/world/gen/structure/template/TemplateManager;
+   L0
+    LINENUMBER 1297 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73019_z : Lnet/minecraft/world/storage/ISaveHandler;
+    INVOKEINTERFACE net/minecraft/world/storage/ISaveHandler.func_186340_h ()Lnet/minecraft/world/gen/structure/template/TemplateManager;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x81
+  public transient varargs func_175739_a(Lnet/minecraft/util/EnumParticleTypes;DDDIDDDD[I)V
+   L0
+    LINENUMBER 1302 L0
+    ALOAD 0
+    ALOAD 1
+    ICONST_0
+    DLOAD 2
+    DLOAD 4
+    DLOAD 6
+    ILOAD 8
+    DLOAD 9
+    DLOAD 11
+    DLOAD 13
+    DLOAD 15
+    ALOAD 17
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_180505_a (Lnet/minecraft/util/EnumParticleTypes;ZDDDIDDDD[I)V
+   L1
+    LINENUMBER 1303 L1
+    RETURN
+   L2
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L2 0
+    LOCALVARIABLE particleType Lnet/minecraft/util/EnumParticleTypes; L0 L2 1
+    LOCALVARIABLE xCoord D L0 L2 2
+    LOCALVARIABLE yCoord D L0 L2 4
+    LOCALVARIABLE zCoord D L0 L2 6
+    LOCALVARIABLE numberOfParticles I L0 L2 8
+    LOCALVARIABLE xOffset D L0 L2 9
+    LOCALVARIABLE yOffset D L0 L2 11
+    LOCALVARIABLE zOffset D L0 L2 13
+    LOCALVARIABLE particleSpeed D L0 L2 15
+    LOCALVARIABLE particleArguments [I L0 L2 17
+    MAXSTACK = 19
+    MAXLOCALS = 18
+
+  // access flags 0x81
+  public transient varargs func_180505_a(Lnet/minecraft/util/EnumParticleTypes;ZDDDIDDDD[I)V
+   L0
+    LINENUMBER 1307 L0
+    NEW net/minecraft/network/play/server/SPacketParticles
+    DUP
+    ALOAD 1
+    ILOAD 2
+    DLOAD 3
+    D2F
+    DLOAD 5
+    D2F
+    DLOAD 7
+    D2F
+    DLOAD 10
+    D2F
+    DLOAD 12
+    D2F
+    DLOAD 14
+    D2F
+    DLOAD 16
+    D2F
+    ILOAD 9
+    ALOAD 18
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketParticles.<init> (Lnet/minecraft/util/EnumParticleTypes;ZFFFFFFFI[I)V
+    ASTORE 19
+   L1
+    LINENUMBER 1309 L1
+    ICONST_0
+    ISTORE 20
+   L2
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/EnumParticleTypes I D D D I D D D D [I net/minecraft/network/play/server/SPacketParticles I] []
+    ILOAD 20
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L3
+   L4
+    LINENUMBER 1311 L4
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73010_i : Ljava/util/List;
+    ILOAD 20
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/player/EntityPlayerMP
+    ASTORE 21
+   L5
+    LINENUMBER 1312 L5
+    ALOAD 0
+    ALOAD 21
+    ILOAD 2
+    DLOAD 3
+    DLOAD 5
+    DLOAD 7
+    ALOAD 19
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_184159_a (Lnet/minecraft/entity/player/EntityPlayerMP;ZDDDLnet/minecraft/network/Packet;)V
+   L6
+    LINENUMBER 1309 L6
+    IINC 20 1
+    GOTO L2
+   L3
+    LINENUMBER 1314 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/util/EnumParticleTypes I D D D I D D D D [I net/minecraft/network/play/server/SPacketParticles I] []
+    RETURN
+   L7
+    LOCALVARIABLE entityplayermp Lnet/minecraft/entity/player/EntityPlayerMP; L5 L6 21
+    LOCALVARIABLE i I L2 L3 20
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L7 0
+    LOCALVARIABLE particleType Lnet/minecraft/util/EnumParticleTypes; L0 L7 1
+    LOCALVARIABLE longDistance Z L0 L7 2
+    LOCALVARIABLE xCoord D L0 L7 3
+    LOCALVARIABLE yCoord D L0 L7 5
+    LOCALVARIABLE zCoord D L0 L7 7
+    LOCALVARIABLE numberOfParticles I L0 L7 9
+    LOCALVARIABLE xOffset D L0 L7 10
+    LOCALVARIABLE yOffset D L0 L7 12
+    LOCALVARIABLE zOffset D L0 L7 14
+    LOCALVARIABLE particleSpeed D L0 L7 16
+    LOCALVARIABLE particleArguments [I L0 L7 18
+    LOCALVARIABLE spacketparticles Lnet/minecraft/network/play/server/SPacketParticles; L1 L7 19
+    MAXSTACK = 13
+    MAXLOCALS = 22
+
+  // access flags 0x81
+  public transient varargs func_184161_a(Lnet/minecraft/entity/player/EntityPlayerMP;Lnet/minecraft/util/EnumParticleTypes;ZDDDIDDDD[I)V
+   L0
+    LINENUMBER 1318 L0
+    NEW net/minecraft/network/play/server/SPacketParticles
+    DUP
+    ALOAD 2
+    ILOAD 3
+    DLOAD 4
+    D2F
+    DLOAD 6
+    D2F
+    DLOAD 8
+    D2F
+    DLOAD 11
+    D2F
+    DLOAD 13
+    D2F
+    DLOAD 15
+    D2F
+    DLOAD 17
+    D2F
+    ILOAD 10
+    ALOAD 19
+    INVOKESPECIAL net/minecraft/network/play/server/SPacketParticles.<init> (Lnet/minecraft/util/EnumParticleTypes;ZFFFFFFFI[I)V
+    ASTORE 20
+   L1
+    LINENUMBER 1319 L1
+    ALOAD 0
+    ALOAD 1
+    ILOAD 3
+    DLOAD 4
+    DLOAD 6
+    DLOAD 8
+    ALOAD 20
+    INVOKESPECIAL net/minecraft/world/WorldServer.func_184159_a (Lnet/minecraft/entity/player/EntityPlayerMP;ZDDDLnet/minecraft/network/Packet;)V
+   L2
+    LINENUMBER 1320 L2
+    RETURN
+   L3
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L3 0
+    LOCALVARIABLE player Lnet/minecraft/entity/player/EntityPlayerMP; L0 L3 1
+    LOCALVARIABLE particle Lnet/minecraft/util/EnumParticleTypes; L0 L3 2
+    LOCALVARIABLE longDistance Z L0 L3 3
+    LOCALVARIABLE x D L0 L3 4
+    LOCALVARIABLE y D L0 L3 6
+    LOCALVARIABLE z D L0 L3 8
+    LOCALVARIABLE count I L0 L3 10
+    LOCALVARIABLE xOffset D L0 L3 11
+    LOCALVARIABLE yOffset D L0 L3 13
+    LOCALVARIABLE zOffset D L0 L3 15
+    LOCALVARIABLE speed D L0 L3 17
+    LOCALVARIABLE arguments [I L0 L3 19
+    LOCALVARIABLE packet Lnet/minecraft/network/Packet; L1 L3 20
+    // signature Lnet/minecraft/network/Packet<*>;
+    // declaration: net.minecraft.network.Packet<?>
+    MAXSTACK = 13
+    MAXLOCALS = 21
+
+  // access flags 0x1
+  // signature (Lnet/minecraft/entity/player/EntityPlayerMP;ZDDDLnet/minecraft/network/Packet<*>;)V
+  // declaration: void func_184159_a(net.minecraft.entity.player.EntityPlayerMP, boolean, double, double, double, net.minecraft.network.Packet<?>)
+  public func_184159_a(Lnet/minecraft/entity/player/EntityPlayerMP;ZDDDLnet/minecraft/network/Packet;)V
+   L0
+    LINENUMBER 1324 L0
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/entity/player/EntityPlayerMP.func_180425_c ()Lnet/minecraft/util/math/BlockPos;
+    ASTORE 10
+   L1
+    LINENUMBER 1325 L1
+    ALOAD 10
+    DLOAD 3
+    DLOAD 5
+    DLOAD 7
+    INVOKEVIRTUAL net/minecraft/util/math/BlockPos.func_177954_c (DDD)D
+    DSTORE 11
+   L2
+    LINENUMBER 1327 L2
+    DLOAD 11
+    LDC 1024.0
+    DCMPG
+    IFLE L3
+    ILOAD 2
+    IFEQ L4
+    DLOAD 11
+    LDC 262144.0
+    DCMPG
+    IFGT L4
+   L3
+    LINENUMBER 1329 L3
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/player/EntityPlayerMP I D D D net/minecraft/network/Packet net/minecraft/util/math/BlockPos D] []
+    ALOAD 1
+    GETFIELD net/minecraft/entity/player/EntityPlayerMP.field_71135_a : Lnet/minecraft/network/NetHandlerPlayServer;
+    ALOAD 9
+    INVOKEVIRTUAL net/minecraft/network/NetHandlerPlayServer.func_147359_a (Lnet/minecraft/network/Packet;)V
+   L4
+    LINENUMBER 1331 L4
+   FRAME FULL [net/minecraft/world/WorldServer net/minecraft/entity/player/EntityPlayerMP I D D D net/minecraft/network/Packet net/minecraft/util/math/BlockPos D] []
+    RETURN
+   L5
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L5 0
+    LOCALVARIABLE player Lnet/minecraft/entity/player/EntityPlayerMP; L0 L5 1
+    LOCALVARIABLE longDistance Z L0 L5 2
+    LOCALVARIABLE x D L0 L5 3
+    LOCALVARIABLE y D L0 L5 5
+    LOCALVARIABLE z D L0 L5 7
+    LOCALVARIABLE packetIn Lnet/minecraft/network/Packet; L0 L5 9
+    // signature Lnet/minecraft/network/Packet<*>;
+    // declaration: net.minecraft.network.Packet<?>
+    LOCALVARIABLE blockpos Lnet/minecraft/util/math/BlockPos; L1 L5 10
+    LOCALVARIABLE d0 D L2 L5 11
+    MAXSTACK = 7
+    MAXLOCALS = 13
+
+  // access flags 0x1
+  public func_175733_a(Ljava/util/UUID;)Lnet/minecraft/entity/Entity;
+  @Ljavax/annotation/Nullable;()
+   L0
+    LINENUMBER 1336 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_175741_N : Ljava/util/Map;
+    ALOAD 1
+    INVOKEINTERFACE java/util/Map.get (Ljava/lang/Object;)Ljava/lang/Object;
+    CHECKCAST net/minecraft/entity/Entity
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    LOCALVARIABLE uuid Ljava/util/UUID; L0 L1 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  // signature (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture<Ljava/lang/Object;>;
+  // declaration: com.google.common.util.concurrent.ListenableFuture<java.lang.Object> func_152344_a(java.lang.Runnable)
+  public func_152344_a(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+   L0
+    LINENUMBER 1341 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    ALOAD 1
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_152344_a (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    LOCALVARIABLE runnableToSchedule Ljava/lang/Runnable; L0 L1 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public func_152345_ab()Z
+   L0
+    LINENUMBER 1346 L0
+    ALOAD 0
+    GETFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    INVOKEVIRTUAL net/minecraft/server/MinecraftServer.func_152345_ab ()Z
+    IRETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1
+  public getChunkSaveLocation()Ljava/io/File;
+   L0
+    LINENUMBER 1351 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    GETFIELD net/minecraft/world/gen/ChunkProviderServer.field_73247_e : Lnet/minecraft/world/chunk/storage/IChunkLoader;
+    CHECKCAST net/minecraft/world/chunk/storage/AnvilChunkLoader
+    GETFIELD net/minecraft/world/chunk/storage/AnvilChunkLoader.field_75825_d : Ljava/io/File;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1041
+  public synthetic bridge func_72863_F()Lnet/minecraft/world/chunk/IChunkProvider;
+   L0
+    LINENUMBER 82 L0
+    ALOAD 0
+    INVOKEVIRTUAL net/minecraft/world/WorldServer.func_72863_F ()Lnet/minecraft/world/gen/ChunkProviderServer;
+    ARETURN
+   L1
+    LOCALVARIABLE this Lnet/minecraft/world/WorldServer; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x9
+  public static <clinit>()V
+   L0
+    LINENUMBER 84 L0
+    INVOKESTATIC org/apache/logging/log4j/LogManager.getLogger ()Lorg/apache/logging/log4j/Logger;
+    PUTSTATIC net/minecraft/world/WorldServer.field_147491_a : Lorg/apache/logging/log4j/Logger;
+    RETURN
+    MAXSTACK = 1
+    MAXLOCALS = 0
+
+  // access flags 0x1
+  public <init>(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/storage/ISaveHandler;Lnet/minecraft/world/storage/WorldInfo;Lnet/minecraft/world/WorldProvider;Lnet/minecraft/profiler/Profiler;Z)V
+    ALOAD 0
+    ALOAD 2
+    ALOAD 3
+    ALOAD 4
+    ALOAD 5
+    ILOAD 6
+    INVOKESPECIAL net/minecraft/world/World.<init> (Lnet/minecraft/world/storage/ISaveHandler;Lnet/minecraft/world/storage/WorldInfo;Lnet/minecraft/world/WorldProvider;Lnet/minecraft/profiler/Profiler;Z)V
+    ALOAD 0
+    ALOAD 1
+    PUTFIELD net/minecraft/world/WorldServer.field_73061_a : Lnet/minecraft/server/MinecraftServer;
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD net/minecraft/world/WorldServer.field_73062_L : Lnet/minecraft/entity/EntityTracker;
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD net/minecraft/world/WorldServer.field_73063_M : Lnet/minecraft/server/management/PlayerChunkMap;
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD net/minecraft/world/WorldServer.field_85177_Q : Lnet/minecraft/world/Teleporter;
+    RETURN
+    MAXSTACK = 6
+    MAXLOCALS = 7
+}
